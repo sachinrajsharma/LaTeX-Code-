@@ -1,0 +1,88 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\title{Case Study Questions – Applications of Derivatives}
+\date{}
+\begin{document}
+	
+	
+	\Large 
+	
+	\section*{Case Study 1}
+	
+	The students of Class 12 were taken for an educational field trip to a technology park where they were shown how traffic speed sensors work. The instructor explained that these sensors detect the change in position of vehicles with respect to time and calculate speed using derivatives. Inspired by this, the students decided to model a problem in which a car moves along a straight road, and its position at time $t$ (in seconds) is given by the function $s(t) = 3t^3 - 6t^2 + 2t$ (in meters). They wanted to analyze the speed and acceleration of the car at different time intervals and determine when the car was at rest, speeding up, or slowing down. This application helped students link real-world motion with calculus concepts such as the first and second derivatives.
+	
+	\pagebreak
+	
+	
+	
+	
+	
+	
+	\begin{enumerate}
+		\item The velocity of the car at time $t = 2$ seconds is:
+		\begin{enumerate}
+			\item 6 m/s\\
+			\item 0 m/s\\
+			\item 12 m/s\\
+			\item -6 m/s
+		\end{enumerate}
+	
+	
+	\pagebreak
+		
+		\item At what time is the car at rest?
+		\begin{enumerate}
+			\item $t = 0$ and $t = 1$\\
+			\item $t = 1$ and $t = 2$\\
+			\item $t = 2$ and $t = 3$\\
+			\item $t = 0$ and $t = 3$
+		\end{enumerate}
+		
+		
+		
+		\pagebreak
+		
+		\item Acceleration of the car at $t = 1$ second is:
+		\begin{enumerate}
+			\item $-4$ m/s$^2$\\
+			\item $-6$ m/s$^2$\\
+			\item $0$ m/s$^2$\\
+			\item $2$ m/s$^2$
+		\end{enumerate}
+		
+		\pagebreak
+		
+		
+		\item What is the total distance travelled by the car from $t=0$ to $t=2$ seconds?
+		\begin{enumerate}
+			\item 4 meters\\
+			\item 8 meters\\
+			\item 10 meters\\
+			\item 12 meters
+		\end{enumerate}
+		\pagebreak
+		
+		
+		
+		
+		\item When is the car accelerating?
+		\begin{enumerate}
+			\item When $a(t) > 0$\\
+			\item When $v(t) > 0$\\
+			\item When $s(t) > 0$\\
+			\item When $t > 5$
+		\end{enumerate}
+		
+		
+		
+		
+	\end{enumerate}
+
+	
+	
+	
+	
+\end{document}
