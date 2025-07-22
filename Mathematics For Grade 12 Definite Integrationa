@@ -1,0 +1,89 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\title{Case Study 1: Definite Integrals}
+\author{}
+\date{}
+
+\begin{document}
+	
+	
+	\LARGE 
+	
+	\section*{Case Study 1}
+	
+	Ravi, a class 12 student, was studying the chapter ``Definite Integrals'' during his summer break. He was fascinated by how integrals could be used to find the exact area under a curve. His teacher introduced him to the \textbf{Fundamental Theorem of Calculus}, which links the concept of differentiation and integration. Ravi also learned several important properties of definite integrals, such as linearity, the reversal of limits, and symmetry (especially for even and odd functions).
+	
+	Ravi explored problems where he could apply these properties to simplify complex expressions and also used standard results to evaluate definite integrals directly. He was particularly curious about how the definite integral represents the net area and how the limits play a critical role in determining this value. He solved a variety of problems using formulas like:
+	
+	\[
+	\int_a^b f(x)\, dx = F(b) - F(a), \quad \text{where } F'(x) = f(x)
+	\]
+	\[
+	\int_a^b [f(x) + g(x)]\, dx = \int_a^b f(x)\, dx + \int_a^b g(x)\, dx
+	\]
+	
+	Based on Ravi’s learning journey, answer the following multiple-choice questions:
+	
+	\pagebreak
+	
+	%\section*{MCQ Questions}
+	
+	\begin{enumerate}
+		
+		\item Evaluate: $\int_{0}^{\pi} \sin x\, dx$
+		\begin{enumerate}
+			\item $0$
+			\item $2$
+			\item $1$
+			\item $-2$
+		\end{enumerate}
+	
+	
+	\pagebreak
+	
+		
+		\item If $f(x)$ is an odd function, then $\int_{-a}^{a} f(x)\, dx$ is:
+		\begin{enumerate}
+			\item Always 0
+			\item Always positive
+			\item Depends on $f(x)$
+			\item Always negative
+		\end{enumerate}
+	\pagebreak
+		
+		\item Using properties, evaluate: $\int_{0}^{4} x^2\, dx + \int_{4}^{6} x^2\, dx$
+		\begin{enumerate}
+			\item $72$
+			\item $80$
+			\item $64$
+			\item $88$
+		\end{enumerate}
+		
+		\pagebreak
+		\item Evaluate: $\int_{1}^{3} (2x + 1)\, dx$
+		\begin{enumerate}
+			\item $12$
+			\item $16$
+			\item $10$
+			\item $14$
+		\end{enumerate}
+	
+		\pagebreak
+		\item Which of the following is true for any continuous function $f(x)$?
+		\begin{enumerate}
+			\item $\int_a^b f(x)\, dx = \int_b^a f(x)\, dx$
+			\item $\int_a^b f(x)\, dx = -\int_b^a f(x)\, dx$
+			\item $\int_a^b f(x)\, dx = \int_c^b f(x)\, dx$
+			\item $\int_a^a f(x)\, dx = f(a)$
+		\end{enumerate}
+	
+	\end{enumerate}
+	
+	
+	
+	
+	
+	
+\end{document}
