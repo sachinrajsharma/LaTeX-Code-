@@ -1,0 +1,92 @@
+\documentclass[10pt,a4paper, english]{article}
+%\usepackage[a4paper,margin=1in,landscape]{geometry}
+%\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{lmodern}
+%\usepackage[english]{babel}
+\usepackage{tikz}
+\usepackage{mathptmx}
+\usepackage{geometry}
+\geometry{
+  top=0.5in,            % <-- you want to adjust this
+  inner=0.5in,
+  outer=0.5in,
+  bottom=0.5in,
+  headheight=3ex,       % <-- and this
+  headsep=2ex,          % <-- and this
+}
+\usepackage{verbatim}
+\everymath{\displaystyle}
+\usepackage{amsmath}
+%\usepackage{lipsum}
+
+%\setlength{\parskip}{1em}
+\usepackage{fancyhdr}
+ %BANSAL DPP - 17,18,19
+\pagestyle{fancy}
+\fancyhf{}
+%\rhead{www.mathstudy.in}
+
+%\usepackage[landscape]{geometry}
+\chead{\Large{ Part Test - JEE Mains \& Advance  }}
+\rhead{By: Sachin Sharmaa}
+\rfoot{www.mathstudy.in}
+\usepackage{amsfonts}
+%\usepackage{helvet}
+\usepackage{amssymb}
+\begin{document}
+%\twocolumn
+%\small
+%\itshape
+%\scshape
+%\upshape
+%\ttfamily
+
+\twocolumn
+\begin{enumerate}
+
+\item If in the expansion of $(a-2b)^n$ the sum of the 5th and 6th term is zero, then the value of $\frac{a}{b}$ is 
+
+\begin{enumerate}
+\item $\frac{2(n-4)}{5}$
+\end{enumerate}
+
+
+\item The total number of terms in the expansion of $(x+y)^{100} +(x-y)^{100}$ after simplification is \begin{enumerate}
+\item 51 
+\end{enumerate}
+
+\item If the rth term in the expansion of $(\frac{x}{3}-\frac{2}{x^2})^{10}$ contains $x^4$ then r is equal to \begin{enumerate}
+\item 3 
+\end{enumerate}
+
+\item If the coefficient of $x^2$ and $x^3$ in the expansion of $(3+ax)^9$ be same then the value of a is \begin{enumerate}
+\item 9/7 
+\end{enumerate}
+
+
+\item In the expansion of $(2-3x^3)^{20}$ if the ratio of the 10th term to 11th term is $\frac{45}{22}$ then x is equal to \begin{enumerate}
+\item $\frac{-2}{3}$ 
+\end{enumerate}
+
+
+\item In the expansion of $(x-\frac{1}{x})^6$ the coefficient of $x^0$ is \begin{enumerate}
+\item -20 
+\end{enumerate}
+\item The coefficient of $x^{-10}$ in $(x^2 -\frac{1}{x^3})^{10}$ is \begin{enumerate}
+\item 210 
+\end{enumerate}
+
+\item If the expansion of $(\frac{3\sqrt{x}}{7}-\frac{5}{2x\sqrt{x}})^{13n}$ containts a term independent of x in 14th term, then n should be \begin{enumerate}
+\item 4
+\end{enumerate}
+\item If the coefficient of rth and (r+1)th terms in the expansion of $(3+7x)^{29}$ are equal, then r equals \begin{enumerate}
+\item 21 
+\end{enumerate}
+
+\item The coefficient of $x^4$ in the expansion of $(\frac{x}{2}-\frac{3}{x^2})^{10}$ is \begin{enumerate}
+\item $\frac{405}{256}$
+\end{enumerate}
+
+\end{enumerate}
+\end{document}
