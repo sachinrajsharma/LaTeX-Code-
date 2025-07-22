@@ -1,0 +1,117 @@
+\documentclass[10pt,a4paper, english]{article}
+%\usepackage[a4paper,margin=1in,landscape]{geometry}
+%\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{lmodern}
+%\usepackage[english]{babel}
+\usepackage{tikz}
+\usepackage{mathptmx}
+\usepackage{geometry}
+\geometry{
+	top=0.5in,            % <-- you want to adjust this
+	inner=0.5in,
+	outer=0.5in,
+	bottom=0.5in,
+	headheight=3ex,       % <-- and this
+	headsep=2ex,          % <-- and this
+}
+\usepackage{verbatim}
+\everymath{\displaystyle}
+\usepackage{amsmath}
+%\usepackage{lipsum}
+
+%\setlength{\parskip}{1em}
+\usepackage{fancyhdr}
+%BANSAL DPP - 17,18,19
+\pagestyle{fancy}
+\fancyhf{}
+%\rhead{www.mathstudy.in}
+
+%\usepackage[landscape]{geometry}
+\chead{\Large{ Practice Test Grade 11 }}
+\rhead{By: Sachin Sharmaa}
+\rfoot{https://udgamwelfarefoundation.com/}
+\usepackage{amsfonts}
+%\usepackage{helvet}
+\usepackage{amssymb}
+\begin{document}
+\Large
+%DPP NO. 33 
+%\textbf{\fbox{\tiny Note - There is no negative marking in Section -A and (-1) mark 
+%will be deducted for each wrong answer in other sections) }}
+%\end{center}
+
+%\Large
+
+
+
+\begin{center}
+\textbf{SECTION A ( Each question carry  2 marks) }
+\end{center}
+
+
+\begin{enumerate}
+
+\item If A and B are coefficients of $x^n$ in the expansion of $(1+x)^{2n}$ and $(1+x)^{2n-1}$ respectively, then find the value of  $\frac{A}{B}$ 
+\item Find the y intercept of a line which passes through (2,2) and is perpendicular to the line 3x+y=3 
+
+\item In an examination , a student has to answer and questions out of 5 questions, questions 1 and 2 are however compulsory. Determine the number of ways in which the student can make choice. 
+
+
+\item Find the number of triangles that are formed by choosing the vertices from a set of 12 points, seven of which lie on the same line. 
+
+
+
+
+
+\begin{center}
+\textbf{SECTION B ( Each question carry  4 marks) }
+\end{center}
+
+\item A committee of 6 is to be chosen from 10 men and 7 women , so as to contain atleast 3 men and 2 women. In how many different ways can this be done, if two particular women refuse to serve on the same committee ? 
+
+\item If the middle term of $(\frac{1}{x} +xsinx)^{10}$ is equal to $7 \frac{7}{8}$ then find the value of x .
+
+\item Prove that the straight line $5x+4y =0$ passes through the point of intersection of the straight lines $x +2y -10 =0$ and $2x+y+5=0$ 
+
+\item Find the equation of the line through the point (3,2) and making an angle of $\frac{\pi}{4}$ with the line x-2y =3
+
+
+\item Find the foot of the perpendicular from the point (2,3) on the line $y =3x+4$ 
+
+
+\item Find the equation of the line , if the coordinates of the middle point of the portion of a line intercepted between  the coordinate axes is (3,2).
+
+\item Find the equation of the lines passing through the point (1,0) and at a distance $\frac{\sqrt{3}}{2}$ from the origin. 
+
+\item Find the distance of the point of intersection of the lines $2x-3y +5=0$ and $3x+4y =0$ from the line $5x-2y =0$ 
+\item Find the coefficient of $\frac{1}{x^{17}}$ in the expansion of $(x^4 - \frac{1}{x^3})^{15}$
+
+\item If p is the length of perpendicular from the origin on the line $\frac{x}{a}+\frac{y}{b}=1$ and $a^2,p^2$ and $b^2$ are in A.P. then show that $a^4+b^4=0$ 
+
+\pagebreak
+\begin{center}
+\textbf{SECTION C ( Each question carry  6 marks) }
+\end{center}
+
+
+\item Find the equation of a circle passing through the point (7,3) having radius 3 units and whose centre lies on the line y =x-1  % exempler pag 223 
+
+\item Show that the set of all points such that the difference of their distances (4,0) and (-4,0) is always equal to 2 repreents a hyperbola. 
+
+
+\item Find the equation of the line passing through the point $(acos^3\theta , a sin^3\theta) $ and perpendicular to the line $xsec\theta +y cosec\theta =a $ is given by $x cos\theta -y sin\theta = a sin2\theta$ 
+
+
+\item Find the equation of the lines through the point of intersection of the lines $x-y+1=0$ and $2x-3y+5=0$ and whose distance from the point (3,2) is $\frac{7}{5}$ 
+
+\item If the coefficients of 2nd, 3rd and the 4th terms in the expansion of $(1+x)^n$ are in A.P. then find the  value of n. 
+
+\item Find n, in the binomial $(\sqrt[3]{2}+\frac{1}{\sqrt[3]{3}})^n$ if the ratio of 7th term from the beginning to the 7th term from the end is $\frac{1}{6}$ 
+
+
+
+\end{enumerate}
+\end{document}
+
+
