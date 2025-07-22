@@ -1,0 +1,169 @@
+
+\documentclass{book}
+%\usepackage[a4paper,margin=1in,landscape]{geometry}
+%\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{tikz}
+\pgfdeclarelayer{bg}    % declare background
+\pgfsetlayers{bg,main}  % order of layers (main = standard layer)
+\usepackage{amsmath}
+\usetikzlibrary{positioning}
+\usetikzlibrary{3d}
+\usetikzlibrary{intersections}
+\usetikzlibrary{calc}
+%\usepackage[tikz]{bclogo}
+\usepackage{tikz-3dplot} 
+\usepackage{gnuplottex}
+\usepackage{lmodern}
+%\usepackage[x11names]{xcolor}
+%\usepackage[english]{babel}
+
+\usepackage{mathptmx}
+\usepackage{geometry}
+\geometry{
+	top=0.5in,            % <-- you want to adjust this
+	inner=0.5in,
+	outer=0.5in,
+	bottom=0.5in,
+	headheight=3ex,       % <-- and this
+	headsep=2ex,          % <-- and this
+}
+\usepackage{verbatim}
+\everymath{\displaystyle}
+\usepackage{pgfplots}\pgfplotsset{compat=newest}
+\usepackage{amsmath}
+
+
+\usepackage{ifsym}
+\usetikzlibrary{intersections}
+
+\usepackage{times}
+
+
+
+%\usepackage{lipsum}
+\usepackage{draftwatermark}
+\SetWatermarkText{www.mathstudy.in}
+\SetWatermarkScale{0.5}
+%\setlength{\parskip}{1em}
+\usepackage{fancyhdr}
+\usepackage{pagecolor}%
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\textbf{By: Sachin Sharma  }}
+\chead{\textbf{\Large Class VIII  - Factorization  }}
+%\usepackage[landscape]{geometry}
+\rhead{\textbf{www.mathstudy.in }}
+\cfoot{\textbf{By: Sachin Sharmaa :  Download Mathematics E-Books for C.B.S.E / I.C.S.E. / I.S.C. / JEE from www.mathstudy.in } }
+%\lfoot{www.mathstudy.in}
+
+\usepackage[tikz]{bclogo}
+
+\usepackage{tikz}\usetikzlibrary{shapes}
+
+
+
+\usepackage{ifsym}
+\usepackage{mathptmx}
+\usepackage{geometry}
+\geometry{
+	top=0.5in,            % <-- you want to adjust this
+	inner=0.5in,
+	outer=0.5in,
+	bottom=0.5in,
+	headheight=3ex,       % <-- and this
+	headsep=2ex,          % <-- and this
+}
+\usepackage{verbatim}
+\everymath{\displaystyle}
+\usepackage{wallpaper}
+\usepackage{amsmath}
+%\usepackage{lipsum}
+\usepackage{draftwatermark}
+\SetWatermarkText{Download Math E-Books from www.mathstudy.in}
+\SetWatermarkScale{0.3}
+%\setlength{\parskip}{1em}
+
+%\rfoot{By: Sachin Sharmaa+91-9811755471}
+
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\usepackage{color}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=red,
+	linktoc=all
+}
+
+
+
+
+
+
+
+
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\small \colorbox{mygrey}{\begin{minipage} 
+				{1\linewidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[3]{
+	\begin{tabular*}{6.62in}{l @{\extracolsep{\fill}} r}
+		\textsc{{\textbf{#1}}} & \textsc{\textit{[#2]}} \\
+	\end{tabular*}\vspace{-8pt}}
+
+\usepackage{mdframed}
+%\usepackage[top=2cm, bottom=2cm, outer=0cm, inner=0cm]{geometry}
+
+\mdfdefinestyle{MyFrame}{%
+	linecolor=blue,
+	outerlinewidth=2pt,
+	roundcorner=20pt,
+	innertopmargin=\baselineskip,
+	innerbottommargin=\baselineskip,
+	innerrightmargin=20pt,
+	innerleftmargin=20pt,
+	backgroundcolor=gray!50!white}
+
+%-----------------------------------------------------------
+\begin{document}
+	
+		\begin{enumerate}
+		\item Factorize $36x^2 - 49y^2$.
+		\item Express $64p^3 - 125q^3$ as the product of two cubes.
+		\item Factorize $20a^2 - 45ab + 25b^2$.
+		\item Find the common factor of $3x^2 - 6xy + 9y^2$.
+		\item Factorize $125x^3 - 27y^3$.
+		\item Simplify $(a + b)^2 - (a - b)^2$.
+		\item Factorize $2x^3 - 8x^2 + 8x$.
+		\item Factor the expression $16m^2 - 40mn + 25n^2$.
+		\item Write $100x^2 - 81$ as a difference of squares.
+		\item Factorize $9p^2 - 6pq + q^2$.
+		\item Find the factors of $5x^2 - 30x + 45$.
+		\item Factorize $4x^3 + 8y^3 + 12z^3$.
+		\item Simplify $(a - b)^3 - (b - a)^3$.
+		\item Factorize $7x^2 - 35xy + 49y^2$.
+		\item Express $27p^3 - 8q^3$ as the difference of cubes.
+		\item Factorize $36m^2 - 48mn + 16n^2$.
+		\item Write the factorization of $16x^2 - 1$.
+		\item Factorize $25a^2 - 30ab + 9b^2$.
+		\item Simplify $(x + 2)^2 - (x - 3)^2$.
+		\item Factor the expression $9x^2 - 12xy + 4y^2$.
+		\item Factorize $125a^3 - 64b^3$.
+		\item Find the factors of $15x^2 + 10xy + 2y^2$.
+		\item Express $49m^2 - 36n^2$ as a difference of squares.
+		\item Factorize $16p^4 - 4p^2q^2 + q^4$.
+		\item Write the factorization of $81x^2 - 36y^2$.
+		\item Factorize $5x^3 - 15x^2 + 10x$.
+		\item Simplify $(a + b + c)^3 - (a - b - c)^3$.
+		\item Factor the expression $25x^2 - 30xy + 9y^2$.
+		\item Factorize $27m^3 + 8n^3$.
+		\item Write the factorization of $64a^2 - 81b^2$.
+	\end{enumerate}
+
+	
+	
+\end{document}
+
