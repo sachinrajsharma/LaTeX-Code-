@@ -1,0 +1,264 @@
+
+\documentclass{book}
+%\usepackage[a4paper,margin=1in,landscape]{geometry}
+%\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{tikz}
+\pgfdeclarelayer{bg}    % declare background
+\pgfsetlayers{bg,main}  % order of layers (main = standard layer)
+\usepackage{amsmath}
+\usetikzlibrary{positioning}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{tcolorbox}
+
+
+\usetikzlibrary{3d}
+\usetikzlibrary{intersections}
+\usetikzlibrary{calc}
+%\usepackage[tikz]{bclogo}
+\usepackage{tikz-3dplot} 
+\usepackage{gnuplottex}
+\usepackage{lmodern}
+%\usepackage[x11names]{xcolor}
+%\usepackage[english]{babel}
+
+\usepackage{mathptmx}
+\usepackage{geometry}
+\geometry{
+	top=0.5in,            % <-- you want to adjust this
+	inner=0.5in,
+	outer=0.5in,
+	bottom=0.5in,
+	headheight=3ex,       % <-- and this
+	headsep=2ex,          % <-- and this
+}
+\usepackage{verbatim}
+\everymath{\displaystyle}
+\usepackage{pgfplots}\pgfplotsset{compat=newest}
+\usepackage{amsmath}
+
+
+\usepackage{ifsym}
+\usetikzlibrary{intersections}
+
+\usepackage{times}
+
+
+
+%\usepackage{lipsum}
+
+%\setlength{\parskip}{1em}
+\usepackage{fancyhdr}
+\usepackage{pagecolor}%
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\textbf{By: Sachin Sharma  }}
+\chead{\textbf{\Large Linear Inequalities  }}
+%\usepackage[landscape]{geometry}
+\rhead{\textbf{LIN01 }}
+\cfoot{\textbf{www.udgamwelfarefoundation.com  } }
+%\lfoot{www.mathstudy.in}
+
+\usepackage[tikz]{bclogo}
+
+\usepackage{tikz}\usetikzlibrary{shapes}
+
+
+
+\usepackage{ifsym}
+\usepackage{mathptmx}
+\usepackage{geometry}
+\geometry{
+	top=0.5in,            % <-- you want to adjust this
+	inner=0.5in,
+	outer=0.5in,
+	bottom=0.5in,
+	headheight=3ex,       % <-- and this
+	headsep=2ex,          % <-- and this
+}
+\usepackage{verbatim}
+\everymath{\displaystyle}
+\usepackage{wallpaper}
+\usepackage{amsmath}
+%\usepackage{lipsum}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+
+%\setlength{\parskip}{1em}
+
+%\rfoot{By: Sachin Sharmaa+91-9811755471}
+
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\usepackage{color}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=red,
+	linktoc=all
+}
+
+
+
+
+
+
+
+
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\small \colorbox{mygrey}{\begin{minipage} 
+				{1\linewidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[3]{
+	\begin{tabular*}{6.62in}{l @{\extracolsep{\fill}} r}
+		\textsc{{\textbf{#1}}} & \textsc{\textit{[#2]}} \\
+	\end{tabular*}\vspace{-8pt}}
+
+\usepackage{mdframed}
+%\usepackage[top=2cm, bottom=2cm, outer=0cm, inner=0cm]{geometry}
+
+\mdfdefinestyle{MyFrame}{%
+	linecolor=blue,
+	outerlinewidth=2pt,
+	roundcorner=20pt,
+	innertopmargin=\baselineskip,
+	innerbottommargin=\baselineskip,
+	innerrightmargin=20pt,
+	innerleftmargin=20pt,
+	backgroundcolor=gray!50!white}
+
+%-----------------------------------------------------------
+		
+	\begin{document}
+		
+			
+		\section*{Instructions}
+		\begin{itemize}
+			\item Attempt all questions.
+			\item Write your answers in the space provided.
+			\item Use set notation for representing solutions.
+			\item Marks are indicated at the end of each question.
+		\end{itemize}
+		
+		\section*{Multiple Choice Questions (1 Mark each)}
+		\begin{enumerate}[label=\arabic*.]
+			\item Which of the following represents the solution set for the inequality $2x - 3 > 5$?
+			\begin{enumerate}[label=(\alph*)]
+				\item $x > 4$
+				\item $x > 1$
+				\item $x < 4$
+				\item $x < 1$
+			\end{enumerate}
+			
+			\item The inequality $-3(x + 2) \leq 9$ has a solution set:
+			\begin{enumerate}[label=(\alph*)]
+				\item $x \leq -5$
+				\item $x \geq -5$
+				\item $x \leq 5$
+				\item $x \geq 5$
+			\end{enumerate}
+			
+			\item Which of the following is the correct graph representation of $x \geq -3$?
+			\begin{enumerate}[label=(\alph*)]
+				\item A number line with a filled circle on -3 and shading to the right.
+				\item A number line with an open circle on -3 and shading to the left.
+				\item A number line with a filled circle on -3 and shading to the left.
+				\item A number line with an open circle on -3 and shading to the right.
+			\end{enumerate}
+			
+			\item The solution set of the inequality $5 - 2x \geq 11$ is:
+			\begin{enumerate}[label=(\alph*)]
+				\item $x \leq -3$
+				\item $x \geq -3$
+				\item $x \leq 3$
+				\item $x \geq 3$
+			\end{enumerate}
+			
+			\item For which value of $x$ is the inequality $7x + 14 < 0$ true?
+			\begin{enumerate}[label=(\alph*)]
+				\item $x < -2$
+				\item $x > -2$
+				\item $x < 2$
+				\item $x > 2$
+			\end{enumerate}
+			
+			\item The solution of $3x - 15 \geq 0$ in set notation is:
+			\begin{enumerate}[label=(\alph*)]
+				\item $\{x | x \geq 5\}$
+				\item $\{x | x \leq 5\}$
+				\item $\{x | x \geq -5\}$
+				\item $\{x | x \leq -5\}$
+			\end{enumerate}
+			
+			\item Which inequality is represented by the number line with a filled circle on 2 and shading to the left?
+			\begin{enumerate}[label=(\alph*)]
+				\item $x \geq 2$
+				\item $x > 2$
+				\item $x \leq 2$
+				\item $x < 2$
+			\end{enumerate}
+			
+			\item The inequality $4(2 - x) > 8$ simplifies to:
+			\begin{enumerate}[label=(\alph*)]
+				\item $x < -2$
+				\item $x > -2$
+				\item $x < 2$
+				\item $x > 2$
+			\end{enumerate}
+		\end{enumerate}
+		
+		\section*{Short Answer Questions (2 Marks each)}
+		\begin{enumerate}[resume,label=\arabic*.]
+			\item Solve the inequality $3x + 2 < x - 6$ and express the solution in set notation form.
+			\item Determine the solution set for $-5 \leq 2x - 7 < 3$ and represent it on the number line.
+			\item If $4 \leq 3 - 2x$, what is the solution set for $x$?
+			\item Solve for $x$ in the inequality $7 - 2x > 3x + 5$ and represent the answer in set notation.
+			\item Find the solution set for the inequality $-2(x - 3) \geq 4 - x$.
+		\end{enumerate}
+		
+		\section*{Long Answer Questions (4 Marks each)}
+		\begin{enumerate}[resume,label=\arabic*.]
+			\item Solve the compound inequality $2x - 3 < 5$ and $3x + 4 > 7$. Express the solution graphically and in set notation.
+			\item Given $3x - 7 \leq 2 - x$ and $2x + 5 > 3$, find the intersection of the solution sets.
+			\item Solve the inequality $-2 \leq \frac{5x - 1}{3} < 4$ algebraically, and represent the solution on the number line.
+			\item For the inequalities $x + 3 > 2$ and $2x - 4 \leq 8$, determine the combined solution set and illustrate it on a number line.
+		\end{enumerate}
+		
+		\section*{Answers}
+		\subsection*{MCQs}
+		\begin{enumerate}[label=\arabic*.]
+			\item (b) $x > 1$
+			\item (a) $x \leq -5$
+			\item (a) A number line with a filled circle on -3 and shading to the right.
+			\item (a) $x \leq -3$
+			\item (a) $x < -2$
+			\item (a) $\{x | x \geq 5\}$
+			\item (c) $x \leq 2$
+			\item (a) $x < -2$
+		\end{enumerate}
+		
+		\subsection*{Short Answer Questions}
+		\begin{enumerate}[label=\arabic*.]
+			\setcounter{enumi}{8}
+			\item $\{x | x < -4\}$
+			\item $\left\{x | -1 \leq x < 5\right\}$
+			\item $\{x | x \geq -\frac{1}{2}\}$
+			\item $\{x | x < \frac{2}{5}\}$
+			\item $\{x | x \leq 10\}$
+		\end{enumerate}
+		
+		\subsection*{Long Answer Questions}
+		\begin{enumerate}[label=\arabic*.]
+			\setcounter{enumi}{13}
+			\item Solution set is $\{x | -\frac{1}{2} < x < 4\}$. Graphically, this is represented with open circles on -0.5 and 4, shading in between.
+			\item Intersection solution set is $\{x | x > 1\}$.
+			\item Solution set is $\{x | -\frac{2}{5} \leq x < \frac{11}{5}\}$.
+			\item Combined solution set is $\{x | x > -1 \text{ and } x \leq 6\}$.
+		\end{enumerate}
+		
+	\end{document}
+	
