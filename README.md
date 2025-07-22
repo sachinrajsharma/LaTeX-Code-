@@ -13,4 +13,5 @@ All resources are completely free and optimized for both self-study and classroo
 Explore more at:  
 🔗 [https://udgamwelfarefoundation.com/](https://udgamwelfarefoundation.com/)  
 
-Join thousands of learners who’ve benefited from our student-first approach over the past decade. Let’s make education accessible, together!  
+Join thousands of learners who’ve benefited from our student-first approach over the past decade. Let’s make education accessible, together! 
+By: Sachin Sharma ( Founder - https://udgamwelfarefoundation.com/)
