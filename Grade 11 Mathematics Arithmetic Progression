@@ -1,0 +1,126 @@
+\documentclass[10pt,a4paper, english]{article}
+%\usepackage[a4paper,margin=1in,landscape]{geometry}
+%\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{lmodern}
+%\usepackage[english]{babel}
+\usepackage{tikz}
+\usepackage{mathptmx}
+\usepackage{geometry}
+\geometry{
+	top=0.5in,            % <-- you want to adjust this
+	inner=0.5in,
+	outer=0.5in,
+	bottom=0.5in,
+	headheight=3ex,       % <-- and this
+	headsep=2ex,          % <-- and this
+}
+\usepackage{verbatim}
+\everymath{\displaystyle}
+\usepackage{amsmath}
+%\usepackage{lipsum}
+
+%\setlength{\parskip}{1em}
+\usepackage{fancyhdr}
+%BANSAL DPP - 17,18,19
+\pagestyle{fancy}
+\fancyhf{}
+%\rhead{www.mathstudy.in}
+
+%\usepackage[landscape]{geometry}
+\chead{\Large{ Part Test - Arithemetic Progression Grade 11  }}
+\rhead{By: Sachin Sharmaa}
+\rfoot{www.mathstudy.in}
+\usepackage{amsfonts}
+%\usepackage{helvet}
+\usepackage{amssymb}
+\begin{document}
+	
+	%PART 26
+	
+	
+	\begin{enumerate}
+		
+		
+		\item If the sum of first n terms of an A.P. 2,4,6,8 , $\cdots$ is 240 then the value of n is 
+		
+		\begin{enumerate}
+			\item 15
+		\end{enumerate} %ARIHANT MOTI BOOK JEE MAIN 
+	
+	
+	\item The sum of all odd numbers between 1 and 1000 which are divisible by 3, is 
+	
+	\begin{enumerate}
+		\item 83667
+	\end{enumerate}%ARIHANT MOTI BOOK JEE MAIN 
+
+
+\item The arithmetic mean of first n odd natural number is 
+
+\begin{enumerate}
+	\item n 
+\end{enumerate}
+
+
+\item If $\frac{5+9+13 +\cdots + n }{7+9+11+ \cdots 12~ terms } = \frac{5}{12}$ then n is equal to 
+
+\begin{enumerate}
+	\item 6 
+\end{enumerate}
+
+
+\item If the first , second and the last terms of an A.P are a,b and c respectively , then the number of terms is 
+
+\begin{enumerate}
+	\item $\frac{b+c-2a}{b-a}$ 
+\end{enumerate}
+
+
+\item If sum of n terms of an A.P is $2n+3n^2$ then rth term is 
+
+\begin{enumerate}
+	\item 6r-1
+\end{enumerate}
+
+
+
+\item If the sum to 2n terms of the AP 2,5,8,11 $\cdots$ is equal to the sum to n terms of the AP 57,59,61,63 , $\cdots$ then n is equal to 
+
+\begin{enumerate}
+	\item 11 
+\end{enumerate}
+
+
+
+\item If the sum of the 12th and 22nd terms of an A.P is 100, then the sum of the first 33 terms of the A.P is 
+
+\begin{enumerate}
+	\item 1650 
+\end{enumerate}
+	
+	
+	\item If pth term of an A.P is q and qth term is p, then the 10th term is 
+	
+	\begin{enumerate}
+		\item p+q-10 
+	\end{enumerate}
+
+
+\item If the arithmetic mean of a and b is $\frac{a^n +b^n}{a^{n-1}+b^{n-1}}$ then the value of n is 
+
+\begin{enumerate}
+	\item 1 
+\end{enumerate}
+
+
+	\end{enumerate}
+	
+	
+	
+	
+	
+\end{document}
+
+
+
