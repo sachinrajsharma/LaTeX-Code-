@@ -54,9 +54,9 @@
 \lhead{\textbf{By: Sachin Sharma  }}
 \chead{\textbf{\Large Class VIII  - Factorization  }}
 %\usepackage[landscape]{geometry}
-\rhead{\textbf{www.mathstudy.in }}
-\cfoot{\textbf{By: Sachin Sharmaa :  Download Mathematics E-Books for C.B.S.E / I.C.S.E. / I.S.C. / JEE from www.mathstudy.in } }
-%\lfoot{www.mathstudy.in}
+
+\cfoot{\textbf{By: Sachin Sharmaa  } }
+
 
 \usepackage[tikz]{bclogo}
 
@@ -80,12 +80,10 @@
 \usepackage{wallpaper}
 \usepackage{amsmath}
 %\usepackage{lipsum}
-\usepackage{draftwatermark}
-\SetWatermarkText{Download Math E-Books from www.mathstudy.in}
-\SetWatermarkScale{0.3}
+
 %\setlength{\parskip}{1em}
 
-%\rfoot{By: Sachin Sharmaa+91-9811755471}
+
 
 \usepackage{amsfonts}
 \usepackage{amssymb}
