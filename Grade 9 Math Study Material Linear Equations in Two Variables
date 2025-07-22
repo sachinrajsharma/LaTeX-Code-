@@ -1,0 +1,237 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb}
+\usepackage{tikz}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{pgfplots}
+\usepackage{booktabs}
+
+\geometry{a4paper, margin=1in}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Class 9 Mathematics}
+\lhead{CBSE Final Exam}
+\rfoot{Page \thepage}
+\lfoot{Seed No: MAT9-2025-004}
+
+\title{\textbf{Class 9 Mathematics – Final Examination (2024–25)}\\\large Chapter: Linear Equations in Two Variables}
+\date{}
+\author{}
+
+\begin{document}
+	\maketitle
+	\hrule
+	\vspace{1em}
+	\textbf{General Instructions:}
+	\begin{itemize}
+		\item All questions are compulsory.
+		\item Attempt all questions as per the instructions given in each section.
+		\item Draw graphs wherever necessary.
+		%\item Seed Number: \textbf{MAT9-2025-004}
+	\end{itemize}
+	\hrule
+	\vspace{1em}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section*{Section A: Multiple Choice Questions (7 × 2 = 14 Marks)}
+	Choose the correct option for each of the following questions:
+	
+	\begin{enumerate}[label=\textbf{Q\arabic*.}]
+		\item Which of the following is a linear equation in two variables?
+		\begin{enumerate}
+			\item \( x^2 + y = 5 \)
+			\item \( x + y = 7 \)
+			\item \( x - y^2 = 0 \)
+			\item \( xy = 6 \)
+		\end{enumerate}
+		
+		\item How many solutions does a linear equation in two variables have?
+		\begin{enumerate}
+			\item One
+			\item Two
+			\item Infinitely many
+			\item None
+		\end{enumerate}
+		
+		\item The graph of the equation \( y = 4 \) is:
+		\begin{enumerate}
+			\item A line parallel to x-axis
+			\item A line parallel to y-axis
+			\item The origin
+			\item A parabola
+		\end{enumerate}
+		
+		\item What is the value of \( y \) when \( x = 3 \) in the equation \( 2x + y = 9 \)?
+		\begin{enumerate}
+			\item 3
+			\item 2
+			\item 1
+			\item -3
+		\end{enumerate}
+		
+		\item Which of the following pairs is a solution of the equation \( 5x - 3y = 1 \)?
+		\begin{enumerate}
+			\item (2, 3)
+			\item (1, 1)
+			\item (0, -\(\frac{1}{3}\))
+			\item (1, 2)
+		\end{enumerate}
+		
+		\item The equation \( x = 6 \) represents:
+		\begin{enumerate}
+			\item A line parallel to x-axis
+			\item A line parallel to y-axis
+			\item A diagonal line
+			\item A horizontal line passing through origin
+		\end{enumerate}
+		
+		\item In the equation \( ax + by + c = 0 \), the line is undefined when:
+		\begin{enumerate}
+			\item \( a = 0, b = 0 \)
+			\item \( a \neq 0, b = 0 \)
+			\item \( b \neq 0 \)
+			\item \( a = 0, b \neq 0 \)
+		\end{enumerate}
+	\end{enumerate}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\newpage
+	\section*{Section B: Short Answer Questions (4 × 3 = 12 Marks)}
+	
+	\begin{enumerate}[label=\textbf{Q\arabic*.}]
+		\setcounter{enumi}{7}
+		\item Find four different solutions of the linear equation \( 3x + 2y = 12 \).
+		
+		\item Draw the graph of the linear equation \( x + y = 4 \). Mark any two points used on the graph.
+		
+		\item The cost of 1 pen is Rs.15 and the cost of 1 notebook is Rs.25. Write a linear equation to represent the total cost of buying pens and notebooks worth Rs.200.
+		
+		\item Is the point \( (1, 2) \) a solution of the equation \( 2x + 3y = 8 \)? Justify your answer.
+	\end{enumerate}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section*{Section C: Long Answer Questions (4 × 5 = 20 Marks)}
+	
+	\begin{enumerate}[label=\textbf{Q\arabic*.}]
+		\setcounter{enumi}{11}
+		\item A student scores 80 marks in Maths and 90 marks in Science. The total marks scored in the two subjects is represented by the equation \( x + y = 170 \). 
+		\begin{itemize}
+			\item Find any three more solutions of this equation.
+			\item Draw the graph.
+		\end{itemize}
+		
+		\item Plot the linear equation \( 3x - 2y = 6 \). Also find the x-intercept and y-intercept from the graph.
+		
+		\item A car rental company charges Rs.500 as a fixed charge and Rs.20 per kilometre. 
+		\begin{itemize}
+			\item Form a linear equation in two variables to represent this situation.
+			\item Draw the graph for up to 5 km.
+		\end{itemize}
+		
+		\item Compare the graphs of the equations \( y = 2x + 1 \) and \( y = 2x - 3 \). 
+		\begin{itemize}
+			\item Plot both on the same graph.
+			\item Write observations about their slope and position.
+		\end{itemize}
+	\end{enumerate}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section*{Section D: Case Study Question (1 × 5 = 5 Marks)}
+	
+	\textbf{Case Study: Daily Wage Problem}
+	
+	A company hires two workers. Worker A earns Rs.400 per day and Worker B earns Rs.300 per day. The total daily wage bill of the company is Rs.3600. Let the number of days worked by A and B be \( x \) and \( y \) respectively. The situation is represented by the equation:
+	\[
+	400x + 300y = 3600
+	\]
+	
+	Answer the following questions:
+	
+	\begin{enumerate}[label=\textbf{Q\arabic*.}]
+		\setcounter{enumi}{15}
+		\item What is the general form of the given equation?
+		\begin{enumerate}
+			\item \( ax + by = c \)
+			\item \( ax + by + c = 0 \)
+			\item \( ax - by = c \)
+			\item \( axy = c \)
+		\end{enumerate}
+		
+		\item If Worker A worked for 3 days, how many days did Worker B work?
+		\begin{enumerate}
+			\item 2
+			\item 3
+			\item 4
+			\item 5
+		\end{enumerate}
+		
+		\item Plot the equation \( 400x + 300y = 3600 \) on the graph.
+		
+		\item Is the point \( (6, 0) \) a solution to the equation?
+		\begin{enumerate}
+			\item Yes
+			\item No
+			\item Can't Say
+			\item Only if y = 0
+		\end{enumerate}
+		
+		\item What does the point \( (0, 12) \) represent in this context?
+		\begin{enumerate}
+			\item Worker A worked 12 days
+			\item Worker B worked 12 days
+			\item Both worked 6 days
+			\item Total cost was Rs.1200
+		\end{enumerate}
+	\end{enumerate}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\newpage
+	\section*{Answer Key}
+	
+	\begin{itemize}
+		\item \textbf{Section A:}
+		\begin{multicols}{2}
+			\begin{enumerate}[label=Q\arabic*.]
+				\item (b)
+				\item (c)
+				\item (a)
+				\item (a)
+				\item (b)
+				\item (b)
+				\item (a)
+			\end{enumerate}
+		\end{multicols}
+		
+		\item \textbf{Section B:}
+		\begin{enumerate}[label=Q\arabic*.]
+			\setcounter{enumi}{7}
+			\item Sample answers: (0,6), (2,3), (4,0), (-2,9)
+			\item Points: (0,4), (4,0). Straight line between them.
+			\item \( 15x + 25y = 200 \)
+			\item No. \( 2(1) + 3(2) = 2 + 6 = 8 \Rightarrow \text{Yes} \)
+		\end{enumerate}
+		
+		\item \textbf{Section C:}
+		\begin{enumerate}[label=Q\arabic*.]
+			\setcounter{enumi}{11}
+			\item (90,80), (100,70), (80,90). Graph: straight line through (80,90).
+			\item Intercepts: x = 2, y = -3. Graph: line through (2,0) and (0,-3)
+			\item Equation: \( y = 20x + 500 \). Graph for x = 0 to 5.
+			\item Both have same slope = 2. Parallel lines with different intercepts.
+		\end{enumerate}
+		
+		\item \textbf{Section D:}
+		\begin{enumerate}[label=Q\arabic*.]
+			\setcounter{enumi}{15}
+			\item (a)
+			\item (3)
+			\item See graph
+			\item Yes
+			\item (b)
+		\end{enumerate}
+	\end{itemize}
+	
+\end{document}
