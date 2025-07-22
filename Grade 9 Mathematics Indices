@@ -1,0 +1,324 @@
+
+\documentclass{book}
+%\usepackage[a4paper,margin=1in,landscape]{geometry}
+%\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{tikz}
+\pgfdeclarelayer{bg}    % declare background
+\pgfsetlayers{bg,main}  % order of layers (main = standard layer)
+\usepackage{amsmath}
+\usetikzlibrary{positioning}
+\usetikzlibrary{3d}
+\usetikzlibrary{intersections}
+\usetikzlibrary{calc}
+%\usepackage[tikz]{bclogo}
+\usepackage{tikz-3dplot} 
+\usepackage{gnuplottex}
+\usepackage{lmodern}
+%\usepackage[x11names]{xcolor}
+%\usepackage[english]{babel}
+
+\usepackage{mathptmx}
+\usepackage{geometry}
+\geometry{
+	top=0.5in,            % <-- you want to adjust this
+	inner=0.5in,
+	outer=0.5in,
+	bottom=0.5in,
+	headheight=3ex,       % <-- and this
+	headsep=2ex,          % <-- and this
+}
+\usepackage{verbatim}
+\everymath{\displaystyle}
+\usepackage{pgfplots}\pgfplotsset{compat=newest}
+\usepackage{amsmath}
+
+
+\usepackage{ifsym}
+\usetikzlibrary{intersections}
+
+\usepackage{times}
+
+
+
+%\usepackage{lipsum}
+\usepackage{draftwatermark}
+\SetWatermarkText{www.mathstudy.in}
+\SetWatermarkScale{0.5}
+%\setlength{\parskip}{1em}
+\usepackage{fancyhdr}
+\usepackage{pagecolor}%
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\textbf{Sachin Sharma }}
+\chead{\textbf{\Large Class IX    }}
+%\usepackage[landscape]{geometry}
+%\lhead{\textbf{M.M 80 }}
+\cfoot{\textbf{www.udgamwelfarefoundation.com } }
+%\lfoot{www.mathstudy.in}
+
+\usepackage[tikz]{bclogo}
+
+\usepackage{tikz}\usetikzlibrary{shapes}
+
+
+
+\usepackage{ifsym}
+\usepackage{mathptmx}
+\usepackage{geometry}
+\geometry{
+	top=0.5in,            % <-- you want to adjust this
+	inner=0.5in,
+	outer=0.5in,
+	bottom=0.5in,
+	headheight=3ex,       % <-- and this
+	headsep=2ex,          % <-- and this
+}
+\usepackage{verbatim}
+\everymath{\displaystyle}
+\usepackage{wallpaper}
+\usepackage{amsmath}
+%\usepackage{lipsum}
+\usepackage{draftwatermark}
+\SetWatermarkText{Download Math E-Books from www.mathstudy.in}
+\SetWatermarkScale{0.3}
+%\setlength{\parskip}{1em}
+
+%\rfoot{By: Sachin Sharmaa+91-9811755471}
+
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\usepackage{color}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=red,
+	linktoc=all
+}
+
+
+
+
+
+
+
+
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\small \colorbox{mygrey}{\begin{minipage} 
+				{1\linewidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[3]{
+	\begin{tabular*}{6.62in}{l @{\extracolsep{\fill}} r}
+		\textsc{{\textbf{#1}}} & \textsc{\textit{[#2]}} \\
+	\end{tabular*}\vspace{-8pt}}
+
+\usepackage{mdframed}
+%\usepackage[top=2cm, bottom=2cm, outer=0cm, inner=0cm]{geometry}
+
+\mdfdefinestyle{MyFrame}{%
+	linecolor=blue,
+	outerlinewidth=2pt,
+	roundcorner=20pt,
+	innertopmargin=\baselineskip,
+	innerbottommargin=\baselineskip,
+	innerrightmargin=20pt,
+	innerleftmargin=20pt,
+	backgroundcolor=gray!50!white}
+
+%-----------------------------------------------------------
+\begin{document}
+
+\section{Indices }
+
+\begin{center}
+	\begin{bclogo}  [  logo = \bchorloge,   couleur = red!30, arrondi = 0.1   ]{ 1 Hr 15 Mints ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Indices ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~} \end{bclogo}
+	
+	
+\end{center}
+
+
+
+
+\begin{center}
+	
+	\begin{bclogo}  [couleur = blue!30, arrondi = 0.1  ]{  SECTION -A ( One Mark Questions)  } \end{bclogo}
+	
+	
+\end{center}
+
+\begin{center}
+	\fbox{\textbf{MULTIPLE CHOICE TYPE QUESTIONS}}
+\end{center}
+
+
+
+	
+	
+	\begin{enumerate}
+		\item \textbf{Find the value of} $2^3 \times 2^4$.
+		\begin{enumerate}
+			\item $2^{12}$
+			\item $2^7$
+			\item $2^1$
+			\item $2^5$
+		\end{enumerate}
+		
+		\item \textbf{If} $a^3 \cdot a^5 = a^n$, \textbf{what is the value of} $n$?
+		\begin{enumerate}
+			\item $a^8$
+			\item $a^{15}$
+			\item $a^{40}$
+			\item $a^2$
+		\end{enumerate}
+		
+		\item \textbf{What is the result of} $5^2 \div 5^4$?
+		\begin{enumerate}
+			\item $5^{-2}$
+			\item $5^6$
+			\item $5^2$
+			\item $5^{-4}$
+		\end{enumerate}
+		
+		\item \textbf{If} $2^{m+2} = 32$, \textbf{what is the value of} $m$?
+		\begin{enumerate}
+			\item $m = 2$
+			\item $m = 4$
+			\item $m = 3$
+			\item $m = 5$
+		\end{enumerate}
+		
+		\item \textbf{What is the simplified form of} $a^3 \cdot a^{-2}$?
+		\begin{enumerate}
+			\item $a$
+			\item $a^5$
+			\item $a^{-1}$
+			\item $a^6$
+		\end{enumerate}
+		
+		\item \textbf{Evaluate} $3^4 \times 3^{-2}$.
+		\begin{enumerate}
+			\item $81$
+			\item $9$
+			\item $27$
+			\item $3^2$
+		\end{enumerate}
+		
+		\item \textbf{If} $b^4 = 16$, \textbf{what is the value of} $b$?
+		\begin{enumerate}
+			\item $b = 2$
+			\item $b = 4$
+			\item $b = 8$
+			\item $b = 16$
+		\end{enumerate}
+		
+		\item \textbf{What is the result of} $4^0$?
+		\begin{enumerate}
+			\item $4$
+			\item $1$
+			\item $0$
+			\item $2$
+		\end{enumerate}
+		
+		\item \textbf{If} $x^3 = x$, \textbf{what is the value of} $x$?
+		\begin{enumerate}
+			\item $x = 0$
+			\item $x = 1$
+			\item $x = 2$
+			\item $x = 3$
+		\end{enumerate}
+		
+		\item \textbf{Simplify the expression} $a^{m+3} \cdot a^{2m-1}$.
+		\begin{enumerate}
+			\item $a^{3m+2}$
+			\item $a^{3m+4}$
+			\item $a^{5m+2}$
+			\item $a^{5m+4}$
+		\end{enumerate}
+	\end{enumerate}
+			
+			
+			
+			
+			
+	
+	
+	
+	\begin{center}
+		
+		\begin{bclogo}  [couleur = blue!30, arrondi = 0.1  ]{  SECTION -B ( Two Marks Questions)  } \end{bclogo}
+		
+		
+	\end{center}
+
+
+
+
+\begin{enumerate}
+	\item \textbf{If} $2^{n+1} = 16$, \textbf{find the value of} $n$.
+	\item \textbf{Evaluate} $3^{-3}$.
+	\item \textbf{If} $x^2 = x$, \textbf{what are the possible values of} $x$?
+	\item \textbf{Find the value of} $a^0 \cdot a^{-1}$.
+	\item \textbf{If} $b^{-2} = \frac{1}{9}$, \textbf{find the value of} $b$.
+\end{enumerate}
+
+
+	
+	
+	
+	
+	
+	
+	\begin{center}
+		
+		\begin{bclogo}  [couleur = blue!30, arrondi = 0.1  ]{  SECTION -C ( Three Marks Questions)  } \end{bclogo}
+		
+		
+	\end{center}
+	
+	
+
+
+\begin{enumerate}
+	\item \textbf{If} $a^{2p} \cdot a^3 = a^7$, \textbf{what is the value of} $p$?
+	\item \textbf{Compare the values of} $2^4$ \textbf{and} $2^3$.
+	\item \textbf{Simplify the expression} $3^{2q+1} \div 3^{q-2}$.
+	\item \textbf{Solve for} $x$ \textbf{in the equation} $2^{x+1} = 16$.
+	\item \textbf{Given that} $c^3 = c^5$, \textbf{find the possible values of} $c$.
+	\item \textbf{If} $y^2 = y^4$, \textbf{what are the possible values of} $y$?
+\end{enumerate}
+
+
+	\pagebreak
+	
+	
+	\begin{center}
+		
+		\begin{bclogo}  [couleur = blue!30, arrondi = 0.1  ]{  SECTION -D ( Four Marks Questions)  } \end{bclogo}
+		
+		
+	\end{center}
+
+
+
+\begin{enumerate}
+	\item \textbf{Find the value of} $p$ \textbf{if} $2^{3p-1} = 8$.
+	\item \textbf{If} $m^2 \cdot m^k = m^{2k+1}$, \textbf{what is the value of} $k$?
+	\item \textbf{Solve for} $n$ \textbf{in the equation} $4^{n-2} = 1$.
+	\item \textbf{Compare the values of} $5^3$ \textbf{and} $5^4$.
+	
+	\item Find the value of $2^{3n - 1} \div 2^n$ in terms of $n$.
+	
+	\item Simplify the expression $\frac{a^{m+2} \cdot a^{2m-1}}{a^{m-3}}$ where $a \neq 0$.
+	
+	\item If $2^{2p} = 8^q$, find the relationship between $p$ and $q$.
+	
+	\item Compare the values of $3^{4n}$ and $81^n$. Determine for what values of $n$ one is greater than the other.
+\end{enumerate}
+
+
+	
+	
+%\end{enumerate}
+\end{document}
