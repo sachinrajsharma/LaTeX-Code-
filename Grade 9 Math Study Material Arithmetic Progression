@@ -1,0 +1,103 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb}
+\usepackage{tikz}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{pgfplots}
+\usepackage{booktabs}
+
+\geometry{a4paper, margin=1in}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Class 9 Mathematics}
+\lhead{By: Sachin Sharma }
+\rfoot{Page \thepage}
+\lfoot{Udgam Welfare Foundation  }
+
+\title{\textbf{Class 9 Mathematics – Final Examination (2024–25)}\\\large Chapter: Arithmetic Progression }
+\date{}
+\author{}
+
+\begin{document}
+\begin{enumerate}
+\item  The sum of p terms of an AP is q, and the sum of q terms is p; find the sum of p+q terms. %H KNIGHT%\\
+\item 
+The sum of four integers in AP is 24, and their product is 945, find them. %H KNIGHT%\\
+
+\item 
+Divide 20 into four parts which are in AP and such that the product of the first and fourth is to the product of the second and third in the ratio of 2 to 3.%H KNIGHT%\\
+
+\item 
+How many terms of the series 9,12,15,..... must be taken to make 306.%H KNIGHT%\\
+
+\item 
+The pth term of an AP is q, and qth term is p; find the mth term. %H KNIGHT%\\
+
+\item 
+Find the maximum sum of the A.P 40,38,36,34......
+
+\item 
+Find the least value of n such that :  1+3+5+7.... to n terms $\geq$ 500
+
+\item 
+Find the sum of the integers between 1 and 200 which are : (a) multiples of 3  (b) multiples of 7  (c) multiples of 3 and 7  (d) multiples of 3 or 7 
+
+
+\item 
+If a be the first term of an A.P and the sum of its first p terms is equal to zero, show that the sum of the next q terms is $-\frac{a(p+q)}{p-1} q$
+
+\item 
+The sum of the first p terms of an A.P is equal to the sum of its first q terms, prove that the sum of its first (p+q) terms is zero. 
+
+\item 
+Prove that hte sum of latter half of 2n terms of a series in A.P is equal to one third of the sum of the first 3n terms.
+
+\item 
+If $S_1,S_2,S_3.....S_p$ be the sum of n terms of Arithemetic Progressions whose first terms are respectively 1,2,3,.... and c.d's are 1,2,3,..... prove that ....$S_1+S_2+S_3+.....S_p = \frac{np}{4} (n+a)(p+1)$
+
+\item 
+If a,b,c be the sum of p,q, and r terms respectively of an A.P prove  that :  $\frac{a}{p}(q-r) +\frac{b}{q}(r-p) + \frac{c}{r} (p-q)=0$
+
+\item If  the sum of m terms of an A.P is equal to half the sum of (m+n) terms and is also equal to half the sum of (m+p) terms, prove that (m+n)$\frac{1}{m}-(\frac{1}{p}) = (m+p)(\frac{1}{m} -\frac{1}{n})$
+
+
+\item The number of terms in an AP is even ; the sum of the odd terms is 24, of the even terms 30 , and the last term exceeds the first by $10\frac{1}{2}$; find the number of terms. %H KNIGHT%\\
+
+
+\item If a,b,c be the sum of p,q and r terms respectively of an A.P prove that : $\frac{a}{p}(q-r) +\frac{b}{q}(r-p) +\frac{c}{r} (p-q)$ = 0
+
+\item If the sum of m terms of an A.P. is equal to half the sum of (m+n) terms and is also equal to half the sum of (m+p)th terms, prove that (m+n)($\frac{1}{m}-\frac{1}{p}) = (m+p)((\frac{1}{m}-\frac{1}{n})$
+
+\item If there are (2n+1) terms in an A.P then prove that the ratio of the sum of odd terms and sum of even terms is (n+1):n .
+
+\item The sum of n terms of two series in A.P are in the ratio (3n-13):(5n+21). Find the ratio of their 24th terms.
+
+\item The interior angles of a polygon are in A.P the smallest angle is $75^{\circ}$ and the common difference is $10^{\circ}$. Find the number of sides of the polygon. 
+
+\item Find the sum of the numbers lying between 1 and 100 which are divisible by 2 or 5.
+
+\item If the mth term of an A.P is $\frac{1}{n}$ and the nth term is $\frac{1}{m}$ then prove that the sum to mn terms is $\frac{mn+1}{2}$
+
+\item If the sum of m terms of an A.P is n and the sum of its n terms is m. show that the sum of (m+n) terms is -(m+n)
+
+\item If the sum of n, 2n, and 3n terms of an A.P be $S_1,S_2$ and $S_3$ respectively, show that $S_3 = 3(S_2-S_1)$
+
+\item If S be the sum of (2n+1) terms of an A.P and $S_1$ that of alternate terms beginning with the first, then show that $\frac{S}{S_1} = \frac{2n+1}{n+1}$
+
+\item If a,b,c be the 1st, 3rd and nth terms respectively of an A.P prove that the sum to n terms is $\frac{c+a}{2} + \frac{c^2-a^2}{b-a}$
+
+\item If the pth terms of an A.P is x and qth term is y. Show that the sum of (p+q) terms is $\frac{(p+q)}{2} \{ x+y+\frac{x-y}{p-q}\}$
+
+%HALL AND KNIGHT%
+
+
+
+
+
+
+
+\end{enumerate}
+\end{document}
