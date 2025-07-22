@@ -1,0 +1,173 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\begin{document}
+
+\begin{center}
+\textbf{LOGARITHM}
+\end{center}
+
+
+
+\noindent
+10 Given that log x = m+n and log y = m-n , express the value of $log(\frac{10x}{y^2})$ in terms of m and n. \\
+
+\noindent
+11 If $\frac{logx}{2}=\frac{logx}{3}$, find the value of $\frac{y^4}{x^6}$\\
+
+\noindent
+12. Solve for x \\
+
+\noindent
+(a) logx+log 5 = 2log 3  (b) $log_3x-log_32=1$  \\
+
+\noindent
+(c) $x=\frac{log125}{log25}$  (d) $\frac{log8}{log2}\times \frac{log3}{log\sqrt{3}}=2log x $\\
+
+\noindent
+13 Given $2 log_{10}x+1 = log_{10}250,$ find \\
+
+\noindent
+(a) x  (b) $log_{10}2x$\\
+
+\noindent
+14. If $log_1[-1+\sqrt{x^2-14x+49}]=4$, then x =.......\\
+
+\noindent
+(a) 24  (b) -10  (c) 24, -10  (d) 10\\
+
+\noindent
+Ans. c\\
+
+\noindent
+15. If $\frac{logp}{2}=\frac{logq}{4}=\frac{logr}{8}=k$ and pqr = 10, then k = ..... \\
+
+\noindent
+(a) 14  (b) $\frac{1}{6}$  (c) $\frac{1}{7}$  (d) 2 \\
+\noindent
+Ans. c \\
+
+\begin{center}
+\textbf{IIT JEE Foundation Corner }
+\end{center}
+
+
+\noindent
+1. The value of $(b^2)^{5log_b x}$is \\
+
+\noindent
+(a) $10^x $  (b) $x^4$  (c) 10x  (d) $x^{10}$\\
+
+\noindent
+2. If A = $Log_{13}189$ and B = $log_{23}521$ , then which of the following is correct $?$  \\
+
+\noindent
+(a) A $< B$  (B) A = B  (c) $A > B$  (d) none of these \\
+
+\noindent
+3. If $log_2(x+y) = 3$ and $log_2 x + log_2 y =2+ log_2 3$, then the values of x and y are \\
+
+\noindent
+(a) x = 1, y = 8  (b) x = 4, y = 4   (c) x = 4 , y = 8  (d) x =2, y = 6 \\
+
+\noindent
+4. The value of $\frac{log_3 54}{log_{486} 3} - \frac{log_3 1458}{log_{18} 3}$ is\\
+
+\noindent
+(a) 0  (b)  1  (c) 2  (d) 3 \\
+
+\noindent
+5. If a =1+log$_x yz, b= 1+log_y zx ; c = 1+log_z xy$ then ab+bc+c a is \\
+
+\noindent
+(a) 1  (b) 0  (c) abc  (d) none of these \\
+
+\noindent
+6.If $a^{3-x}b^{5x} = a^{x+5}b^{3x}$ then  the value of x log $(\frac{b}{a})$ is\\
+
+\noindent
+(a) log a (b) log b (c) log x  (d) 1 \\
+
+\noindent
+7. If $\frac{logx }{l+m-2n} = \frac{logy}{m+n-2l} = \frac{logz}{m+n-2m}$, then xyz is equal to \\
+
+\noindent
+(a) 0  (b) 1  (c) lmn  (d) 2 \\
+
+\noindent
+8. If y = $a^{(\frac{1}{1-log_a x})}$ and z = $a^{(\frac{1}{1-log_ay})}$, then x is equal to \\
+
+\noindent
+(a) 1+log yz  (b) $\frac{1}{1-log_a z }$  \\
+
+\noindent
+(c) $a^{(\frac{1}{1-log_a z})}$  (d) $\frac{y}{z}$\\
+
+\noindent
+9. If $\frac{log a}{b-c} = \frac{log b}{c-a} = \frac{log c }{a-b}$, then the value of $a^a \times b^b \times c^c$ is \\
+
+\noindent
+(a) 1  (b) 0  (d) 2  (d) none of these \\
+
+\noindent
+10. The value of $log_4log_2log_{\sqrt{2}}log_3 (x-2006) =0$ is \\
+
+\noindent
+(a) 2015  (b)  2011 (c) 2010  (d) none of these \\
+
+
+\noindent
+1. If $a =log_2,b=log_25,c=log_72$, then find the value of $log_{140}63$ in terms of a,b,c\\%Arihant AIEEE%
+
+\noindent
+2. If $log_{10}\sqrt{1+x}+3log_{10}\sqrt{1-x}=log_{10}\sqrt{1-x^2}+2$, then find the value of x. \\%Arihant AIEEE%
+ 
+\noindent
+3. Find the value of $\frac{1}{1+log_ba+log_bc}+\frac{1}{1+log_ca+log_cb}+\frac{1}{1+log_ab+log_ac}$\\%Arihant AIEEE%
+ 
+\noindent
+4.  If 2 $log(x+1)-log(x^2-1)=log2$, then x equals \\
+
+\noindent
+(a) 1  (b) 0  (c) 2  (d) 3  \\%Arihant AIEEE%
+ 
+\noindent
+5. If $y = 2^{\frac{1}{log_x8}}$, then find x. %Arihant AIEEE%
+
+\noindent
+(c) 2ab +1  (d) $\frac{1}{2ab-1}$\\
+\noindent
+Ans d\\
+
+\noindent
+7. The value of b satisfying $log_{\sqrt{8}}b = 3\frac{1}{3}$\\%Roorkee 85 kc sinha p 440%
+
+\noindent
+Ans. (a) 32  (b)  64  (c) $\frac{1}{32}$  (d) none of these \\
+
+\noindent
+8. The value of $log_ba.log_cblog_ac$\\%kc sinha p 440%
+
+\noindent
+(a) 1  (b)  2  (c) 3  (d) none of these \\
+
+
+\noindent
+9. If $a^2+b^2=23ab,$ prove that $log\frac{a+b}{5} =\frac{1}{2}(loga + logb)$\\%kc sinha p 440%
+
+\noindent
+10. The value of $7log\frac{16}{15}+5log\frac{25}{24}+3log\frac{81}{80}$\\%kc sinha p 440%
+
+\noindent
+(a) log 2  (b) log 3  (c) $log \frac{1}{2}$  (d) none of these 
+
+
+
+
+
+
+        
+        
+\end{document}
