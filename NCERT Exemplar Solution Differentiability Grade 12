@@ -1,0 +1,3496 @@
+\documentclass[10pt,a4paper, english]{article}
+%\usepackage[a4paper,margin=1in,landscape]{geometry}
+%\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{lmodern}
+%\usepackage[english]{babel}
+\usepackage{tikz}
+\usepackage{mathptmx}
+\usepackage{geometry}
+\geometry{
+	top=0.5in,            % <-- you want to adjust this
+	inner=0.5in,
+	outer=0.5in,
+	bottom=0.5in,
+	headheight=3ex,       % <-- and this
+	headsep=2ex,          % <-- and this
+}
+\usepackage{verbatim}
+\everymath{\displaystyle}
+\usepackage{amsmath}
+%\usepackage{lipsum}
+
+%\setlength{\parskip}{1em}
+\usepackage{fancyhdr}
+%BANSAL DPP - 17,18,19
+\pagestyle{fancy}
+\fancyhf{}
+%\rhead{www.mathstudy.in}
+
+%\usepackage[landscape]{geometry}
+\chead{\Large{ Differentiability and Continuity }}
+\rhead{By: Sachin Sharmaa}
+\rfoot{https://udgamwelfarefoundation.com/}
+\usepackage{amsfonts}
+%\usepackage{helvet}
+\usepackage{amssymb}
+\begin{document}
+	
+	
+	\begin{center}
+		\fbox{\textbf{NCERT EXEMPLAR CORNER}}
+	\end{center}
+	
+	\begin{enumerate}
+		
+		\item  	\textbf{Examine the continuity of the function $f(x) = {x^3} + 2{x^2} - 1$ at $x = 1$.[NCERT Exemp. Ex.5.3 ,Q.1,Page 107]}
+		
+		
+		\textbf{Solution}
+		
+		We have, $f(x) = {x^3} + 2{x^2} - 1$ at $x = 1$ 
+		
+		
+		As we know that, function $f$ will be continuous at $x = a$, if $\mathop {\lim }\limits_{x \to {a^ - }} f(x) = \mathop {\lim }\limits_{x \to {a^ + }} f(x) = f(a)$.
+		
+		
+		therefore,             $\mathop {\lim }\limits_{x \to {1^ + }} f(x) = \mathop {\lim }\limits_{h \to 0} {(1 + h)^3} + 2{(1 + h)^2} - 1 = 2$
+		
+		and           $\mathop {\lim }\limits_{x \to {1^ - }} f(x) = \mathop {\lim }\limits_{h \to 0} {(1 - h)^3} + 2{(1 - h)^2} - 1 = 2$
+		therefore,             $\mathop {\lim }\limits_{x \to {1^ + }} f(x) = \mathop {\lim }\limits_{x \to {1^ - }} f(x)$
+		
+		
+		and         $f(1) = 1 + 2 - 1 = 2$
+		
+		
+		So,         $f(x)$ is continuous at $x = 1$. 
+		
+		
+		\textbf{Tip: Every polynomial function is continuous at every real point. }
+		
+
+		\textbf{Find which of the functions in Exercises 2 to 10 is continuous or discontinuous at the indicated points: }
+			
+	 \item \textbf{	$f(x) = \left\{ {\begin{array}{*{20}{l}}{3x + 5,}&{{\rm{ if }}x \ge 2}\\{{x^2},}&{{\rm{ if }}x < 2}\end{array}} \right.$at $x = 2$.[NCERT Exemp. Ex.5.3 ,Q.2,Page 107]}
+	 
+	 
+		\textbf{Solution}
+		
+			We have,     $f(x) = \left\{ {\begin{array}{*{20}{l}}{3x + 5,}&{{\rm{ if }}x \ge 2}\\{{x^2},}&{{\rm{ if }}x < 2}\end{array}} \right.$at $x = 2$.
+			
+			
+		At $x = 2,$            ${\rm{LHL}} = \mathop {\lim }\limits_{x \to {2^ - }} {(x)^2}$
+		$ = \mathop {\lim }\limits_{h \to 0} {(2 - h)^2} = \mathop {\lim }\limits_{h \to 0} \left( {4 + {h^2} - 4h} \right) = 4$
+		
+		
+		and 
+		
+		                    ${\rm{RHL}} = \mathop {\lim }\limits_{x \to {2^ + }} (3x + 5)$
+		$ = \mathop {\lim }\limits_{h \to 0} [3(2 + h) + 5] = 11$
+		
+		
+		Since,                ${\rm{LHL}} \ne {\rm{RHL}}$ at $x = 2$
+		
+		
+		Therefore, we can say that  $f(x)$ is discontinuous at $x = 2$.
+		
+	\item \textbf{ 	$f(x) = \left\{ {\begin{array}{*{20}{l}}{\frac{{1 - \cos 2x}}{{{x^2}}},}&{{\rm{ if }}x \ne 0}\\{5,}&{{\rm{ if }}x = 0}\end{array}} \right.$at $x = 0$ [NCERT Exemp. Ex.5.3 ,Q.3,Page 107] }
+	
+	
+		\textbf{Solution}
+		
+			We have $f(x) = \left\{ {\begin{array}{*{20}{l}}{\frac{{1 - \cos 2x}}{{{x^2}}},}&{{\rm{ if }}x \ne 0}\\{5,}&{{\rm{ if }}x = 0}\end{array}} \right.$   at $x = 0$.
+
+
+
+		At $x = 0,$        ${\rm{LHL}} = \mathop {\lim }\limits_{x \to {0^ - }} \frac{{1 - \cos 2x}}{{{x^2}}}$
+		
+		
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{1 - \cos 2(0 - h)}}{{{{(0 - h)}^2}}}$
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{1 - \cos 2h}}{{{h^2}}}$                             
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{1 - 1 + 2{{\sin }^2}h}}{{{h^2}}}$                    
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{2{{(\sin h)}^2}}}{{{{(h)}^2}}}$  
+		
+		                            
+		$ = 2$
+		
+		
+		${\rm{RHL}} = \mathop {\lim }\limits_{x \to {0^ + }} \frac{{1 - \cos 2x}}{{{x^2}}}$
+		
+		
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{1 - \cos 2(0 + h)}}{{{{(0 + h)}^2}}}$
+		
+		
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{2{{\sin }^2}h}}{{{h^2}}} = 2$    
+		
+		                 
+		and $f(0) = 5$
+		
+		
+		Since, ${\rm{LHL}} = {\rm{RHL}} \ne f(0)$
+		
+		
+		Therefore we can say that  $f(x)$ is not continuous at $x = 0$.
+		
+	\item \textbf{	$f(x) = \left\{ {\begin{array}{*{20}{l}}{\frac{{2{x^2} - 3x - 2}}{{x - 2}},}&{{\rm{ if }}x \ne 2}\\{5,}&{{\rm{ if }}x = 2}\end{array}} \right.$at $x = 2$ [NCERT Exemp. Ex.5.3 ,Q.4,Page 107] }
+	
+	
+		\textbf{Solution}
+		
+			We have $f(x) = \left\{ {\begin{array}{*{20}{l}}{\frac{{2{x^2} - 3x - 2}}{{x - 2}},}&{{\rm{ if }}x \ne 2}\\{5,}&{{\rm{ if }}x = 2}\end{array}} \right.$at $x = 2$
+			
+			
+		At $x = 2,$                ${\rm{LHL}} = \mathop {\lim }\limits_{x \to {2^ - }} \frac{{2{x^2} - 3x - 2}}{{x - 2}}$
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{2{{(2 - h)}^2} - 3(2 - h) - 2}}{{(2 - h) - 2}}$
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{8 + 2{h^2} - 8h - 6 + 3h - 2}}{{ - h}}$
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{2{h^2} - 5h}}{{ - h}} = \mathop {\lim }\limits_{h \to 0} \frac{{h(2h - 5)}}{{ - h}} = 5$
+		${\rm{RHL}} = \mathop {\lim }\limits_{x \to {2^ + }} \frac{{2{x^2} - 3x - 2}}{{x - 2}}$
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{2{{(2 + h)}^2} - 3(2 + h) - 2}}{{(2 + h) - 2}}$
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{8 + 2{h^2} + 8h - 6 - 3h - 2}}{h}$
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{2{h^2} + 5h}}{h} = \mathop {\lim }\limits_{h \to 0} \frac{{h(2h + 5)}}{h} = 5$
+		and                    $f(2) = 5$
+		
+		
+		therefore,                      ${\rm{LHL}} = {\rm{RHL}} = f(2)$
+		
+		
+				Therefore we can say that   $f(x)$ is continuous at $x = 2$.
+		
+	\item  \textbf{	$f(x) = \left\{ {\begin{array}{*{20}{l}}{\frac{{|x - 4|}}{{2(x - 4)}},}&{{\rm{ if }}x \ne 4}\\{0,}&{{\rm{ if }}x = 4}\end{array}} \right.$at $x = 4$ [NCERT Exemp. Ex.5.3 ,Q.5,Page 107]}
+	
+	
+		\textbf{Solution}
+		
+			We have $f(x) = \left\{ {\begin{array}{*{20}{l}}{\frac{{|x - 4|}}{{2(x - 4)}},}&{{\rm{ if }}x \ne 4}\\{0,}&{{\rm{ if }}x = 4}\end{array}} \right.$at $x = 4$.
+		At $x = 4,$               ${\rm{LHL}} = \mathop {\lim }\limits_{x \to {4^ - }} \frac{{|x - 4|}}{{2(x - 4)}}$
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{|4 - h - 4|}}{{2[(4 - h) - 4]}} = \mathop {\lim }\limits_{h \to 0} \frac{{|0 - h|}}{{(8 - 2h - 8)}}$
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{h}{{ - 2h}} = \frac{{ - 1}}{2}\quad $ and $f(4) = 0 \ne {\rm{LHL}}$
+		
+		
+				Therefore we can say that  $f(x)$ is discontinuous at $x = 4$.
+		
+	\item \textbf{
+		$f(x) = \left\{ {\begin{array}{*{20}{l}}{|x|\cos \frac{1}{x},}&{{\rm{ if }}x \ne 0}\\{0,}&{{\rm{ if }}x = 0}\end{array}} \right.$at $x = 0$ [NCERT Exemp. Ex.5.3 ,Q.6,Page 107]}
+	
+	
+		\textbf{Solution}
+		
+			We have $f(x) = \left\{ {\begin{array}{*{20}{l}}{|x|\cos \frac{1}{x},}&{{\rm{ if }}x \ne 0}\\{0,}&{{\rm{ if }}x = 0}\end{array}} \right.$at $x = 0$
+		At $x = 0,$                  ${\rm{LHL}} = \mathop {\lim }\limits_{x \to {0^ - }} |x|\cos \frac{1}{x} = \mathop {\lim }\limits_{h \to 0} |0 - h|\cos \frac{1}{{0 - h}}$
+		$ = \mathop {\lim }\limits_{h \to 0} h\cos \left( {\frac{{ - 1}}{h}} \right)$
+		$ = 0 \times [$ an oscillating number between -1 and 1$] = 0$
+		${\rm{RHL}} = \mathop {\lim }\limits_{x \to {0^ + }} |x|\cos \frac{1}{x}$
+		$ = \mathop {\lim }\limits_{h \to 0} |0 + h|\cos \frac{1}{{(0 + h)}}$
+		$ = \mathop {\lim }\limits_{h \to 0} h\cos \frac{1}{h}$
+		$ = 0 \times $ [an oscillating number between -1 and 1$] = 0$
+		and $f(0) = 0$ 
+		Since, ${\rm{LHL}} = {\rm{RHL}} = f(0)$
+		
+		
+				Therefore we can say that  $f(x)$ is continuous at $x = 0$.
+		
+	\item \textbf{	\[f(x) = \left\{ {\begin{array}{*{20}{l}}{|x - a|\sin \frac{1}{{x - a}},}&{{\rm{ if }}x \ne 0}\\{0,}&{{\rm{ if }}x = a}\end{array}} \right.\], at $x = a$[NCERT Exemp. Ex.5.3 ,Q.7,Page 107] }
+	
+	
+		\textbf{Solution}
+		
+			We have \[f(x) = \left\{ {\begin{array}{*{20}{l}}{|x - a|\sin \frac{1}{{x - a}},}&{{\rm{ if }}x \ne 0}\\{0,}&{{\rm{ if }}x = a}\end{array}} \right.\] at $x = a$
+		At $x = a,$                ${\rm{LHL}} = \mathop {\lim }\limits_{x \to {a^ - }} |x - a|\sin \frac{1}{{x - a}}$
+		$ = \mathop {\lim }\limits_{h \to 0} |a - h - a|\sin \left( {\frac{1}{{a - h - a}}} \right)$
+		$ = \mathop {\lim }\limits_{h \to 0}  - h\sin \left( {\frac{1}{h}} \right)$                    
+		$ = 0 \times [$ an oscillating number between -1 and 1$] = 0$ 
+		${\rm{RHL}} = \mathop {\lim }\limits_{x \to {a^ + }} |x - a|\sin \left( {\frac{1}{{x - a}}} \right)$
+		$ = \mathop {\lim }\limits_{h \to 0} |a + h - a|\sin \left( {\frac{1}{{a + h - a}}} \right) = \mathop {\lim }\limits_{h \to 0} h\sin \frac{1}{h}$
+		$ = 0 \times [$ an oscillating number between -1 and 1$] = 0$
+		and $f(a) = 0$
+		
+		
+		
+		
+		  $  \Rightarrow  {\rm{LHL}} = {\rm{RHL}} = f({\rm{a}})$
+		
+		
+		Therefore we can say that   $f(x)$ is continuous at $x = a$.
+		
+	\item  \textbf{	$f(x) = \left\{ {\begin{array}{*{20}{l}}{\frac{{{e^{1/x}}}}{{1 + {e^{1/x}}}},}&{{\rm{ if }}x \ne 0}\\{0,}&{{\rm{ if }}x = 0}\end{array}} \right.$at $x = 0$[NCERT Exemp. Ex.5.3 ,Q.8,Page 107]}
+	
+	
+		\textbf{Solution}
+		
+			We have  $f(x) = \left\{ {\begin{array}{*{20}{l}}{\frac{{{e^{1/x}}}}{{1 + {e^{1/x}}}},}&{{\rm{ if }}x \ne 0}\\{0,}&{{\rm{ if }}x = 0}\end{array}} \right.$at $x = 0$
+			
+			
+		At $x = 0,$             ${\rm{LHL}} = \mathop {\lim }\limits_{x \to {0^ - }} \frac{{{e^{1/x}}}}{{1 + {e^{1/x}}}} = \mathop {\lim }\limits_{h \to 0} \frac{{{e^{1/0 - h}}}}{{1 + {e^{1/0 - h}}}}$
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{{e^{ - 1/h}}}}{{1 + {e^{ - 1/h}}}} = \mathop {\lim }\limits_{h \to 0} \frac{1}{{{e^{1/h}}\left( {1 + {e^{ - 1/h}}} \right)}}$
+		
+		$ = \frac{1}{{\frac{1}{0}}} = 0$
+		
+		
+		${\rm{RHL}} = \mathop {\lim }\limits_{x \to {0^ + }} \frac{{{e^{1/x}}}}{{1 + {e^{1/x}}}}$
+		
+		
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{{e^{1/0 + h}}}}{{1 + {e^{1/0 + h}}}} = \mathop {\lim }\limits_{h \to 0} \frac{{{e^{1/h}}}}{{1 + {e^{1/h}}}}$
+		
+		
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{1}{{{e^{ - 1/h}} + 1}} = \frac{1}{{{e^{ - \infty }} + 1}}$
+		
+		
+		$\Rightarrow {\rm{LHL}} \ne {\rm{RHL}}$ at $x = 0$. 
+		
+		
+		Therefore we can say that  $f(x)$ is discontinuous at $x = 0$.
+		
+	\item  \textbf{
+		\[f(x) = \left\{ {\begin{array}{*{20}{l}}{\frac{{{x^2}}}{2},}&{{\rm{ if }}0 \le x \le 1}\\{2{x^2} - 3x + \frac{3}{2},}&{{\rm{ if }}1 < x \le 2}\end{array}} \right.\]at $x = 1$ [NCERT Exemp. Ex.5.3 ,Q.9,Page 107] }
+	
+	
+		\textbf{Solution}
+		
+			We have \[f(x) = \left\{ {\begin{array}{*{20}{l}}{\frac{{{x^2}}}{2},}&{{\rm{ if }}0 \le x \le 1}\\{2{x^2} - 3x + \frac{3}{2},}&{{\rm{ if }}1 < x \le 2}\end{array}} \right.\]at $x = 1$
+			
+			
+		At $x = 1,$              ${\rm{HL}} = \mathop {\lim }\limits_{x \to {1^ - }} \frac{{{x^2}}}{2} = \mathop {\lim }\limits_{h \to 0} \frac{{{{(1 - h)}^2}}}{2}$
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{1 + {h^2} - 2h}}{2} = \frac{1}{2}$
+
+
+		RHL $ = \mathop {\lim }\limits_{x \to {1^ + }} \left( {2{x^2} - 3x + \frac{3}{2}} \right)$
+		$ = \mathop {\lim }\limits_{h \to 0} \left[ {2{{(1 + h)}^2} - 3(1 + h) + \frac{3}{2}} \right]$
+		$ = \mathop {\lim }\limits_{h \to 0} \left( {2 + 2{h^2} + 4h - 3 - 3h + \frac{3}{2}} \right) =  - 1 + \frac{3}{2} = \frac{1}{2}$
+		and $f(1) = \frac{{{1^2}}}{2} = \frac{1}{2}$
+
+
+		$  \Rightarrow {\rm{LHL}} = {\rm{RHL}} = f(1)$
+		
+		
+				Therefore we can say that  $  		 f(x)$ is continuous at $x = 1$.
+				
+				
+				
+		
+	\item \textbf{	$f(x) = |x| + |x - 1|$ at $x = 1$ [NCERT Exemp. Ex.5.3 ,Q.10,Page 107]}
+	
+	
+		\textbf{Solution}
+		
+			We have, $f(x) = |x| + |x - 1|$ at $x = 1$ 
+		At $x = 1,$               ${\rm{LHL}} = \mathop {\lim }\limits_{x \to {1^ - }} [|x| + |x - 1|]$
+		$ = \mathop {\lim }\limits_{h \to 0} [|1 - h| + |1 - h - 1|] = 1 + 0 = 1$
+		and ${\rm{RHL}} = \mathop {\lim }\limits_{x \to {1^ - }} [|x| + |x - 1|]$
+		$ = \mathop {\lim }\limits_{h \to 0} [|1 + h| + |1 + h - 1|] = 1 + 0 = 1$
+		
+		and $f(1) = |1| + |0| = 1$
+		
+		
+		therefore,${\rm{LHL}} = {\rm{RHL}} = f(1)$
+		
+		
+		Therefore we can say that  $f(x)$ is continuous at $x = 1$. 
+		
+		
+		\textbf{ Tip: Every modulus function is a continuous function at any real point.}
+		
+		
+		
+		\textbf{Find the value of k in each of the Exercises 11 to 14 so that the function f is continuous at the indicated point:}
+		
+	\item \textbf{	$f(x) = \left\{ {\begin{array}{*{20}{c}}{3x - 8,{\rm{ if }}x \le 5}\\{2k,{\rm{ }}\,\,\,\,\,\,\,{\rm{if }}x > 5}\end{array}} \right.$at $x = 5$[NCERT Exemp. Ex.5.3 ,Q.11,Page 108] }
+	
+	
+		\textbf{Solution}
+		
+			We have $f(x) = \left\{ {\begin{array}{*{20}{l}}{3x - 8,}&{{\rm{ if }}x \le 5}\\{2k,}&{{\rm{ if }}x > 5}\end{array}} \right.$at $x = 5$
+			
+			
+		Since, $f(x)$ is continuous at $x = 5$. 
+		
+		therefore,${\rm{LHL}} = {\rm{RHL}} = f(5)$
+		
+		
+		Now, ${\rm{LHL}} = \mathop {\lim }\limits_{x \to {5^ - }} (3x - 8) = \mathop {\lim }\limits_{h \to 0} [3(5 - h) - 8]$
+		
+		
+		$ = \mathop {\lim }\limits_{h \to 0} [15 - 3h - 8] = 7$
+		
+		
+		${\rm{RHL}} = \mathop {\lim }\limits_{x \to {5^ + }} 2{\rm{k}} = \mathop {\lim }\limits_{h \to 0} 2{\rm{k}} = 2{\rm{k}} = 7$                
+		and $f(5) = 3 \times 5 - 8 = 7$
+		
+		
+		$  \Rightarrow 2k = 7 \Rightarrow k = \frac{7}{2}$
+		
+				Therefore the value of k =$ \frac{7}{2}$
+		
+	\item \textbf{	$f(x) = \left\{ {\begin{array}{*{20}{c}}{\frac{{{2^{x + 2}} - 16}}{{{4^x} - 16}},}&{{\rm{ if }}x \ne 2}\\{k,}&{{\rm{ if }}x = 2}\end{array}} \right.$at $x = 2$[NCERT Exemp. Ex.5.3 ,Q.12,Page 108]}
+	
+	
+		\textbf{Solution}
+		
+			We have $f(x) = \left\{ {\begin{array}{*{20}{c}}{\frac{{{2^{x + 2}} - 16}}{{{4^x} - 16}},}&{{\rm{ if }}x \ne 2}\\{k,}&{{\rm{ if }}x = 2}\end{array}} \right.$at $x = 2$
+			
+			
+		Since, $f(x)$ is continuous at $x = 2$. 
+		
+		
+		therefore,${\rm{LHL}} = {\rm{RHL}} = f(2)$
+		
+		
+		At $x = 2,$$\mathop {\lim }\limits_{x \to 2} \frac{{{2^x} \cdot {2^2} - {2^4}}}{{{4^x} - {4^2}}} = \mathop {\lim }\limits_{x \to 2} \frac{{4 \cdot \left( {{2^x} - 4} \right)}}{{{{\left( {{2^x}} \right)}^2} - {{(4)}^2}}}$
+		
+		
+		$ = \mathop {\lim }\limits_{x \to 2} \frac{{4 \cdot \left( {{2^x} - 4} \right)}}{{\left( {{2^x} - 4} \right)\left( {{2^x} + 4} \right)}}$              
+		
+		
+		$ = \mathop {\lim }\limits_{x \to 2} \frac{4}{{{2^x} + 4}} = \frac{4}{8} = \frac{1}{2}$
+		
+		
+		
+		But $f(2) = k$ 
+		
+		
+		Therefore the value of $k = \frac{1}{2}$
+		
+
+		
+	\item \textbf{	$f(x) = \left\{ {\begin{array}{*{20}{c}}{\frac{{\sqrt {1 + kx}  - \sqrt {1 - kx} }}{x},}&{{\rm{ if }} - 1 \le x < 0}\\{\frac{{2x + 1}}{{x - 1}},}&{{\rm{ if }}0 \le x \le 1}\end{array}} \right.$at $x = 0$[NCERT Exemp. Ex.5.3 ,Q.13,Page 108]}
+	
+	
+		\textbf{Solution}
+		
+			We have, $f(x) = \left\{ {\begin{array}{*{20}{c}}{\frac{{\sqrt {1 + kx}  - \sqrt {1 - kx} }}{x},}&{{\rm{ if }} - 1 \le x < 0}\\{\frac{{2x + 1}}{{x - 1}},}&{{\rm{ if }}0 \le x \le 1}\end{array}} \right.$at $x = 0$
+			
+			
+		therefore,${\rm{LHL}} = \mathop {\lim }\limits_{x \to {0^ - }} \frac{{\sqrt {1 + kx}  - \sqrt {1 - kx} }}{x}$
+		
+		
+		$ = \mathop {\lim }\limits_{x \to {0^ - }} \left( {\frac{{\sqrt {1 + kx}  - \sqrt {1 - kx} }}{x}} \right) \cdot \left( {\frac{{\sqrt {1 + kx}  + \sqrt {1 - kx} }}{{\sqrt {1 + kx}  + \sqrt {1 - kx} }}} \right)$
+		
+		
+		$ = \mathop {\lim }\limits_{x \to {0^ - }} \frac{{1 + kx - 1 + kx}}{{x[\sqrt {1 + kx}  + \sqrt {1 - kx} ]}}$
+		$ = \mathop {\lim }\limits_{x \to {0^ - }} \frac{{2kx}}{{x\sqrt {1 + kx}  + \sqrt {1 - kx} }}$
+		
+		
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{2k}}{{\sqrt {1 + k(0 - h)}  + \sqrt {1 - k(0 - h)} }}$
+		
+		
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{2k}}{{\sqrt {1 - kh}  + \sqrt {1 + kh} }} = \frac{{2k}}{2} = k$
+		
+		
+		and $f(0) = \frac{{2 \times 0 + 1}}{{0 - 1}} =  - 1$
+		
+		
+		
+		
+		$ \Rightarrow $$k =  - 1$   
+		
+		Therefore the value of k =  -1               
+		
+	\item \textbf{	$f(x) = \left\{ {\begin{array}{*{20}{l}}{\frac{{1 - \cos kx}}{{x\sin x}},}&{{\rm{ if }}x \ne 0}\\{\frac{1}{2},}&{{\rm{ if }}x = 0}\end{array}} \right.$at $x = 0$[NCERT Exemp. Ex.5.3 ,Q.14,Page 108]}
+	
+	
+		\textbf{Solution}
+		
+		
+			We have $f(x) = \left\{ {\begin{array}{*{20}{l}}{\frac{{1 - \cos kx}}{{x\sin x}},}&{{\rm{ if }}x \ne 0}\\{\frac{1}{2},}&{{\rm{ if }}x = 0}\end{array}} \right.$at $x = 0$.
+		At $x = 0,$            ${\rm{LHL}} = \mathop {\lim }\limits_{x \to {0^ - }} \frac{{1 - \cos kx}}{{x\sin x}} = \mathop {\lim }\limits_{h \to 0} \frac{{1 - \cos k(0 - h)}}{{(0 - h)\sin (0 - h)}}$
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{1 - \cos ( - kh)}}{{ - h\sin ( - h)}}$
+		
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{1 - 1 + 2{{\sin }^2}\frac{{kh}}{2}}}{{h\sin h}}$   
+		
+		              
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{2{{\sin }^2}\frac{{kh}}{2}}}{{h\sin h}}$
+		
+		
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{2\sin \frac{{kh}}{2}}}{{\frac{{kh}}{2}}} \cdot \frac{{\sin \frac{{kh}}{2}}}{{\frac{{kh}}{2}}} \cdot \frac{1}{{\frac{{\sin h}}{h}}} \cdot \frac{{{k^2}h/4}}{h}$
+		
+		
+		$ = \frac{{2{k^2}}}{4} = \frac{{{k^2}}}{2}$                  
+
+
+
+		Also, $f(0) = \frac{1}{2} \Rightarrow \frac{{{k^2}}}{2} = \frac{1}{2} \Rightarrow k =  \pm 1 $
+		
+		Therefore the value of k =$\pm 1$
+		
+	\item \textbf{	Prove that the function $f$ defined by $f(x) = \left\{ {\begin{array}{*{20}{l}}{\frac{x}{{|x| + 2{x^2}}},}&{{\rm{ if }}x \ne 0}\\{k,}&{{\rm{ if }}x = 0}\end{array}} \right.$ remains discontinuous at $x = 0$, regardless the choice of $k$ [NCERT Exemp. Ex.5.3 ,Q.15,Page 108]}
+	
+	
+		\textbf{Solution}
+		
+		
+			We have $f(x) = \left\{ {\begin{array}{*{20}{l}}{\frac{x}{{|x| + 2{x^2}}},}&{{\rm{ if }}x \ne 0}\\{k,}&{{\rm{ if }}x = 0}\end{array}} \right.$.
+			
+			
+		At $x = 0,$        ${\rm{LHL}} = \mathop {\lim }\limits_{x \to {0^ - }} \frac{x}{{|x| + 2{x^2}}} = \mathop {\lim }\limits_{h \to 0} \frac{{(0 - h)}}{{|0 - h| + 2{{(0 - h)}^2}}}$
+		
+		
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{ - h}}{{h + 2{h^2}}} = \mathop {\lim }\limits_{h \to 0} \frac{{ - h}}{{h(1 + 2h)}} =  - 1$
+		
+		
+		${\rm{RHL}} = \mathop {\lim }\limits_{x \to {0^ + }} \frac{x}{{|x| + 2{x^2}}} = \mathop {\lim }\limits_{h \to 0} \frac{{0 + h}}{{|0 + h| + 2{{(0 + h)}^2}}}$
+		
+		
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{h}{{h + 2{h^2}}} = \mathop {\lim }\limits_{h \to 0} \frac{h}{{h(1 + 2h)}} = 1$
+		and $f(0) = k$ 
+		
+		
+		Since, ${\rm{LHL}} \ne {\rm{RHL}}$ for any value of ${\rm{k}}$. 
+		
+		
+		Hence, $f(x)$ is discontinuous at $x = 0$ regardless the choice of $k$.
+		
+	\item \textbf{Find the values of $a$ and $b$ such that the function $f$ defined by
+		\[f(x) = \left\{ {\begin{array}{*{20}{l}}{\frac{{x - 4}}{{|x - 4|}} + a,}&{{\rm{ if }}x < 4}\\{a + b,}&{{\rm{ if }}x = 4}\\{\frac{{x - 4}}{{|x - 4|}} + b,}&{{\rm{ if }}x > 4}\end{array}} \right.\].
+		is a continuous function at $x = 4$[NCERT Exemp. Ex.5.3 ,Q.16,Page 108]}
+		
+		
+		\textbf{Solution}
+		
+		
+			We have $f(x) = \left\{ {\begin{array}{*{20}{l}}{\frac{{x - 4}}{{|x - 4|}} + a,}&{{\rm{ if }}x < 4}\\{a + b,}&{{\rm{ if }}x = 4}\\{\frac{{x - 4}}{{|x - 4|}} + b,}&{{\rm{ if }}x > 4}\end{array}} \right.$
+			
+			
+		At $x = 4,$       ${\rm{LHL}} = \mathop {\lim }\limits_{x \to {4^ - }} \frac{{x - 4}}{{|x - 4|}} + {\rm{a}}$
+		
+		
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{4 - h - 4}}{{|4 - h - 4|}} + a = \mathop {\lim }\limits_{h \to 0} \frac{{ - h}}{h} + a$
+		$ =  - 1 + a$
+		
+		
+		${\rm{RHL}} = \mathop {\lim }\limits_{x \to {4^ + }} \frac{{x - 4}}{{|x - 4|}} + b$
+		
+		
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{4 + h - 4}}{{|4 + h - 4|}} + b = \mathop {\lim }\limits_{h \to 0} \frac{h}{h} + b = 1 + b$
+		
+		
+		$f(4) = a + b \Rightarrow  - 1 + a = 1 + b = a + b$
+		
+		
+		$ \Rightarrow $$ - 1 + a = a + b$ and $1 + b = a + b$
+		
+		
+		Therefore the value of $b =  - 1$ and $a = 1$
+		
+	\item \textbf{	If the function $f(x) = \frac{1}{{x + 2}}$, then find the points of discontinuity of the composite function $y = f\{ f(x)\} $[NCERT Exemp. Ex.5.3 ,Q.17,Page 108]}
+	
+	
+		\textbf{Solution}
+		
+		
+			We have, $f(x) = \frac{1}{{x + 2}}$
+		therefore,$y = f\{ f(x)\} $
+		$ = f\left( {\frac{1}{{x + 2}}} \right) = \frac{1}{{\frac{1}{{x + 2}} + 2}}$
+		
+		$ = \frac{1}{{1 + 2x + 4}} \cdot (x + 2) = \frac{{(x + 2)}}{{(2x + 5)}}$
+		
+		
+		So, the function $y$ will not be continuous at those points, where it is not defined as it is a rational function. 
+		
+		
+		
+		Therefore, $y = \frac{{x + 2}}{{(2x + 5)}}$ is not defined, when $2x + 5 = 0$ 
+		
+		
+		$ \Rightarrow  x = \frac{{ - 5}}{2}$
+		
+		
+		Therefore we can say that $y$ is discontinuous at $x = \frac{{ - 5}}{2}$.
+		
+	\item\textbf{	Find all points of discontinuity of the function $f(t) = \frac{1}{{{t^2} + t - 2}}$, where $t = \frac{1}{{x - 1}}$[NCERT Exemp. Ex.5.3 ,Q.18,Page 109]}
+	
+	
+		\textbf{Solution}
+		
+		
+			We have, $f(t) = \frac{1}{{{t^2} + t - 2}}$ and $t = \frac{1}{{x - 1}}$
+			
+			
+		therefore,$f(t) = \frac{1}{{\left( {\frac{1}{{{x^2} + 1 - 2x}}} \right) + \left( {\frac{1}{{x - 1}}} \right) - \frac{2}{1}}}$
+		
+		
+		$ = \frac{1}{{\left( {\frac{{1 + x - 1 + \left[ { - 2{{(x - 1)}^2}} \right]}}{{\left( {{x^2} + 1 - 2x} \right)}}} \right)}}$
+		
+		
+		$ = \frac{{{x^2} + 1 - 2x}}{{x - 2{x^2} - 2 + 4x}}$
+		
+		$ = \frac{{{x^2} + 1 - 2x}}{{ - 2{x^2} + 5x - 2}}$
+		
+		$ = \frac{{{{(x - 1)}^2}}}{{ - \left( {2{x^2} - 5x + 2} \right)}}$
+		
+		$ = \frac{{{{(x - 1)}^2}}}{{(2x - 1)(2 - x)}}$
+		
+		So, $f(t)$ is discontinuous at $2x - 1 = 0 \Rightarrow x = 1/2$
+		
+		and $2 - x = 0 \Rightarrow x = 2$
+		
+		Therefore the given function is discontinuous at $x = 1/2$  $\&$   x = 2
+		
+		
+		
+	\item \textbf{	Show that the function $f(x) = |\sin x + \cos x|$ is continuous at $x = \pi $.
+	[NCERT Exemp. Ex.5.3 ,Q.19,Page 109]}
+	
+		\textbf{Solution}	
+		
+		
+		
+		We have, $f(x) = |\sin x + \cos x|$ at $x = \pi $
+		
+		Let $g(x) = \sin x + \cos x$
+		and $h(x) = |x|$
+		
+		therefore,$hog(x) = h[g(x)]$
+		
+		
+		$ = h(\sin x + \cos x)$
+		
+		$ = |\sin x + \cos x|$
+		
+		
+		
+		As we know that sum of two continuous function is a continuous function and $g(x) = \sin x + \cos x$ is a continuous function as it is forming with addition of two continuous functions $\sin x$ and $\cos x$.
+		
+		Also, $h(x) = |x|$ is also a continuous function. Since, we know that composite functions of two continuous functions is also a continuous function. 
+		
+		
+Therefore we can say that $f(x) = |\sin x + \cos x|$ is a continuous function everywhere. 
+		
+Therefore we can say that $f(x)$ is continuous at $x = \pi $.
+		
+\item \textbf{	Examine the differentiability of ${\rm{f}}$, where ${\rm{f}}$ is defined by
+		$f(x) = \left\{ {\begin{array}{*{20}{l}}{x[x],}&{{\rm{ if }}0 \le x < 2}\\{(x - 1)x,}&{{\rm{ if }}2 \le x < 3}\end{array}} \right.$at $x = 2$[NCERT Exemp. Ex.5.3 ,Q.20,Page 109]}
+		
+		
+		\textbf{Solution}
+		
+		
+		
+		
+			We have, $f(x) = \left\{ {\begin{array}{*{20}{l}}{x[x],}&{{\rm{ if }}0 \le x < 2}\\{(x - 1)x,}&{{\rm{ if }}2 \le x < 3}\end{array}} \right.$at $x = 2$.
+			
+			
+			As we know that , a function $f$ is differentiable at a point a in its domain, if both $L{f^\prime }(a)$ and $R{f^\prime }(a)$ are finite and equal, where $L{f^\prime }(c) = \mathop {\lim }\limits_{h \to 0} \frac{{f(a - h) - f(a)}}{{ - h}}$ and
+			$R{f^\prime }(c) = \mathop {\lim }\limits_{h \to 0} \frac{{f(a + h) - f(a)}}{h}$ [ where $a$ is any positive number]  
+			
+			
+		At $x = 2,$      $L{f^\prime }(2) = \mathop {\lim }\limits_{h \to 0} \frac{{f(2 - h) - f(2)}}{{ - h}}$
+		
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{(2 - h)[2 - h] - (2 - 1)2}}{{ - h}}$
+		
+		
+		
+		
+		
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{(2 - h)(1) - 2}}{{ - h}}$
+		
+		
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{2 - h - 2}}{{ - h}} = \mathop {\lim }\limits_{h \to 0} \frac{{ - h}}{{ - h}} = 1$
+		
+		
+		$R{f^\prime }(2) = \mathop {\lim }\limits_{h \to 0} \frac{{f(2 + h) - f(2)}}{h}$
+		
+		
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{(2 + h - 1)(2 + h) - (2 - 1) \cdot 2}}{h}$
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{(1 + h)(2 + h) - 2}}{h}$
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{2 + h + 2h + {h^2} - 2}}{h}$
+		
+		
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{{h^2} + 3h}}{h} = \mathop {\lim }\limits_{h \to 0} \frac{{h(h + 3)}}{h} = 3$
+		
+		
+ $ \Rightarrow  L{f^\prime }(2) \ne R{f^\prime }(2)$
+		
+		
+Therefore we can say that  $f(x)$ is not differentiable at $x = 2$.
+		
+
+		
+		
+			
+	\item \textbf{\[f(x) = \left\{ {\begin{array}{*{20}{l}}{{x^2}\sin \frac{1}{x},}&{{\rm{ if }}x \ne 0}\\{0,}&{{\rm{ if }}x = 0}\end{array}} \right.\]at $x = 0$ [NCERT Exemp. Ex.5.3 ,Q.21,Page 109]}
+	
+	
+		\textbf{Solution}
+		
+		
+			We have, \[f(x) = \left\{ {\begin{array}{*{20}{l}}{{x^2}\sin \frac{1}{x},}&{{\rm{ if }}x \ne 0}\\{0,}&{{\rm{ if }}x = 0}\end{array}} \right.\]at $x = 0$
+			
+			
+		For differentiability at $x = 0$ 
+		
+		
+		$L{f^\prime }(0) = \mathop {\lim }\limits_{x \to {0^ - }} \frac{{f(x) - f(0)}}{{x - 0}} = \mathop {\lim }\limits_{x \to {0^ - }} \frac{{{x^2}\sin \frac{1}{x} - 0}}{{x - 0}}$
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{{{(0 - h)}^2}\sin \left( {\frac{1}{{0 - h}}} \right)}}{{0 - h}} = \mathop {\lim }\limits_{h \to 0} \frac{{{h^2}\sin \left( {\frac{{ - 1}}{h}} \right)}}{{ - h}}$
+		$ = \mathop {\lim }\limits_{h \to 0}  + h\sin \left( {\frac{1}{h}} \right)$                
+		
+		    
+		$ = 0 \times [$ some constant which is oscillating between -1 and 1 $] = 0$
+		
+		
+		$R{f^\prime }(0) = \mathop {\lim }\limits_{x \to {0^ + }} \frac{{f(x) - f(0)}}{{x - 0}} = \mathop {\lim }\limits_{x \to {0^ + }} \frac{{{x^2}\sin \frac{1}{x} - 0}}{{x - 0}}$
+		
+		
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{{{(0 + h)}^2}\sin \left( {\frac{1}{{0 + h}}} \right)}}{{0 + h}} = \mathop {\lim }\limits_{h \to 0} \frac{{{h^2}\sin (1/h)}}{h}$
+		
+		
+		$ = \mathop {\lim }\limits_{h \to 0} h\sin (1/h)$
+		
+		
+		$ = 0 \times [$ some constant which is oscillating between -1 and 1$] = 0$
+		
+		
+		$  \Rightarrow L{f^\prime }(0) = R{f^\prime }(0)$
+		
+		
+Therefore we can say that  $f(x)$ is differentiable at $x = 0$.
+		
+		
+	\item \textbf{	$f(x) = \left\{ {\begin{array}{*{20}{l}}{1 + x,{\rm{ if }}x \le 2}\\{5 - x,{\rm{ if }}x > 2}\end{array}} \right.$at $x = 2$ [NCERT Exemp. Ex.5.3 ,Q.22,Page 109] }
+	
+	
+		\textbf{Solution}
+		
+		
+			We have $f(x) = \left\{ {\begin{array}{*{20}{l}}{1 + x,{\rm{ if }}x \le 2}\\{5 - x,{\rm{ if }}x > 2}\end{array}} \right.$at $x = 2$
+			
+			
+		For differentiability at $x = 2$, 
+		
+		
+		$L{f^\prime }(2) = \mathop {\lim }\limits_{x \to {2^ - }} \frac{{f(x) - f(2)}}{{x - 2}} = \mathop {\lim }\limits_{x \to {2^ - }} \frac{{(1 + x) - (1 + 2)}}{{x - 2}}$
+		
+		
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{(1 + 2 - h) - 3}}{{2 - h - 2}} = \mathop {\lim }\limits_{h \to 0} \frac{{ - h}}{{ - h}} = 1$
+		$R{f^\prime }(2) = \mathop {\lim }\limits_{x \to {2^ + }} \frac{{f(x) - f(2)}}{{x - 2}} = \mathop {\lim }\limits_{x \to {2^ + }} \frac{{(5 - x) - 3}}{{x - 2}}$
+		
+		
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{5 - (2 + h) - 3}}{{2 + h - 2}}$
+		
+		
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{5 - 2 - h - 3}}{h} = \mathop {\lim }\limits_{h \to 0} \frac{{ - h}}{{ + h}}$
+		$ =  - 1$
+		
+		
+		$L{f^\prime }(2) \ne R{f^\prime }(2)$
+		
+		
+Therefore we can say that  $f(x)$ is not differentiable at $x = 2$.
+		
+\item \textbf{	Show that $f(x) = |x - 5|$ is continuous but not differentiable at $x = 5$[NCERT Exemp. Ex.5.3 ,Q.23,Page 109]}
+
+
+		\textbf{Solution}
+		
+		
+			We have, $f(x) = |x - 5|$
+		therefore,$f(x) = \left\{ {\begin{array}{*{20}{l}}{ - (x - 5),}&{{\rm{ if }}x < 5}\\{x - 5,}&{{\rm{ if }}x \ge 5}\end{array}} \right.$
+		
+		
+		For continuity at $x = 5$,
+		
+		 
+		${\rm{LHL}} = \mathop {\lim }\limits_{x \to {5^ - }} ( - x + 5)$
+		$ = \mathop {\lim }\limits_{h \to 0} [ - (5 - h) + 5] = \mathop {\lim }\limits_{h \to 0} h = 0$
+		
+		
+		${\rm{RHL}} = \mathop {\lim }\limits_{x \to {5^ + }} (x - 5)$
+		$ = \mathop {\lim }\limits_{h \to 0} (5 + h - 5) = \mathop {\lim }\limits_{h \to 0} h = 0$
+		
+		
+		therefore,$f(5) = 5 - 5 = 0$
+		
+		
+		$ \Rightarrow $${\rm{LHL}} = {\rm{RHL}} = f(5)$
+		
+		Hence, $f(x)$ is continuous at $x = 5$.
+		
+		Now, $L{f^\prime }(5) = \mathop {\lim }\limits_{x \to {5^ - }} \frac{{f(x) - f(5)}}{{x - 5}}$
+		$ = \mathop {\lim }\limits_{x \to {5^ - }} \frac{{ - x + 5 - 0}}{{x - 5}} =  - 1$
+		
+		$R{f^\prime }(5) = \mathop {\lim }\limits_{x \to {5^ + }} \frac{{f(x) - f(5)}}{{x - 5}}$
+		
+		$ = \mathop {\lim }\limits_{x \to {5^ + }} \frac{{x - 5 - 0}}{{x - 5}} = 1$
+		
+      $ \Rightarrow   L{f^\prime }(5) \ne R{f^\prime }(5)$
+		
+		
+		Therefore we can say that  $f(x) = |x - 5|$ is not differentiable at $x = 5$.
+		
+	\item \textbf{	A function $f:R \to R$ satisfies the equation $f(x + y) = f(x) \cdot f(y)$ for all $x,y \in R,$$f(x) \ne 0$. Suppose that the function is differentiable at $x = 0$ and ${f^\prime }(0) = 2$, then prove that ${f^\prime }(x) = 2f(x)$[NCERT Exemp. Ex.5.3 ,Q.24,Page 109]}
+	
+	
+	
+		\textbf{Solution}
+		
+		
+			Let $f:R \to R$ satisfies the equation $f(x + y) = f(x) \cdot f(y),\,\,\forall x,y \in R,f(x) \ne 0$
+			
+			
+		Let $f(x)$ is differentiable at $x = 0$ and ${f^\prime }(0) = 2$.....(i).
+		
+		 
+		$ \Rightarrow $${f^\prime }(0) = \mathop {\lim }\limits_{x \to 0} \frac{{f(x) - f(0)}}{{x - 0}}$
+		
+		
+		$ \Rightarrow $$2 = \mathop {\lim }\limits_{x \to 0} \frac{{f(x) - f(0)}}{x}$
+		
+		
+		
+		
+		$ \Rightarrow $$2 = \mathop {\lim }\limits_{h \to 0} \frac{{f(0 + h) - f(0)}}{{0 + h}}$
+		
+		
+		$ \Rightarrow $$2 = \mathop {\lim }\limits_{h \to 0} \frac{{f(0) \cdot f(h) - f(0)}}{h}$
+		
+		
+		$ \Rightarrow $$2 = \mathop {\lim }\limits_{h \to 0} \frac{{f(0)[f(h) - 1]}}{h}$      
+		
+		         
+		Also, ${f^\prime }(x) = \mathop {\lim }\limits_{h \to 0} \frac{{f(x + h) - f(x)}}{h}$
+		
+		
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{f(x) \cdot f(h) - f(x)}}{h}$    
+		
+		           
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{f(x)[f(h) - 1]}}{h} = 2f(x)$      [using Eq. (i)]
+		
+		
+$ \Rightarrow  {f^\prime }(x) = 2f(x)$
+
+Hence proved.
+		
+		
+		\textbf{Differentiate each of the following w.r.t. x(Exercise 25 to 43)}
+\item \textbf{	${2^{{{\cos }^2}x}}$ [NCERT Exemp. Ex.5.3 ,Q.25,Page 109]}
+
+
+		\textbf{Solution}
+		
+		
+			Let $y = {2^{{{\cos }^2}x}}$
+			
+			
+		therefore,$\log y = \log {2^{{{\cos }^2}x}} = {\cos ^2}x \cdot \log 2$
+		
+		
+		On differentiating w.r.t. $x$, we get 
+		
+		$\frac{d}{{dy}}\log y \cdot \frac{{dy}}{{dx}} = \frac{d}{{dx}}\log 2 \cdot {\cos ^2}x$
+		
+		
+		$ \Rightarrow $$\frac{1}{y} \cdot \frac{{dy}}{{dx}} = \log 2\frac{d}{{dx}}{(\cos x)^2}$
+		
+		
+		$ \Rightarrow $$\frac{1}{y} \cdot \frac{{dy}}{{dx}} = \log 2 \cdot [2\cos x] \cdot \frac{d}{{dx}}\cos x$
+		
+		
+		$ = \log 2 \cdot 2\cos x \cdot ( - \sin x)$
+		
+		$ = \log 2 \cdot [ - (\sin 2x)]$
+		
+		therefore,$\frac{{dy}}{{dx}} =  - y \cdot \log 2(\sin 2x)$
+		
+		
+		$ =  - {2^{{{\cos }^2}x}} \cdot \log 2(\sin 2x)   $[ putting the value of y = $2^{cos^2x}$]
+		
+\item \textbf{	$\frac{{{8^x}}}{{{x^8}}}$  [NCERT Exemp. Ex.5.3 ,Q.26,Page 109]}
+
+
+		\textbf{Solution}
+		
+		
+			Let $y = \frac{{{8^x}}}{{{x^8}}} \Rightarrow \log y = \log \frac{{{8^x}}}{{{x^8}}}$
+			
+			
+		$ \Rightarrow $$\frac{d}{{dy}}\log y \cdot \frac{{dy}}{{dx}} = \frac{d}{{dx}}\left[ {\log {8^x} - \log {x^8}} \right]$
+		
+		
+		$ \Rightarrow $$\frac{1}{y} \cdot \frac{{dy}}{{dx}} = \frac{d}{{dx}}[x \cdot \log 8 - 8 \cdot \log x]$
+		
+		
+		
+		On differentiating w.r.t. $x$, we get 
+		
+		
+		$\frac{1}{y} \cdot \frac{{dy}}{{dx}} = \log 8 \cdot 1 - 8 \cdot \frac{1}{x}$
+		
+		
+		$ \Rightarrow $$\frac{1}{y} \cdot \frac{{dy}}{{dx}} = \log 8 - \frac{8}{x}$
+		
+		
+		therefore,$\frac{{dy}}{{dx}} = y\left( {\log 8 - \frac{8}{x}} \right) = \frac{{{8^x}}}{{{x^8}}}\left( {\log 8 - \frac{8}{x}} \right)$
+		
+	\item \textbf{	$\log \left( {x + \sqrt {{x^2} + a} } \right)$[NCERT Exemp. Ex.5.3 ,Q.27,Page 109] }
+	
+	
+		\textbf{Solution}
+		
+		
+			Let $y = \log \left( {x + \sqrt {{x^2} + a} } \right)$
+			
+			
+		therefore,$\frac{{dy}}{{dx}} = \frac{d}{{dx}}\log \left( {x + \sqrt {{x^2} + a} } \right)$
+		
+		
+		$ = \frac{1}{{\left( {x + \sqrt {{x^2} + a} } \right)}} \cdot \frac{d}{{dx}}\left[ {x + \sqrt {{x^2} + a} } \right]$
+		
+		
+		$ = \frac{1}{{\left( {x + \sqrt {{x^2} + a} } \right)}}\left[ {1 + \frac{1}{2}{{\left( {{x^2} + a} \right)}^{ - 1/2}} \cdot 2x} \right]$
+		
+		
+		$ = \frac{1}{{\left( {x + \sqrt {{x^2} + a} } \right)}} \cdot \left( {1 + \frac{x}{{\sqrt {{x^2} + a} }}} \right)$
+		
+		
+		$ = \frac{{\left( {\sqrt {{x^2} + a}  + x} \right)}}{{\left( {x + \sqrt {{x^2} + a} } \right)\left( {\sqrt {{x^2} + a} } \right)}} = \frac{1}{{\left( {\sqrt {\left. {{x^2} + a} \right)} } \right.}}$
+		
+		
+		
+	$\Rightarrow \frac{dy}{dx} = \frac{1}{{\left( {\sqrt {\left. {{x^2} + a} \right)} } \right.}}$
+		
+\item \textbf{	$\log \left[ {\log \left( {\log {x^5}} \right)} \right]$ [NCERT Exemp. Ex.5.3 ,Q.28,Page 109]}
+
+
+		\textbf{Solution}
+		
+		
+			Let $y = \log \left[ {\log \left( {\log {x^5}} \right)} \right]$
+		therefore,$\frac{{dy}}{{dx}} = \frac{d}{{dx}}\left[ {\log \left( {\log \log {x^5}} \right)} \right]$
+		
+		
+		$ = \frac{1}{{\log \log {x^5}}} \cdot \frac{d}{{dx}}\left( {\log  \cdot \log {x^5}} \right)$
+		
+		
+		$ = \frac{1}{{\log \log {x^5}}} \cdot \left( {\frac{1}{{\log {x^5}}}} \right) \cdot \frac{d}{{dx}}\log {x^5}$
+		
+		
+		$ = \frac{1}{{\log \log {x^5}}} \cdot \frac{1}{{\log {x^5}}} \cdot \frac{d}{{dx}}(5\log x) = \frac{5}{{x \cdot \log \left( {\log {x^5}} \right) \cdot \log \left( {{x^5}} \right)}}$
+		
+		
+		$\Rightarrow \frac{dy}{dx} = \frac{5}{{x \cdot \log \left( {\log {x^5}} \right) \cdot \log \left( {{x^5}} \right)}}$
+		
+	\item \textbf{	$\sin \sqrt x  + {\cos ^2}\sqrt x $[NCERT Exemp. Ex.5.3 ,Q.29,Page 109] }
+	
+	
+		\textbf{Solution}
+		
+		
+			Let $y = \sin \sqrt x  + {(\cos \sqrt x )^2}$
+			
+			
+		therefore,$\frac{{dy}}{{dx}} = \frac{d}{{dx}}\sin \left( {{x^{1/2}}} \right) + \frac{d}{{dx}}{\left[ {\cos \left( {{x^{1/2}}} \right)} \right]^2}$
+		
+		
+		
+		$ = \cos {x^{1/2}} \cdot \frac{d}{{dx}}{x^{1/2}} + 2\cos \left( {{x^{1/2}}} \right)\frac{d}{{dx}}\left[ {\cos \left( {{x^{1/2}}} \right)} \right]$
+		
+		
+		
+		$ = \cos \left( {{x^{1/2}}} \right)\frac{1}{2}{x^{ - 1/2}} + 2 \cdot \cos \left( {{x^{1/2}}} \right) \cdot \left[ { - \sin \left( {{x^{1/2}}} \right) \cdot \frac{d}{{dx}}{x^{1/2}}} \right]$
+		
+		
+		$ = \cos \sqrt x  \cdot \frac{1}{{2\sqrt x }}\left[ { - 2\cos \left( {{x^{1/2}}} \right)} \right] \cdot \sin {x^{1/2}} \cdot \frac{1}{{2\sqrt x }}$
+		
+		
+		$ = \frac{1}{{2\sqrt x }}[\cos (\sqrt x ) - \sin (2\sqrt x )]$
+		
+		$\Rightarrow \frac{dy}{dx} = \frac{1}{{2\sqrt x }}[\cos (\sqrt x ) - \sin (2\sqrt x )]$
+		
+\item \textbf{	${\sin ^n}\left( {a{x^2} + bx + c} \right)$ [NCERT Exemp. Ex.5.3 ,Q.30,Page 109]}
+
+
+		\textbf{Solution}
+		
+		
+			Let $y = {\sin ^n}\left( {a{x^2} + bx + c} \right)$
+			
+			
+		therefore,$\frac{{dy}}{{dx}} = \frac{d}{{dx}}{\left[ {\sin \left( {a{x^2} + bx + c} \right)} \right]^n}$
+		
+		
+		$ = n \cdot {\left[ {\sin \left( {a{x^2} + bx + c} \right)} \right]^{n - 1}} \cdot \frac{d}{{dx}}\sin \left( {a{x^2} + bx + c} \right)$
+		
+		
+		$ = n \cdot {\sin ^{n - 1}}\left( {a{x^2} + bx + c} \right) \cdot \cos \left( {a{x^2} + bx + c} \right) \cdot \frac{d}{{dx}}\left( {a{x^2} + bx + c} \right)$
+		
+		
+		$ = n \cdot {\sin ^{n - 1}}\left( {a{x^2} + bx + c} \right) \cdot \cos \left( {a{x^2} + bx + c} \right) \cdot (2ax + b)$
+		
+		
+		$ = n \cdot (2ax + b) \cdot {\sin ^{n - 1}}\left( {a{x^2} + bx + c} \right) \cdot \cos \left( {a{x^2} + bx + c} \right)$
+		
+		
+		$ \Rightarrow  \frac{dy}{dx} = n \cdot (2ax + b) \cdot {\sin ^{n - 1}}\left( {a{x^2} + bx + c} \right) \cdot \cos \left( {a{x^2} + bx + c} \right)$
+		
+		
+		
+		
+		\item \textbf{cos(tan$\sqrt{x+1}$ ) [NCERT Exemp. Ex.5.3 ,Q.31,Page 109]}
+		
+		\textbf{Solution}
+		
+		Let $y = cos(tan\sqrt{x+1})$
+		
+		$\frac{dy}{dx} = -sin(tan\sqrt{x+1}). \frac{d(tan\sqrt{x+1})}{dx}$
+		
+		
+$		= -sin(tan\sqrt{x+1}).sec^2\sqrt{x+1}.\frac{d(\sqrt{x+1})}{dx}$
+
+
+$=-sin(tan\sqrt{x+1}).sec^2\sqrt{x+1}.\frac{1}{2\sqrt{x+1}}$
+
+therefore, $\frac{dy}{dx} = -\frac{1}{2\sqrt{x+1}}sin(tan\sqrt{x+1}).sec^2\sqrt{x+1}.$
+
+
+
+		
+	\item \textbf{	$\sin {x^2} + {\sin ^2}x + {\sin ^2}\left( {{x^2}} \right)$[NCERT Exemp. Ex.5.3 ,Q.32,Page 109]}
+	
+	
+	
+		\textbf{Solution}
+		
+			Let $y = \sin {x^2} + {\sin ^2}x + {\sin ^2}\left( {{x^2}} \right)$
+			
+			
+		therefore,$\frac{{dy}}{{dx}} = \frac{d}{{dx}}\sin \left( {{x^2}} \right) + \frac{d}{{dx}}{(\sin x)^2} + \frac{d}{{dx}}{\left( {\sin {x^2}} \right)^2}$
+		
+		
+		$ = \cos \left( {{x^2}} \right)\frac{d}{{dx}}\left( {{x^2}} \right) + 2\sin x \cdot \frac{d}{{dx}}\sin x + 2\sin {x^2} \cdot \frac{d}{{dx}}\sin {x^2}$
+		
+		
+		$ = \cos {x^2}2x + 2 \cdot \sin x \cdot \cos x + 2\sin {x^2}\cos {x^2} \cdot \frac{d}{{dx}}{x^2}$
+		
+		
+		$ = 2x\cos {(x)^2} + 2 \cdot \sin x \cdot \cos x + 2\sin {x^2} \cdot \cos {x^2} \cdot 2x$
+		
+		
+		$ = 2x\cos {(x)^2} + \sin 2x + \sin 2{(x)^2} \cdot 2x$
+		
+		
+		$ = 2x\cos \left( {{x^2}} \right) + 2x \cdot \sin 2\left( {{x^2}} \right) + \sin 2x$
+		
+		$\Rightarrow \frac{dy}{dx} = 2x\cos \left( {{x^2}} \right) + 2x \cdot \sin 2\left( {{x^2}} \right) + \sin 2x$
+		
+\item \textbf{	${\sin ^{ - 1}}\frac{1}{{\sqrt {x + 1} }}$ [NCERT Exemp. Ex.5.3 ,Q.33,Page 109] }
+
+
+		\textbf{Solution}
+		
+		
+			Let $y = {\sin ^{ - 1}}\frac{1}{{\sqrt {x + 1} }}$
+			
+			
+		therefore,$\frac{{dy}}{{dx}} = \frac{d}{{dx}}{\sin ^{ - 1}}\frac{1}{{\sqrt {x + 1} }}$
+		
+		$ = \frac{1}{{\sqrt {\frac{{x + 1 - 1}}{{x + 1}}} }} \cdot \frac{d}{{dx}} \cdot {(x + 1)^{ - 1/2}}$
+		
+		
+		$ = \sqrt {\frac{{x + 1}}{x}}  \cdot \frac{{ - 1}}{2}{(x + 1)^{ - \frac{1}{2} - 1}} \cdot \frac{d}{{dx}}(x + 1)$
+		
+		
+		$ = \frac{{{{(x + 1)}^{1/2}}}}{{{x^{1/2}}}} \cdot \left( { - \frac{1}{2}} \right){(x + 1)^{ - 3/2}} = \frac{{ - 1}}{{2\sqrt x }} \cdot \left( {\frac{1}{{x + 1}}} \right)$
+		
+		$\Rightarrow \frac{dy}{dx} = \frac{{ - 1}}{{2\sqrt x }} \cdot \left( {\frac{1}{{x + 1}}} \right)$
+		
+		
+	\item \textbf{${(\sin x)^{\cos x}}$[NCERT Exemp. Ex.5.3 ,Q.34,Page 109]}
+	
+	
+	
+		\textbf{Solution}
+		
+		
+			Let $y = {(\sin x)^{\cos x}}$
+		$ \Rightarrow $$\log y = \log {(\sin x)^{\cos x}} = \cos x\log \sin x$
+		
+		
+		therefore,$\frac{d}{{dy}}\log y \cdot \frac{{dy}}{{dx}} = \frac{d}{{dx}}(\cos x \cdot \log \sin x)$
+		
+		
+		$ \Rightarrow $$\frac{1}{y} \cdot \frac{{dy}}{{dx}} = \cos x \cdot \frac{d}{{dx}}\log \sin x + \log \sin x \cdot \frac{d}{{dx}}\cos x$
+		
+		
+		$ = \cos x \cdot \frac{1}{{\sin x}} \cdot \frac{d}{{dx}}\sin x + \log \sin x \cdot ( - \sin x)$
+		
+		
+		$ = \cot x \cdot \cos x - \log (\sin x) \cdot \sin x$                  
+		
+		
+		therefore,$\frac{{dy}}{{dx}} = y\left[ {\frac{{{{\cos }^2}x}}{{\sin x}} - \sin x \cdot \log (\sin x)} \right]$
+		
+		
+		$ = \sin {x^{\cos x}}\left[ {\frac{{{{\cos }^2}x}}{{\sin x}} - \sin x \cdot \log (\sin x)} \right]$
+		
+		
+$\Rightarrow \frac{dy}{dx} = \sin {x^{\cos x}}\left[ {\frac{{{{\cos }^2}x}}{{\sin x}} - \sin x \cdot \log (\sin x)} \right]$
+		
+		
+		
+	\item \textbf{	${\sin ^m}x \cdot {\cos ^n}x$[NCERT Exemp. Ex.5.3 ,Q.35,Page 109] }
+	
+	
+		\textbf{Solution}
+		
+			Let $y = {\sin ^m}x \cdot {\cos ^n}x$
+		therefore,$\frac{{dy}}{{dx}} = \frac{d}{{dx}}\left[ {{{(\sin x)}^m} \cdot {{(\cos x)}^n}} \right]$
+		
+		
+		$ = {(\sin x)^m} \cdot \frac{d}{{dx}}{(\cos x)^n} + {(\cos x)^n} \cdot \frac{d}{{dx}}{(\sin x)^m}$
+		
+		
+		$ = {(\sin x)^m} \cdot n{(\cos x)^{n - 1}} \cdot \frac{d}{{dx}}\cos x + {(\cos x)^n}m{(\sin x)^{m - 1}} \cdot \frac{d}{{dx}}\sin x$
+		$ = {(\sin x)^m} \cdot n{(\cos x)^{n - 1}}( - \sin x) + {(\cos x)^n} \cdot m{(\sin x)^{m - 1}}\cos x$
+		
+		
+		$ =  - n{\sin ^m}x \cdot {\cos ^{n - 1}}x \cdot (\sin x) + m{\cos ^n}x \cdot {\sin ^{m - 1}}x \cdot \cos x$
+		
+		
+		$ =  - n \cdot {\sin ^m}x \cdot \sin x \cdot {\cos ^n}x \cdot \frac{1}{{\cos x}} + m \cdot {\sin ^m}x \cdot \frac{1}{{\sin x}} \cdot {\cos ^n}x \cdot \cos x$
+		
+		
+		$ =  - n \cdot {\sin ^m}x \cdot {\cos ^n}x \cdot \tan x + m{\sin ^m}x \cdot {\cos ^n}x \cdot \cot x$
+		
+		
+		$ = {\sin ^m}x \cdot {\cos ^n}x[ - n\tan x + m\cot x]$
+		
+		
+		$\frac{dy}{dx} = = {\sin ^m}x \cdot {\cos ^n}x[ - n\tan x + m\cot x]$
+		
+		
+\item\textbf{	${(x + 1)^2}{(x + 2)^3}{(x + 3)^4}$[NCERT Exemp. Ex.5.3 ,Q.36,Page 109] }
+
+
+		\textbf{Solution}
+		
+		
+			Let $y = {(x + 1)^2}{(x + 2)^3}{(x + 3)^4}$
+		therefore,$\log y = \log \left\{ {{{(x + 1)}^2} \cdot {{(x + 2)}^3}{{(x + 3)}^4}} \right\}$
+		
+		
+		
+		$ = \log {(x + 1)^2} + \log {(x + 2)^3} + \log {(x + 3)^4}$
+		and $\frac{d}{{dy}}\log y \cdot \frac{{dy}}{{dx}} = \frac{d}{{dx}}[2\log (x + 1)] + \frac{d}{{dx}}[3\log (x + 2)] + \frac{d}{{dx}}[4\log (x + 3)]$
+		
+		
+		$\frac{1}{y} \cdot \frac{{dy}}{{dx}} = \frac{2}{{(x + 1)}} \cdot \frac{d}{{dx}}(x + 1) + 3 \cdot \frac{1}{{(x + 2)}} \cdot \frac{d}{{dx}}(x + 2) + 4 \cdot \frac{1}{{(x + 3)}} \cdot \frac{d}{{dx}}(x + 3)$
+		
+		
+		$ = \left[ {\frac{2}{{x + 1}} + \frac{3}{{x + 2}} + \frac{4}{{x + 3}}} \right]$
+		therefore,$\frac{{dy}}{{dx}} = y\left[ {\frac{2}{{(x + 1)}} + \frac{3}{{(x + 2)}} + \frac{4}{{(x + 3)}}} \right]$
+		
+		$ = {(x + 1)^2} \cdot {(x + 2)^3} \cdot {(x + 3)^4}\left[ {\frac{2}{{(x + 1)}} + \frac{3}{{(x + 2)}} + \frac{4}{{(x + 3)}}} \right]$
+		
+		
+		$ = {(x + 1)^2} \cdot {(x + 2)^3} \cdot {(x + 3)^4}$
+		$\left[ {\frac{{2(x + 2)(x + 3) + 3(x + 1)(x + 3) + 4(x + 1)(x + 2)}}{{(x + 1)(x + 2)(x + 3)}}} \right]$
+		
+		
+		$ = \frac{{{{(x + 1)}^2}{{(x + 2)}^3}{{(x + 3)}^4}}}{{(x + 1)(x + 2)(x + 3)}}$
+		
+		
+		$\left[ {2\left( {{x^2} + 5x + 6} \right) + 3\left( {{x^2} + 4x + 3} \right) + 4\left( {{x^2} + 3x + 2} \right)} \right]$
+		
+		
+		$ = (x + 1){(x + 2)^2}{(x + 3)^3}$
+		
+		
+		$\left[ {2{x^2} + 10x + 12 + 3{x^2} + 12x + 9 + 4{x^2} + 12x + 8} \right]$
+		
+		
+		$ = (x + 1){(x + 2)^2}{(x + 3)^3}\left[ {9{x^2} + 34x + 29} \right]$
+		
+		$\Rightarrow \frac{dy}{dx} == (x + 1){(x + 2)^2}{(x + 3)^3}\left[ {9{x^2} + 34x + 29} \right]$
+		
+		
+	\item \textbf{${\cos ^{ - 1}}\left( {\frac{{\sin x + \cos x}}{{\sqrt 2 }}} \right), - \frac{\pi }{4} < x < \frac{\pi }{4}$[NCERT Exemp. Ex.5.3 ,Q.37,Page 110]}
+	
+	
+		\textbf{Solution}
+		
+		
+			Let $y = {\cos ^{ - 1}}\left( {\frac{{\sin x + \cos x}}{{\sqrt 2 }}} \right)$
+			
+			
+		therefore,$\frac{{dy}}{{dx}} = \frac{d}{{dx}}{\cos ^{ - 1}}\left( {\frac{{\sin x + \cos x}}{{\sqrt 2 }}} \right)$
+		
+		
+		$ = \frac{{ - 1}}{{\sqrt {1 - {{\left( {\frac{{\sin x + \cos x}}{{\sqrt 2 }}} \right)}^2}} }} \cdot \frac{d}{{dx}}\left( {\frac{{\sin x + \cos x}}{{\sqrt 2 }}} \right)$
+		
+		$ = \frac{{ - 1}}{{\sqrt {4 - \frac{{\left( {{{\sin }^2}x + {{\cos }^2}x + 2\sin x \cdot \cos x} \right)}}{2}}  \cdot \frac{1}{{\sqrt 2 }}(\cos x - \sin x)}}$
+		
+		
+		$ = \frac{{ - 1 \cdot \sqrt 2 }}{{\sqrt {1 - \sin 2x} }} \cdot \frac{1}{{\sqrt 2 }}(\cos x - \sin x)$
+		
+		$ = \frac{{ - 1(\cos x - \sin x)}}{{(\cos x - \sin x)}} =  - 1$
+		
+		$\frac{dy}{dx} = = \frac{{ - 1(\cos x - \sin x)}}{{(\cos x - \sin x)}} =  - 1$
+		
+		
+	\item \textbf{	${\tan ^{ - 1}}\sqrt {\frac{{1 - \cos x}}{{1 + \cos x}}} , - \frac{\pi }{4} < x < \frac{\pi }{4}$ [NCERT Exemp. Ex.5.3 ,Q.38,Page 110]}
+	
+	
+		\textbf{Solution}
+		
+		
+		
+		
+		\textbf{Method I }
+		
+			Let $y = {\tan ^{ - 1}}\sqrt {\frac{{1 - \cos x}}{{1 + \cos x}}} $
+			
+		therefore,$\frac{{dy}}{{dx}} = \frac{d}{{dx}}{\tan ^{ - 1}}\sqrt {\frac{{1 - \cos x}}{{1 + \cos x}}} $
+		
+		$ = \frac{1}{{1 + \sqrt {{{\left( {\frac{{1 - \cos x}}{{1 + \cos x}}} \right)}^2}} }} \cdot \frac{d}{{dx}}{\left[ {\frac{{1 - \cos x}}{{1 + \cos x}}} \right]^{1/2}}$  
+		
+		    
+		$ = \frac{1}{{1 + \frac{{1 - \cos x}}{{1 + \cos x}}}} \cdot \frac{1}{2}{\left[ {\frac{{1 - \cos x}}{{1 + \cos x}}} \right]^{ - 1/2}} \cdot \frac{d}{{dx}}\left( {\frac{{1 - \cos x}}{{1 + \cos x}}} \right)$
+		
+		
+		$ = \frac{1}{{\frac{{1 + \cos x + 1 - \cos x}}{{1 + \cos x}}}} \cdot \frac{1}{2}{\left[ {\frac{{(1 - \cos x)}}{{(1 + \cos x)}} \cdot \frac{{(1 - \cos x)}}{{(1 - \cos x)}}} \right]^{ - 1/2}}$
+		$ \cdot \frac{{(1 + \cos x) \cdot \sin x + (1 - \cos x) \cdot \sin x}}{{{{(1 + \cos x)}^2}}}$
+		
+		
+		$ = \frac{{(1 + \cos x)}}{2} \cdot \frac{1}{2}{\left[ {\frac{{{{(1 - \cos x)}^2}}}{{\left( {1 - {{\cos }^2}x} \right)}}} \right]^{ - 1/2}}\left[ {\frac{{\sin x(1 + \cos x + 1 - \cos x)}}{{{{(1 + \cos x)}^2}}}} \right]$
+		
+		
+		$ = \frac{{(1 + \cos x)}}{2} \cdot \frac{1}{2}{\left[ {\frac{{{{(1 - \cos x)}^2}}}{{\left( {1 - {{\cos }^2}x} \right)}}} \right]^{ - 1/2}}\left[ {\frac{{\sin x(1 + \cos x + 1 - \cos x)}}{{{{(1 + \cos x)}^2}}}} \right]$
+		
+		$ = \frac{{(1 + \cos x)}}{2} \cdot \frac{1}{2}{\left[ {\frac{{{{(1 - \cos x)}^2}}}{{\sin x}}} \right]^{ - 1/2}} \cdot \frac{{2\sin x}}{{{{(1 + \cos x)}^2}}}$
+		
+		
+		$ = \frac{{(1 + \cos x)}}{2} \cdot \frac{1}{2} \cdot \frac{{\sin x}}{{(1 - \cos x)}} \cdot \frac{{2\sin x}}{{{{(1 + \cos x)}^2}}}$
+		
+		
+		$ = \frac{{2{{\sin }^2}x}}{{4(1 + \cos x)(1 - \cos x)}} = \frac{1}{2} \cdot \frac{{{{\sin }^2}x}}{{\left( {1 - {{\cos }^2}x} \right)}}$
+		
+		
+		$ = \frac{1}{2} \cdot \frac{{{{\sin }^2}x}}{{{{\sin }^2}x}} = \frac{1}{2}$
+		
+		$\Rightarrow \frac{dy}{dx} = \frac{1}{2} \cdot \frac{{{{\sin }^2}x}}{{{{\sin }^2}x}} = \frac{1}{2}$
+		
+		
+\textbf{Method II }
+		
+		
+		Let $y = {\tan ^{ - 1}}\left( {\sqrt {\frac{{1 - \cos x}}{{1 + \cos x}}} } \right)$
+		
+		$ = {\tan ^{ - 1}}\left( {\tan \frac{x}{2}} \right) = \frac{x}{2}$
+		On differentiating w.r.t. $x$, we get
+		$\frac{{dy}}{{dx}} = \frac{1}{2}$
+		
+		
+		
+		
+	\item \textbf{	${\tan ^{ - 1}}(\sec x + \tan x),\frac{{ - \pi }}{2} < x < \frac{\pi }{2}$ [NCERT Exemp. Ex.5.3 ,Q.39,Page 110]}
+	
+	
+		\textbf{Solution}
+		
+		
+			Let $y = {\tan ^{ - 1}}(\sec x + \tan x)$
+		therefore,$\frac{{dy}}{{dx}} = \frac{d}{{dx}}{\tan ^{ - 1}}(\sec x + \tan x)$
+		
+		
+		$ = \frac{1}{{1 + {{(\sec x + \tan x)}^2}}} \cdot \frac{d}{{dx}}(\sec x + \tan x)$   
+		
+		         
+		$ = \frac{1}{{1 + {{\sec }^2}x + {{\tan }^2}x + 2\sec x \cdot \tan x}} \cdot \left[ {\sec x \cdot \tan x + {{\sec }^2}x} \right]$
+	
+	
+		$ = \frac{1}{{\left( {{{\sec }^2}x + {{\sec }^2}x + 2\sec x \cdot \tan x} \right)}} \cdot \sec x \cdot (\sec x + \tan x)$
+	
+	
+		$ = \frac{1}{{2\sec x(\tan x + \sec x)}} \cdot \sec x(\sec x + \tan x) = \frac{1}{2}$
+		
+	\item \textbf{	${\tan ^{ - 1}}\left( {\frac{{a\cos x - b\sin x}}{{b\cos x + a\sin x}}} \right),\frac{{ - \pi }}{2} < x < \frac{\pi }{2}$ and $\frac{a}{b}\tan x >  - 1$[NCERT Exemp. Ex.5.3 ,Q.40,Page 110]}
+	
+		\textbf{Solution}
+		
+		
+			Let $y = {\tan ^{ - 1}}\left( {\frac{{a\cos x - b\sin x}}{{b\cos x + a\sin x}}} \right)$
+			
+			
+		$ = {\tan ^{ - 1}}\left[ {\frac{{\frac{{a\cos x}}{{b\cos x}} - \frac{{b\sin x}}{{b\cos x}}}}{{\frac{{b\cos x}}{{b\cos x}} + \frac{{a\sin x}}{{b\cos x}}}}} \right] = {\tan ^{ - 1}}\left[ {\frac{{\frac{a}{b} - \tan x}}{{1 + \frac{a}{b}\tan x}}} \right]$
+		
+		
+		$ = {\tan ^{ - 1}}\frac{a}{b} - {\tan ^{ - 1}}\tan x$   
+		
+		          
+		$ = {\tan ^{ - 1}}\frac{a}{b} - x$
+		
+		
+		therefore,$\frac{{dy}}{{dx}} = \frac{d}{{dx}}\left( {{{\tan }^{ - 1}}\frac{a}{b}} \right) - \frac{d}{{dx}}(x)$
+		$ = 0 - 1$                                
+		$ =  - 1$
+		
+		
+		$\frac{dy}{dx} = -1$
+		
+		
+	\item \textbf{	${\sec ^{ - 1}}\left( {\frac{1}{{4{x^3} - 3x}}} \right),0 < x < \frac{1}{{\sqrt 2 }}$ [NCERT Exemp. Ex.5.3 ,Q.41,Page 110]}
+	
+	
+		\textbf{Solution}
+		
+		
+			Let $y = {\sec ^{ - 1}}\left( {\frac{1}{{4{x^3} - 3x}}} \right)$
+		On putting $x = \cos \theta $ in Eq. (i), we get 
+		$y = {\sec ^{ - 1}}\frac{1}{{4{{\cos }^3}\theta  - 3\cos \theta }}$                       …….(i)
+		
+		
+		$ = {\sec ^{ - 1}}\frac{1}{{\cos 3\theta }}$
+		
+		
+		$ = {\sec ^{ - 1}}(\sec 3\theta ) = 3\theta $
+		
+		
+		$ = 3{\cos ^{ - 1}}x$              
+		
+		       
+		therefore,$\frac{{dy}}{{dx}} = \frac{d}{{dx}}\left( {3{{\cos }^{ - 1}}x} \right)$
+		
+		
+		$ = 3 \cdot \frac{{ - 1}}{{\sqrt {1 - {x^2}} }}$
+		
+		
+		$\frac{dy}{dx} = -3 \cdot \frac{{ 1}}{{\sqrt {1 - {x^2}} }}$
+		
+	\item \textbf{	${\tan ^{ - 1}}\left( {\frac{{3{a^2}x - {x^3}}}{{{a^3} - 3a{x^2}}}} \right),\frac{{ - 1}}{{\sqrt 3 }} < \frac{x}{a} < \frac{1}{{\sqrt 3 }}$ [NCERT Exemp. Ex.5.3 ,Q.42,Page 110]}
+	
+	
+		\textbf{Solution}
+		
+		
+			Let $y = {\tan ^{ - 1}}\left( {\frac{{3{a^2}x - {x^3}}}{{{a^3} - 3a{x^2}}}} \right)$
+			
+			
+		Put $x = {\mathop{\rm a}\nolimits} \,tan\theta  \Rightarrow \theta  = {\tan ^{ - 1}}\frac{x}{a}$
+		
+		
+		therefore,$y = {\tan ^{ - 1}}\left[ {\frac{{3\tan \theta  - {{\tan }^3}\theta }}{{1 - 3{{\tan }^2}\theta }}} \right]$    
+		
+		        
+		$ = {\tan ^{ - 1}}(\tan 3\theta ) = 3\theta $
+		$ = 3{\tan ^{ - 1}}\frac{x}{a}$  
+		
+		
+		                                 
+		therefore,$\frac{{dy}}{{dx}} = 3 \cdot \frac{d}{{dx}}{\tan ^{ - 1}}\frac{x}{a} = 3 \cdot \left[ {\frac{1}{{1 + \frac{{{x^2}}}{{{a^2}}}}}} \right] \cdot \frac{d}{{dx}} \cdot \left( {\frac{x}{a}} \right)$
+		
+		
+		$ = 3 \cdot \frac{{{a^2}}}{{{a^2} + {x^2}}} \cdot \frac{1}{a} = \frac{{3a}}{{{a^2} + {x^2}}}$
+		
+		
+	$\frac{dy}{dx} = \frac{{3a}}{{{a^2} + {x^2}}}$
+		
+	\item \textbf{	${\tan ^{ - 1}}\left[ {\frac{{\sqrt {1 + {x^2}}  + \sqrt {1 - {x^2}} }}{{\sqrt {1 + {x^2}}  - \sqrt {1 - {x^2}} }}} \right], - 1 < x < 1,x \ne 0$[NCERT Exemp. Ex.5.3 ,Q.43,Page 110] }
+	
+	
+		\textbf{Solution}
+		
+		
+			Let $y = {\tan ^{ - 1}}\left[ {\frac{{\sqrt {1 + {x^2}}  + \sqrt {1 - {x^2}} }}{{\sqrt {1 + {x^2}}  - \sqrt {1 - {x^2}} }}} \right]$
+		Put ${x^2} = \cos 2\theta $
+		
+		
+		therefore,$y = {\tan ^{ - 1}}\left( {\frac{{\sqrt {1 + \cos 2\theta }  + \sqrt {1 - \cos 2\theta } }}{{\sqrt {1 + \cos 2\theta }  - \sqrt {1 - \cos 2\theta } }}} \right)$
+		
+		
+		$ = {\tan ^{ - 1}}\left( {\frac{{\sqrt {1 + 2{{\cos }^2}\theta  - 1}  + \sqrt {1 - 1 + 2{{\sin }^2}\theta } }}{{\sqrt {1 + 2{{\cos }^2}\theta  - 1}  - \sqrt {1 - 1 + 2{{\sin }^2}\theta } }}} \right)$
+		
+		
+		$ = {\tan ^{ - 1}}\left( {\frac{{\sqrt 2 \cos \theta  + \sqrt 2 \sin \theta }}{{\sqrt 2 \cos \theta  - \sqrt 2 \sin \theta }}} \right) = {\tan ^{ - 1}}\left[ {\frac{{\sqrt 2 (\cos \theta  + \sin \theta )}}{{\sqrt 2 (\cos \theta  - \sin \theta )}}} \right]$
+		
+		
+		$ = {\tan ^{ - 1}}\left( {\frac{{\cos \theta  + \sin \theta }}{{\cos \theta  - \sin \theta }}} \right) = {\tan ^{ - 1}}\left( {\frac{{\frac{{\cos \theta  + \sin \theta }}{{\cos \theta }}}}{{\frac{{\cos \theta  - \sin \theta }}{{\cos \theta }}}}} \right)$
+		
+		
+		$ = {\tan ^{ - 1}}\left( {\frac{{1 + \tan \theta }}{{1 - \tan \theta }}} \right)$
+		$ = {\tan ^{ - 1}}\tan \left( {\frac{\pi }{4} + \theta } \right)$  
+		
+		                      
+		$ = \frac{\pi }{4} + \theta  = \frac{\pi }{4} + \frac{1}{2}{\cos ^{ - 1}}{x^2}$      
+		
+		
+		       
+		therefore,$\frac{{dy}}{{dx}} = \frac{d}{{dx}}\left( {\frac{\pi }{4}} \right) + \frac{d}{{dx}}\left( {\frac{1}{2}{{\cos }^{ - 1}}{x^2}} \right)$
+		
+		
+		$ = 0 + \frac{1}{2} \cdot \frac{{ - 1}}{{\sqrt {1 - {x^4}} }} \cdot \frac{d}{{dx}}{x^2} = \frac{1}{2} \cdot \frac{{ - 2x}}{{\sqrt {1 - {x^4}} }} = \frac{{ - x}}{{\sqrt {1 - {x^4}} }}$
+		
+		
+		
+		
+		$\frac{dy}{dx}= \frac{{ - x}}{{\sqrt {1 - {x^4}} }}$
+		
+		\textbf{Find $\frac{{dy}}{{dx}}$ of each of the functions expressed in parametric form.}
+		
+	\item \textbf{	$x = t + \frac{1}{t},y = t - \frac{1}{t}$[NCERT Exemp. Ex.5.3 ,Q.44,Page 110]}
+	
+	
+		\textbf{Solution}
+		
+		
+			 and $y = t - \frac{1}{t}$
+		therefore,$\frac{{dx}}{{dt}} = \frac{d}{{dt}}\left( {t + \frac{1}{t}} \right)$ and $\frac{{dy}}{{dt}} = \frac{d}{{dt}}\left( {t - \frac{1}{t}} \right)$
+		
+		
+		$ \Rightarrow $$\frac{{dx}}{{dt}} = 1 + ( - 1){t^{ - 2}}$ and $\frac{{dy}}{{dt}} = 1 - ( - 1){t^{ - 2}}$
+		
+		
+		$ \Rightarrow $$\frac{{dx}}{{dt}} = 1 - \frac{1}{{{t^2}}}$ and $\frac{{dy}}{{dt}} = 1 + \frac{1}{{{t^2}}}$
+		
+		
+		$ \Rightarrow $$\frac{{dx}}{{dt}} = \frac{{{t^2} - 1}}{{{t^2}}}$ and $\frac{{dy}}{{dt}} = \frac{{{t^2} + 1}}{{{t^2}}}$
+		
+		
+		therefore,$\frac{{dy}}{{dx}} = \frac{{dy/dt}}{{dx/dt}} = \frac{{{t^2} + 1/{t^2}}}{{{t^2} - 1/{t^2}}} = \frac{{{t^2} + 1}}{{{t^2} - 1}}$
+		
+		
+		$\frac{dy}{dx} =  \frac{{{t^2} + 1}}{{{t^2} - 1}}$
+		
+		
+	\item \textbf{	$x = {e^\theta }\left( {\theta  + \frac{1}{\theta }} \right),y = {e^{ - \theta }}\left( {\theta  - \frac{1}{\theta }} \right)$ [NCERT Exemp. Ex.5.3 ,Q.45,Page 110]}
+	
+	
+		\textbf{Solution}
+		
+		
+			 and $y = {e^{ - \theta }}\left( {\theta  - \frac{1}{\theta }} \right)$
+			 
+		therefore,$\frac{{dx}}{{d\theta }} = \frac{d}{{d\theta }}\left[ {{e^\theta } \cdot \left( {\theta  + \frac{1}{\theta }} \right)} \right]$
+		
+		
+		$ = {e^\theta } \cdot \frac{d}{{d\theta }}\left( {\theta  + \frac{1}{\theta }} \right) + \left( {\theta  + \frac{1}{\theta }} \right) \cdot \frac{d}{{d\theta }}{e^\theta }$
+		
+		
+		$ = {e^\theta }\left( {1 - \frac{1}{{{\theta ^2}}}} \right) + \left( {\theta  + \frac{1}{\theta }} \right){e^\theta }$
+		
+		
+		$ = {e^\theta }\left( {1 - \frac{1}{{{\theta ^2}}} + \theta  + \frac{1}{\theta }} \right)$
+		
+		
+		$ = {e^\theta }\left( {\frac{{{\theta ^2} - 1 + {\theta ^3} + \theta }}{{{\theta ^2}}}} \right)$   		                   ……(i)
+		
+		
+		and $\frac{{dy}}{{d\theta }} = \frac{d}{{d\theta }}\left[ {{e^{ - \theta }} \cdot \left( {\theta  - \frac{1}{\theta }} \right)} \right]$
+		
+		
+		$ = {e^{ - \theta }} \cdot \frac{d}{{d\theta }}\left( {\theta  - \frac{1}{\theta }} \right) + \frac{d}{{d\theta }}{e^{ - \theta }}\left( {\theta  - \frac{1}{\theta }} \right)$
+		
+		
+		$ = {e^{ - \theta }}\left( {1 + \frac{1}{{{\theta ^2}}}} \right) + \left( {\theta  - \frac{1}{\theta }} \right){e^{ - \theta }} \cdot \frac{d}{{d\theta }}( - \theta )$
+		
+		
+		$ = {e^{ - \theta }}\left[ {\frac{{{\theta ^2} + 1}}{{{\theta ^2}}} - \frac{{{\theta ^2} - 1}}{\theta }} \right] = {e^{ - \theta }}\left[ {\frac{{{\theta ^2} + 1 - {\theta ^3} + \theta }}{{{\theta ^2}}}} \right]$                   ……(ii)
+		
+		
+		therefore,$\frac{{dy}}{{dx}} = \frac{{dy/d\theta }}{{dx/d\theta }} = \frac{{{e^{ - \theta }}\left( {\frac{{{\theta ^2} + 1 - {\theta ^3} + \theta }}{{{\theta ^2}}}} \right)}}{{{e^\theta }\left( {\frac{{{\theta ^2} - 1 + {\theta ^3} + \theta }}{{{\theta ^2}}}} \right)}}$
+		
+		
+		$ = {e^{ - 2\theta }}\left( {\frac{{ - {\theta ^3} + {\theta ^2} + \theta  + 1}}{{{\theta ^3} + {\theta ^2} + \theta  - 1}}} \right)$
+		
+		
+		$ \Rightarrow  \frac{dy}{dx} = {e^{ - 2\theta }}\left( {\frac{{ - {\theta ^3} + {\theta ^2} + \theta  + 1}}{{{\theta ^3} + {\theta ^2} + \theta  - 1}}} \right)$
+		
+		
+	\item \textbf{	$x = 3\cos \theta  - 2{\cos ^3}\theta ,y = 3\sin \theta  - 2{\sin ^3}\theta $ [NCERT Exemp. Ex.5.3 ,Q.46,Page 110]}
+	
+	
+		\textbf{Solution}	
+		
+		
+		
+		 and $y = 3\sin \theta  - 2{\sin ^3}\theta $
+		 
+		 
+		therefore,$\frac{{dx}}{{d\theta }} = \frac{d}{{d\theta }}(3\cos \theta ) - \frac{d}{{d\theta }}\left( {2{{\cos }^3}\theta } \right)$
+		$ = 3 \cdot ( - \sin \theta ) - 2 \cdot 3{\cos ^2}\theta  \cdot \frac{d}{{d\theta }} \cdot \cos \theta $
+		
+		
+		$ =  - 3\sin \theta  + 6{\cos ^2}\theta \sin \theta $
+		and $\frac{{dy}}{{d\theta }} = 3\cos A - 2 \cdot 3{\sin ^2}\theta  \cdot \frac{d}{{d\theta }} \cdot \sin \theta $
+		
+		
+		$ = 3\cos \theta  - 6{\sin ^2}\theta  \cdot \cos \theta $
+		
+		
+		Now, $\frac{{dy}}{{dx}} = \frac{{dy/d\theta }}{{dx/d\theta }} = \frac{{3\cos \theta  - 6{{\sin }^2}\theta \cos \theta }}{{ - 3\sin \theta  + 6{{\cos }^2}\theta \sin \theta }}$
+		
+		
+		$ = \frac{{3\cos \theta \left( {1 - 2{{\sin }^2}\theta } \right)}}{{3\sin \theta \left( { - 1 + 2{{\cos }^2}\theta } \right)}} = \cot \theta  \cdot \frac{{\cos 2\theta }}{{\cos 2\theta }} = \cot \theta $
+		
+		
+		
+		$\Rightarrow \frac{dy}{dx} = \cot \theta $
+		
+	\item \textbf{	$\sin x = \frac{{2t}}{{1 + {t^2}}},\tan y = \frac{{2t}}{{1 - {t^2}}}$ [NCERT Exemp. Ex.5.3 ,Q.47,Page 110]}
+	
+	
+	
+		\textbf{Solution}	             
+		
+		
+		           ……(i)
+		and $\tan y = \frac{{2t}}{{1 - {t^2}}}$                …….(ii)
+		therefore,$\frac{d}{{dx}}\sin x \cdot \frac{{dx}}{{dt}} = \frac{d}{{dt}}\left( {\frac{{2t}}{{1 + {t^2}}}} \right)$
+		
+		
+		$ \Rightarrow $$\cos x\frac{{dx}}{{dt}} = \frac{{\left( {1 + {t^2}} \right) \cdot \frac{d}{{dt}}(2t) - (2t) \cdot \frac{d}{{dt}}\left( {1 + {t^2}} \right)}}{{{{\left( {1 + {t^2}} \right)}^2}}}$
+		
+		
+		$ = \frac{{2\left( {1 + {t^2}} \right) - 2t \cdot 2t}}{{{{\left( {1 + {t^2}} \right)}^2}}} = \frac{{2 + 2{t^2} - 4{t^2}}}{{{{\left( {1 + {t^2}} \right)}^2}}}$
+		
+		
+		$ \Rightarrow $$\frac{{dx}}{{dt}} = \frac{{2\left( {1 - {t^2}} \right)}}{{{{\left( {1 + {t^2}} \right)}^2}}} \cdot \frac{1}{{\cos x}}$
+		
+		
+		$ \Rightarrow $$\frac{{dx}}{{dt}} = \frac{{2\left( {1 - {t^2}} \right)}}{{{{\left( {1 + {t^2}} \right)}^2}}} \cdot \frac{1}{{\sqrt {1 - {{\sin }^2}x} }} = \frac{{2\left( {1 - {t^2}} \right)}}{{{{\left( {1 + {t^2}} \right)}^2}}} \cdot \frac{1}{{\sqrt {1 - {{\left( {\frac{{2t}}{{1 + {t^2}}}} \right)}^2}} }}$
+		
+		
+		$ \Rightarrow $$\frac{{dx}}{{dt}} = \frac{{2\left( {1 - {t^2}} \right)}}{{{{\left( {1 + {t^2}} \right)}^2}}} \cdot \frac{{\left( {1 + {t^2}} \right)}}{{\left( {1 - {t^2}} \right)}} = \frac{2}{{1 + {t^2}}}$                    …….(iii)
+		
+		
+		Also, $\frac{d}{{dy}}\tan y \cdot \frac{{dy}}{{dt}} = \frac{d}{{dt}}\left( {\frac{{2t}}{{1 - {t^2}}}} \right)$
+		
+		
+		${\sec ^2}y\frac{{dy}}{{dt}} = \frac{{\left( {1 - {t^2}} \right)\frac{d}{{dt}} \cdot (2t) - 2t \cdot \frac{d}{{dt}}\left( {1 - {t^2}} \right)}}{{{{\left( {1 - {t^2}} \right)}^2}}}$
+		
+		
+		$\frac{{dy}}{{dt}} = \frac{{2 - 2{t^2} + 4{t^2}}}{{{{\left( {1 - {t^2}} \right)}^2}}} \cdot \frac{1}{{{{\sec }^2}y}}$
+		
+		
+		$ = \frac{{2\left( {1 + {t^2}} \right)}}{{{{\left( {1 - {t^2}} \right)}^2}}} \cdot \frac{1}{{\left( {1 + {{\tan }^2}y} \right)}} = \frac{{2\left( {1 + {t^2}} \right)}}{{{{\left( {1 - {t^2}} \right)}^2}}} \cdot \frac{1}{{1 + \frac{{4{t^2}}}{{{{\left( {1 - {t^2}} \right)}^2}}}}}$
+		
+		
+		$ = \frac{{2\left( {1 + {t^2}} \right)}}{{{{\left( {1 - {t^2}} \right)}^2}}} \cdot \frac{{{{\left( {1 - {t^2}} \right)}^2}}}{{{{\left( {1 + {t^2}} \right)}^2}}} = \frac{2}{{1 + {t^2}}}$                        …….(iv)
+		
+		
+		therefore,$\frac{{dy}}{{dx}} = \frac{{dy/dt}}{{dx/dt}} = \frac{{2/1 + {t^2}}}{{2/1 + {t^2}}} = 1$                  [from Eqs. (iii) and (iv)]
+		
+		
+		
+		
+		$\Rightarrow \frac{dy}{dx} = 1$
+		
+	\item \textbf{	$x = \frac{{1 + \log t}}{{{t^2}}},y = \frac{{3 + 2\log t}}{t}$[NCERT Exemp. Ex.5.3 ,Q.48,Page 110]}
+	
+	
+		\textbf{Solution}
+		
+		
+			 and $y = \frac{{3 + 2\log t}}{t}$
+			 
+			 
+		therefore,$\frac{{dx}}{{dt}} = \frac{{{t^2} \cdot \frac{d}{{dt}}(1 + \log t) - (1 + \log t) \cdot \frac{d}{{dt}}{t^2}}}{{{{\left( {{t^2}} \right)}^2}}}$
+		
+		
+		$ = \frac{{{t^2} \cdot \frac{1}{t} - (1 + \log t) \cdot 2t}}{{{t^4}}} = \frac{{t - (1 + \log t) \cdot 2t}}{{{t^4}}}$
+		$ = \frac{t}{{{t^4}}}[1 - 2(1 + \log t)] = \frac{{ - 1 - 2\log t}}{{{t^3}}}$                        ……(i)
+		
+		
+		and $\frac{{dy}}{{dt}} = \frac{{t \cdot \frac{a}{{dt}}(3 + 2\log t) - (3 + 2\log t) \cdot \frac{a}{{dt}}t}}{{{t^2}}}$
+		$ = \frac{{t \cdot 2 \cdot \frac{1}{t} - (3 + 2\log t) \cdot 1}}{{{t^2}}}$
+		
+		
+		$ = \frac{{2 - 3 - 2\log t}}{{{t^2}}} = \frac{{ - 1 - 2\log t}}{{{t^2}}}$                                 …….(ii)
+		
+		
+		therefore,$\frac{{dy}}{{dx}} = \frac{{dy/dt}}{{dx/dt}} = \frac{{ - 1 - 2\log t/{t^2}}}{{ - 1 - 2\log t/{t^3}}} = t$
+		
+		
+	After simplification we get : 	$ \frac{dy}{dx} = t$
+		
+		
+	\item \textbf{	If $x = {e^{\cos 2t}}$ and $y = {e^{\sin 2t}}$, then prove that $\frac{{dy}}{{dx}} =  - \frac{{y\log x}}{{x\log y}}$[NCERT Exemp. Ex.5.3 ,Q.49,Page 110]}	
+		\textbf{Solution}	
+		
+		
+		
+		 and $y = {e^{\sin 2t}}$
+		therefore,$\frac{{dx}}{{dt}} = \frac{d}{{dt}}{e^{\cos 2t}} = {e^{\cos 2t}} \cdot \frac{d}{{dt}}\cos 2t$
+		
+		
+		$ = {e^{\cos 2t}} \cdot ( - \sin 2t) \cdot \frac{d}{{dt}}(2t)$
+		$\frac{{dx}}{{dt}} =  - 2{e^{\cos 2t}} \cdot \sin 2t$                             …….(i)
+		
+		
+		and $\frac{{dy}}{{dt}} = \frac{d}{{dt}}{e^{\sin 2t}} = {e^{\sin 2t}} \cdot \frac{d}{{dt}}\sin 2t$
+		
+		
+		$ = {e^{\sin 2t}}\cos 2t \cdot \frac{d}{{dt}}2t$
+		$ = 2{e^{\sin 2t}} \cdot \cos 2t$                                    …….(ii)
+		
+		
+		therefore,$\frac{{dy}}{{dx}} = \frac{{dy/dt}}{{dx/dt}} = \frac{{2{e^{\sin 2t}} \cdot \cos 2t}}{{ - 2{e^{\cos 2t}} \cdot \sin 2t}}$
+		
+		
+		$ = \frac{{{e^{\sin 2t}} \cdot \cos 2t}}{{{e^{\cos 2t}} \cdot \sin 2t}}$                                      …….(iii)
+		
+		
+		We know that,             $\log x = \cos 2t \cdot \log e = \cos 2t$           ……(iv)
+		
+		
+		and                                $\log y = \sin 2t \cdot \log e = \sin 2t$            …….(v)
+		
+		
+		
+		therefore,                 $\frac{{dy}}{{dx}} = \frac{{ - y\log x}}{{x\log y}}$
+		
+		
+		[using Eqs. (iv) and (v) in Eq. (iii) and $x = {e^{\cos 2t}},y = {e^{\sin 2t}}$]
+		
+		
+		Hence proved.
+		
+	\item \textbf{	If $x = a\sin 2t(1 + \cos 2t)$ and $y = b\cos 2t(1 - \cos 2t),$ then show that ${\left( {\frac{{dy}}{{dx}}} \right)_{t = \pi /4}} = \frac{b}{a}$[NCERT Exemp. Ex.5.3 ,Q.50,Page 110]}
+	
+	
+		\textbf{Solution}	
+		
+		
+		 and $y = b\cos 2t(1 - \cos 2t)$
+		therefore,$\frac{{dx}}{{dt}} = a\left[ {\sin 2t \cdot \frac{d}{{dt}}(1 + \cos 2t) + (1 + \cos 2t) \cdot \frac{d}{{dt}}\sin 2t} \right]$
+		
+		
+		$ = a\left[ {\sin 2t \cdot ( - \sin 2t) \cdot \frac{d}{{dt}}2t + (1 + \cos 2t) \cdot \cos 2t \cdot \frac{d}{{dt}}2t} \right]$
+		$ =  - 2a{\sin ^2}2t + 2a\cos 2t(1 + \cos 2t)$
+		
+		
+		$ \Rightarrow $$\frac{{dx}}{{dt}} =  - 2a\left[ {{{\sin }^2}2t - \cos 2t(1 + \cos 2t)} \right]$                                 ……(i)
+		
+		
+		
+		and $\frac{{dy}}{{dt}} = b\left[ {\cos 2t \cdot \frac{d}{{dt}}(1 - \cos 2t) + (1 - \cos 2t) \cdot \frac{d}{{dt}}\cos 2t} \right]$
+		$ = b\left[ {\cos 2t \cdot (\sin 2t)\frac{d}{{dt}}2t + (1 - \cos 2t)( - \sin 2t) \cdot \frac{d}{{dt}}2t} \right]$
+		
+		
+		$ = b[2\sin 2t \cdot \cos 2t + 2(1 - \cos 2t)( - \sin 2t)]$
+		
+		
+		$ = 2b[\sin 2t \cdot \cos 2t - (1 - \cos 2t)\sin 2t]$                        …….(ii)
+		
+		
+		therefore,$\frac{{dy}}{{dx}} = \frac{{dy/dt}}{{dx/dt}} = \frac{{ - 2b[ - \sin 2t \cdot \cos 2t + (1 - \cos 2t)\sin 2t]}}{{ - 2a\left[ {{{\sin }^2}2t - \cos 2t(1 + \cos 2t)} \right]}}$
+		
+		
+		$ \Rightarrow $${\left( {\frac{{dy}}{{dx}}} \right)_{t = \pi /4}} = \frac{b}{a}\frac{{\left[ { - \sin \frac{\pi }{2}\cos \frac{\pi }{2} + \left( {1 - \cos \frac{\pi }{2}} \right)\sin \frac{\pi }{2}} \right]}}{{\left[ {{{\sin }^2}\frac{\pi }{2} - \cos \frac{\pi }{2}\left( {1 + \cos \frac{\pi }{2}} \right)} \right]}}$
+		
+		
+		$ = \frac{b}{a} \cdot \frac{{(0 + 1)}}{{(1 - 0)}}$                      and $\left. {\cos \frac{\pi }{2} = 0} \right]$
+		$ = \frac{b}{a}$
+		
+		
+		Hence proved.
+		
+		
+	\item \textbf{	If $x = 3\sin t - \sin 3t,y = 3\cos t - \cos 3t,$ then find $\frac{{dy}}{{dx}}$ at $t = \frac{\pi }{3}$[NCERT Exemp. Ex.5.3 ,Q.51,Page 110]}
+	
+	
+		\textbf{Solution}	
+		
+		
+		 and $y = 3\cos t - \cos 3t$
+		therefore,$\frac{{dx}}{{dt}} = 3 \cdot \frac{d}{{dt}}\sin t - \frac{d}{{dt}}\sin 3t$
+		
+		
+		$ = 3\cos t - \cos 3t \cdot \frac{d}{{dt}}3t = 3\cos t - 3\cos 3t$                    ……..(i)
+		
+		and $\frac{{dy}}{{dt}} = 3 \cdot \frac{d}{{dt}}\cos t - \frac{d}{{dt}}\cos 3t$
+		$ =  - 3\sin t + \sin 3t \cdot \frac{d}{{dt}}3t$
+		$\frac{{dy}}{{dt}} = 3\sin 3t - 3t\sin t$                          ……(ii)
+		therefore,$\frac{{dy}}{{dx}} = \frac{{dy/dt}}{{dx/dt}} = \frac{{3(\sin 3t - \sin t)}}{{3(\cos t - \cos 3t)}}$
+		
+		
+		Now, ${\left( {\frac{{dy}}{{dx}}} \right)_{t = \pi /3}} = \frac{{\sin \frac{{3\pi }}{3} - \sin \frac{\pi }{3}}}{{\left( {\cos \frac{\pi }{3} - \cos 3\frac{\pi }{3}} \right)}} = \frac{{0 - \sqrt 3 /2}}{{\frac{1}{2} - ( - 1)}}$
+		
+		
+		$ = \frac{{ - \sqrt 3 /2}}{{3/2}} = \frac{{ - \sqrt 3 }}{3} = \frac{{ - 1}}{{\sqrt 3 }}$
+		
+		
+		 $ \Rightarrow  {\left( {\frac{{dy}}{{dx}}} \right)_{t = \pi /3}} = \frac{{ - 1}}{{\sqrt 3 }}$
+		
+	\item \textbf{	Differentiate $\frac{x}{{\sin x}}$ w.r.t. $\sin x$[NCERT Exemp. Ex.5.3 ,Q.52,Page 111]}
+	
+	
+		\textbf{Solution}
+		
+		
+		
+			Let $u = \frac{x}{{\sin x}}$ and $v = \sin x$
+		therefore,$\frac{{du}}{{dx}} = \frac{{\sin x \cdot \frac{d}{{dx}}x - x \cdot \frac{d}{{dx}}\sin x}}{{{{(\sin x)}^2}}}$
+		
+		
+		$ = \frac{{\sin x - x\cos x}}{{{{\sin }^2}x}}$                             ……(i)
+		
+		and $\frac{{dv}}{{dx}} = \frac{d}{{dx}}\sin x = \cos x$           …..(ii)
+		
+		
+		therefore,$\frac{{du}}{{dv}} = \frac{{du/dx}}{{dv/dx}} = \frac{{\sin x - x\cos x/{{\sin }^2}x}}{{\cos x}}$
+		
+		
+		$ = \frac{{\sin x - x\cos x}}{{{{\sin }^2}x\cos x}} = \frac{{\frac{{\sin x - x\cos x}}{{\cos x}}}}{{\frac{{{{\sin }^2}x\cos x}}{{\cos x}}}}$
+		
+		
+		[Dividing numerator and denominator by cosx ]
+		$ = \frac{{\tan x - x}}{{{{\sin }^2}x}}$
+		
+		
+		
+		
+	\item \textbf{	Differentiate ${\tan ^{ - 1}}\frac{{\sqrt {1 + {x^2}}  - 1}}{x}$ w.r.t. ${\tan ^{ - 1}}x,$ when $x \ne 0.$ [NCERT Exemp. Ex.5.3 ,Q.53,Page 111]}
+	
+	
+	
+		\textbf{Solution}
+		
+		
+			Let $u = {\tan ^{ - 1}}\frac{{\sqrt {1 + {x^2}}  - 1}}{x}$ and $v = {\tan ^{ - 1}}x$
+			
+			
+		therefore,$x = \tan \theta $
+		
+		$ \Rightarrow $$u = {\tan ^{ - 1}}\frac{{\sqrt {1 + {{\tan }^2}\theta }  - 1}}{{\tan \theta }}$
+		
+		
+		$ = {\tan ^{ - 1}}\frac{{(\sec \theta  - 1)\cos \theta }}{{\sin \theta }}$
+		
+		
+		$ = {\tan ^{ - 1}}\left( {\frac{{1 - \cos \theta }}{{\sin \theta }}} \right)$
+		
+		
+		$ = {\tan ^{ - 1}}\left[ {\frac{{1 - 1 + 2{{\sin }^2}\theta /2}}{{2\sin \theta /2 \cdot \cos \theta /2}}} \right]$                
+		
+		$ = {\tan ^{ - 1}}\left[ {\tan \frac{\theta }{2}} \right]$
+		
+		
+		$ = \frac{\theta }{2} = \frac{1}{2}{\tan ^{ - 1}}x$
+		
+		
+		therefore,$\frac{{du}}{{dx}} = \frac{1}{2}\frac{d}{{dx}}{\tan ^{ - 1}}x = \frac{1}{2} \cdot \frac{1}{{1 + {x^2}}}$            ………(i)
+		
+		
+		and $\frac{{dv}}{{dx}} = \frac{d}{{dx}}{\tan ^{ - 1}}x = \frac{1}{{1 + {x^2}}}$                 ………(ii)
+		
+		
+		therefore,$\frac{{du}}{{dv}} = \frac{{du/dx}}{{dv/dx}}$
+		$ = \frac{{1/2\left( {1 + {x^2}} \right)}}{{1/\left( {1 + {x^2}} \right)}} = \frac{{\left( {1 + {x^2}} \right)}}{{2\left( {1 + {x^2}} \right)}} = \frac{1}{2}$
+		
+		
+		
+		
+		\textbf{Find $\frac{{dy}}{{dx}}$ when $x$ and $y$ are connected by the relation given[NCERT Exemp. Ex.5.3 ,Q.54,Page 111]}
+		
+	\item \textbf{	$\sin (xy) + \frac{x}{y} = {x^2} - y$}
+	
+	
+		\textbf{Solution}
+		
+			We have, $\sin (xy) + \frac{x}{y} = {x^2} - y$
+			
+			
+		On differentiating both sides w.r.t. $x$, we get 
+		$\frac{d}{{dx}}(\sin xy) + \frac{d}{{dx}}\left( {\frac{x}{y}} \right) = \frac{d}{{dx}}{x^2} - \frac{d}{{dx}}y$
+		
+		
+		$ \Rightarrow $$\cos xy \cdot \frac{d}{{dx}}(xy) + \frac{{y\frac{d}{{dx}}x - x \cdot \frac{d}{{dx}}y}}{{{y^2}}} = 2x - \frac{{dy}}{{dx}}$
+		
+		
+		$ \Rightarrow $$\cos xy \cdot \left[ {x \cdot \frac{d}{{dx}}y + y \cdot \frac{d}{{dx}} \cdot x} \right] + \frac{{y - x\frac{{dy}}{{dx}}}}{{{y^2}}} = 2x - \frac{{dy}}{{dx}}$
+		
+		
+		$ \Rightarrow $$x\cos xy \cdot \frac{{dy}}{{dx}} + y\cos xy + \frac{y}{{{y^2}}} - \frac{x}{{{y^2}}}\frac{{dy}}{{dx}} = 2x - \frac{{dy}}{{dx}}$
+		
+		
+		$ \Rightarrow $$x\cos xy \cdot \frac{{dy}}{{dx}} + y\cos xy + \frac{y}{{{y^2}}} - \frac{x}{{{y^2}}}\frac{{dy}}{{dx}} = 2x - \frac{{dy}}{{dx}}$
+		
+		
+		$ \Rightarrow $$\frac{{dy}}{{dx}}\left[ {x\cos xy - \frac{x}{{{y^2}}} + 1} \right] = 2x - y\cos xy - \frac{y}{{{y^2}}}$
+		
+		
+		therefore,$\frac{{dy}}{{dx}} = \left[ {\frac{{2xy - {y^2}\cos xy - 1}}{y}} \right]\left[ {\frac{{{y^2}}}{{x{y^2}\cos xy - x + {y^2}}}} \right]$
+		
+		
+		$ = \frac{{\left( {2xy - {y^2}\cos xy - 1} \right)y}}{{\left( {x{y^2}\cos xy - x + {y^2}} \right)}}$
+		
+		
+		$\Rightarrow \frac{dy}{dx} = = \frac{{\left( {2xy - {y^2}\cos xy - 1} \right)y}}{{\left( {x{y^2}\cos xy - x + {y^2}} \right)}}$
+		
+		
+	\item \textbf{	$\sec (x + y) = xy$[NCERT Exemp. Ex.5.3 ,Q.55,Page 111]}
+	
+	
+		\textbf{Solution}
+		
+		
+			We have, $\sec (x + y) = xy$
+		On differentiating both sides w.r.t. $x$ , we get 
+		$\frac{d}{{dx}}\sec (x + y) = \frac{d}{{dx}}(xy)$
+		
+		
+		$ \Rightarrow $$\sec (x + y) \cdot \tan (x + y) \cdot \frac{d}{{dx}}(x + y) = x \cdot \frac{d}{{dx}}y + y \cdot \frac{d}{{dx}}x$
+		
+		
+		$ \Rightarrow $$\sec (x + y) \cdot \tan (x + y) \cdot \left( {1 + \frac{{dy}}{{dx}}} \right) = x\frac{{dy}}{{dx}} + y$
+		
+		
+		$ \Rightarrow $$\sec (x + y)\tan (x + y) + \sec (x + y) \cdot \tan (x + y) \cdot \frac{{dy}}{{dx}} = x\frac{{dy}}{{dx}} + y$
+		
+		
+		$ \Rightarrow $$\frac{{dy}}{{dx}}[\sec (x + y) \cdot \tan (x + y) - x] = y - \sec (x + y) \cdot \tan (x + y)$
+		
+		
+		therefore,$\frac{{dy}}{{dx}} = \frac{{y - \sec (x + y) \cdot \tan (x + y)}}{{\sec (x + y) \cdot \tan (x + y) - x}}$
+		
+		
+	\item \textbf{	${\tan ^{ - 1}}\left( {{x^2} + {y^2}} \right) = a$[NCERT Exemp. Ex.5.3 ,Q.56,Page 111]}
+	
+	
+		\textbf{Solution}	
+		
+		
+		We have, ${\tan ^{ - 1}}\left( {{x^2} + {y^2}} \right) = a$
+		
+		
+		On differentiating both sides w.r.t. $x$, we get 
+		$\frac{d}{{dx}}{\tan ^{ - 1}}\left( {{x^2} + {y^2}} \right) = \frac{da}{{dx}}$ 
+		
+		
+		$ \Rightarrow $$\frac{1}{{1 + {{\left( {{x^2} + {y^2}} \right)}^2}}} \cdot \frac{d}{{dx}}\left( {{x^2} + {y^2}} \right) = 0$
+		
+		
+		$ \Rightarrow $$2x + \frac{d}{{dy}}{y^2} \cdot \frac{{dy}}{{dx}} = 0$
+		$ \Rightarrow $$2y \cdot \frac{{dy}}{{dx}} =  - 2x$
+		
+		
+		therefore,$\frac{{dy}}{{dx}} = \frac{{ - 2x}}{{2y}} = \frac{{ - x}}{y}$
+		
+	\item \textbf{	${\left( {{x^2} + {y^2}} \right)^2} = xy$ [NCERT Exemp. Ex.5.3 ,Q.57,Page 111]}
+	
+	
+	
+		\textbf{Solution}	
+		
+		
+		We have, ${\left( {{x^2} + {y^2}} \right)^2} = xy$
+		
+		
+		On differentiating both sides w.r.t. $x$, we get 
+		$\frac{d}{{dx}}{\left( {{x^2} + {y^2}} \right)^2} = \frac{d}{{dx}}(xy)$
+		
+		
+		$ \Rightarrow $$2\left( {{x^2} + {y^2}} \right) \cdot \frac{d}{{dx}}\left( {{x^2} + {y^2}} \right) = x \cdot \frac{d}{{dx}}y + y \cdot \frac{d}{{dx}}x$
+		
+		
+		$ \Rightarrow $$2\left( {{x^2} + {y^2}} \right) \cdot \left( {2x + 2y\frac{{dy}}{{dx}}} \right) = x\frac{{dy}}{{dx}} + y$
+		
+		
+		$ \Rightarrow $$2{x^2} \cdot 2x + 2{x^2} \cdot 2y\frac{{dy}}{{dx}} + 2{y^2} \cdot 2x + 2{y^2} \cdot 2y\frac{{dy}}{{dx}} = x\frac{{dy}}{{dx}} + y$
+		
+		
+		$ \Rightarrow $$\frac{{dy}}{{dx}}\left[ {4{x^2}y + 4{y^3} - x} \right] = y - 4{x^3} - 4x{y^2}$
+		
+		
+		therefore,$\frac{{dy}}{{dx}} = \frac{{\left( {y - 4{x^3} - 4x{y^2}} \right)}}{{\left( {4{x^2}y + 4{y^3} - x} \right)}}$
+		
+		
+		
+		
+	\item \textbf{	If $a{x^2} + 2hxy + b{y^2} + 2gx + 2fy + c = 0,$ then show that $\frac{{dy}}{{dx}} \cdot \frac{{dx}}{{dy}} = 1$[NCERT Exemp. Ex.5.3 ,Q.58,Page 111]}
+	
+	
+		\textbf{Solution}
+		
+		
+			We have, $a{x^2} + 2hxy + b{y^2} + 2gx + 2fy + c = 0$                  ……(i)
+			
+			
+		On differentiating both sides w.r.t. $x$, we get
+		$\frac{d}{{dx}}\left( {a{x^2}} \right) + \frac{d}{{dx}}(2hxy) + \frac{d}{{dx}}\left( {b{y^2}} \right) + \frac{d}{{dx}}(2gx) + \frac{d}{{dx}}(2fy) + \frac{d}{{dx}}(c) = 0$
+		
+		
+		$ \Rightarrow $$2ax + 2h\left( {x \cdot \frac{{dy}}{{dx}} + y \cdot 1} \right) + b \cdot 2y\frac{{dy}}{{dx}} + 2g + 2f\frac{{dy}}{{dx}} + 0 = 0$
+		
+		
+		$ \Rightarrow $$\frac{{dy}}{{dx}}[2hx + 2by + 2f] =  - 2ax - 2hy - 2g$
+		
+		
+		$ \Rightarrow $$\frac{{dy}}{{dx}} = \frac{{ - 2(ax + hy + g)}}{{2(hx + by + f)}}$
+		
+		
+		$ = \frac{{ - (ax + hy + g)}}{{(hx + by + f)}}$                                          ……….(ii)
+		
+		
+		Now, differentiating Eq. (i) w.r.t. $y$, we get
+		$\frac{d}{{dy}}\left( {a{x^2}} \right) + \frac{d}{{dy}}(2hxy) + \frac{d}{{dy}}\left( {b{y^2}} \right) + \frac{d}{{dy}}(2gx) + \frac{d}{{dy}}(2fy) + \frac{d}{{dy}}(c) = 0$
+		
+		
+		$ \Rightarrow $$a \cdot 2x \cdot \frac{{dx}}{{dy}} + 2h \cdot \left( {x \cdot \frac{d}{{dy}}y + y \cdot \frac{d}{{dy}}x} \right) + b \cdot 2y + 2g \cdot \frac{{dx}}{{dy}} + 2f + 0 = 0$
+		
+		
+		$ \Rightarrow $$\frac{{dx}}{{dy}}[2ax + 2hy + 2g] =  - 2hx - 2by - 2f$
+		
+		
+		$ \Rightarrow $$\frac{{dx}}{{dy}} = \frac{{ - 2(hx + by + f)}}{{2(ax + hy + g)}} = \frac{{ - (hx + by + f)}}{{(ax + hy + g)}}$                  …….(iii)
+		
+		
+		therefore,$\frac{{dy}}{{dx}} \cdot \frac{{dx}}{{dy}} = \frac{{ - (ax + hy + g)}}{{(hx + by + f)}} \cdot \frac{{ - (hx + by + f)}}{{(ax + hy + g)}}$               [using Eqs. (ii) and (iii)]
+		
+		
+		$ = 1 = {\rm{RHS}}$
+		
+		Hence proved.
+		
+		
+		
+		
+		
+	\item	\textbf{If $x = {e^{x/y}},$ then prove that $\frac{{dy}}{{dx}} = \frac{{x - y}}{{x\log x}}$[NCERT Exemp. Ex.5.3 ,Q.59,Page 111]}
+	
+	
+		\textbf{Solution}
+		
+		
+			We have, $x = {e^{x/y}}$ 
+		therefore,$\frac{d}{{dx}}x = \frac{d}{{dx}}{e^{x/y}}$
+		
+		
+		$ \Rightarrow $$1 = {e^{x/y}} \cdot \frac{d}{{dx}}(x/y)$
+		
+		
+		$ \Rightarrow $$1 = {e^{x/y}} \cdot \left[ {\frac{{y \cdot 1 - x \cdot dy/dx}}{{{y^2}}}} \right]$
+		
+		
+		$ \Rightarrow $${y^2} = y \cdot {e^{x/y}} - x \cdot \frac{{dy}}{{dx}} \cdot {e^{x/y}}$
+		
+		
+		$ \Rightarrow $$x \cdot \frac{{dy}}{{dx}} \cdot {e^{x/y}} = y{e^{x/y}} - {y^2}$
+		
+		
+		therefore,$\frac{{dy}}{{dx}} = \frac{{y\left( {{e^{x/y}} - y} \right)}}{{x \cdot {e^{x/y}}}}$
+		
+		
+		$ = \frac{{\left( {{e^{x/y}} - y} \right)}}{{{e^{x/y}} \cdot \frac{x}{y}}}$    
+		
+		               
+		$ = \frac{{x - y}}{{x \cdot \log x}}$
+		
+	\item \textbf{	If ${y^x} = {e^{y - x}}$, then prove that $\frac{{dy}}{{dx}} = \frac{{{{(1 + \log y)}^2}}}{{\log y}}$[NCERT Exemp. Ex.5.3 ,Q.60,Page 111]}
+	
+	
+		\textbf{Solution}
+		
+		
+			We have, ${y^x} = {e^{y - x}}$
+			
+			
+		$ \Rightarrow $$\log {y^x} = \log {e^{y - x}}$
+		
+		
+		$ \Rightarrow $$x\log y = y - x \cdot {\log _e} = (y - x)$
+		
+		        
+		$ \Rightarrow $$\log y = \frac{{(y - x)}}{x}$                           ……..(i)
+		
+		
+		Now, differentiating w.r.t. $x$, we get
+		$\frac{d}{{dy}}\log y \cdot \frac{{dy}}{{dx}} = \frac{d}{{dx}}\frac{{(y - x)}}{x}$
+		
+		
+		$ \Rightarrow $$\frac{1}{y} \cdot \frac{{dy}}{{dx}} = \frac{{x \cdot \frac{d}{{dx}}(y - x) - (y - x) \cdot \frac{d}{{dx}} \cdot x}}{{{x^2}}}$
+		
+		
+		$ \Rightarrow $$\frac{1}{y}\frac{{dy}}{{dx}} = \frac{{x\left( {\frac{{dy}}{{dx}} - 1} \right) - (y - x)}}{{{x^2}}}$
+		
+		
+		$ \Rightarrow $$\frac{{{x^2}}}{y} \cdot \frac{{dy}}{{dx}} = x\frac{{dy}}{{dx}} - x - y + x$
+		
+		
+		$ \Rightarrow $$\frac{{dy}}{{dx}}\left( {\frac{{{x^2}}}{y} - x} \right) =  - y$
+		
+		
+		therefore,$\frac{{dy}}{{dx}} = \frac{{ - {y^2}}}{{{x^2} - xy}} = \frac{{ - {y^2}}}{{x(x - y)}}$
+		
+		
+		$ = \frac{{{y^2}}}{{x(y - x)}} \cdot \frac{x}{x} = \frac{{{y^2}}}{{{x^2}}} \cdot \frac{1}{{\frac{{(y - x)}}{x}}}$
+		$ = \frac{{{{(1 + \log y)}^2}}}{{\log y}}$ 
+		
+		    
+		Hence proved.
+		
+	\item \textbf{	If $y = {(\cos x)^{{{(\cos x)}^{{{(\cos x)}^{ - \infty }}}}}},$ then show that $\frac{{dy}}{{dx}} = \frac{{{y^2}\tan x}}{{y\log \cos x - 1}}.$[NCERT Exemp. Ex.5.3 ,Q.61,Page 111]}
+	
+	
+		\textbf{Solution}
+		
+		
+			We have, $y = {(\cos x)^{{{(\cos x)}^{(\cos x) \cdots \infty }}}}$
+			
+			
+		$ \Rightarrow $$y = {(\cos x)^y}$
+		
+		
+		therefore,$\log y = \log {(\cos x)^y}$
+		
+		
+		$ \Rightarrow $$\log y = y\log \cos x$
+		
+		
+		On differentiating w.r.t. $x$, we get 
+		$\frac{1}{y} \cdot \frac{{dy}}{{dx}} = y \cdot \frac{d}{{dx}}\log \cos x + \log \cos x \cdot \frac{{dy}}{{dx}}$
+		
+		
+		$ \Rightarrow $$\frac{1}{y} \cdot \frac{{dy}}{{dx}} = \frac{y}{{\cos x}} \cdot \frac{d}{{dx}}\cos x + \log \cos x \cdot \frac{{dy}}{{dx}}$
+		$ \Rightarrow $$\frac{{dy}}{{dx}}\left[ {\frac{1}{y} - \log \cos x} \right] = \frac{{ - y\sin x}}{{\cos x}} =  - y\tan x$
+		
+		
+		therefore,$\frac{{dy}}{{dx}} = \frac{{ - {y^2}\tan x}}{{(1 - y\log \cos x)}}$
+		
+		
+		
+		
+		
+		
+	\item \textbf{	If $x\sin (a + y) + \sin a \cdot \cos (a + y) = 0,$ then prove that
+		$\frac{{dy}}{{dx}} = \frac{{{{\sin }^2}(a + y)}}{{\sin a}}$[NCERT Exemp. Ex.5.3 ,Q.62,Page 111]}
+		
+		
+		\textbf{Solution}
+		
+		
+			We have, $x\sin (a + y) + \sin a \cdot \cos (a + y) = 0$
+		$ \Rightarrow $$x\sin (a + y) =  - \sin a \cdot \cos (a + y)$
+		$ \Rightarrow $$x = \frac{{ - \sin a \cdot \cos (a + y)}}{{\sin (a + y)}}$
+		
+		$ \Rightarrow $$x =  - \sin a \cdot \cot (a + y)$
+		
+		
+		therefore,$\frac{{dx}}{{dy}} =  - \sin a \cdot \left[ { - {{{\mathop{\rm cosec}\nolimits} }^2}(a + y)} \right] \cdot \frac{d}{{dy}}(a + y)$
+		
+		
+		$ = \sin a \cdot \frac{1}{{{{\sin }^2}(a + y)}} \cdot 1$
+		
+		
+		$ = \frac{{{{\sin }^2}(a + y)}}{{\sin a}}$
+		
+	\item \textbf{	If $\sqrt {1 - {x^2}}  + \sqrt {1 - {y^2}}  = a(x - y),$ then prove that $\frac{{dy}}{{dx}} = \sqrt {\frac{{1 - {y^2}}}{{1 - {x^2}}}} $[NCERT Exemp. Ex.5.3 ,Q.63,Page 111]}
+	
+	
+	
+		\textbf{Solution}
+		
+			We have, 
+		$\sqrt {1 - {x^2}}  + \sqrt {1 - {y^2}}  = a(x - y)$
+		
+		
+		On putting $x = \sin \alpha $ and $y = \sin \beta ,$ we get 
+		$\sqrt {1 - {{\sin }^2}\alpha }  + \sqrt {1 - {{\sin }^2}\beta }  = a(\sin \alpha  - \sin \beta )$
+		
+		
+		$ \Rightarrow $$\cos \alpha  + \cos \beta  = a(\sin \alpha  - \sin \beta )$
+		
+		
+		$ \Rightarrow $$2\cos \frac{{\alpha  + \beta }}{2} \cdot \cos \frac{{\alpha  - \beta }}{2} = a\left( {2\cos \frac{{\alpha  + \beta }}{2} \cdot \sin \frac{{\alpha  - \beta }}{2}} \right)$
+		
+		
+		$ \Rightarrow $$\cos \frac{{\alpha  - \beta }}{2} = a\sin \frac{{\alpha  - \beta }}{2}$
+		
+		
+		$ \Rightarrow $$\cot \frac{{\alpha  - \beta }}{2} = a$
+		
+		
+		$ \Rightarrow $$\frac{{\alpha  - \beta }}{2} = {\cot ^{ - 1}}a$
+		$ \Rightarrow $$\alpha  - \beta  = 2{\cot ^{ - 1}}a$
+		
+		
+		$ \Rightarrow $${\sin ^{ - 1}}x - {\sin ^{ - 1}}y = 2{\cot ^{ - 1}}a$             and $y = \sin \beta ]$
+		
+		
+		On differentiating both sides w.r.t. $x$, we get 
+		$\frac{1}{{\sqrt {1 - {x^2}} }} - \frac{1}{{\sqrt {1 - {y^2}} }}\frac{{dy}}{{dx}} = 0$
+		
+		
+		therefore,$\frac{{dy}}{{dx}} = \frac{{\sqrt {1 - {y^2}} }}{{\sqrt {1 - {x^2}} }} = \sqrt {\frac{{1 - {y^2}}}{{1 - {x^2}}}} $
+		
+		
+		Hence proved.
+		
+	\item \textbf{	If $y = {\tan ^{ - 1}}x,$ then find $\frac{{{d^2}y}}{{d{x^2}}}$ in terms of $y$ alone[NCERT Exemp. Ex.5.3 ,Q.64,Page 111]}
+	
+	
+		\textbf{Solution}
+		
+			We have, $y = {\tan ^{ - 1}}x$                   [on differentiating w.r.t. $\left. x \right]$
+		therefore,$\frac{{dy}}{{dx}} = \frac{1}{{1 + {x^2}}}$                               [again differentiating w.r.t. $\left. x \right]$
+		
+		
+		Now, $\frac{{{d^2}y}}{{d{x^2}}} = \frac{d}{{dx}}{\left( {1 + {x^2}} \right)^{ - 1}}$
+		
+		
+		$ =  - 1{\left( {1 + {x^2}} \right)^{ - 2}} \cdot \frac{d}{{dx}}\left( {1 + {x^2}} \right)$
+		
+		
+		$ =  - \frac{1}{{{{\left( {1 + {x^2}} \right)}^2}}} \cdot 2x$
+		
+		
+		$ = \frac{{ - 2{\rm{ tan }}y}}{{{{\left( {1 + {{\tan }^2}y} \right)}^2}}}$             
+		
+		       
+		$ = \frac{{ - 2\tan y}}{{{{\left( {{{\sec }^2}y} \right)}^2}}}$
+		
+		$ =  - 2\frac{{\sin y}}{{\cos y}} \cdot {\cos ^2}y \cdot {\cos ^2}y$
+		
+		
+		$ =  - \sin 2y \cdot {\cos ^2}y$     
+		              
+		\textbf{Verify the Rolle's theorem for each of the functions in following questions.}
+		
+	\item	\textbf{$f(x) = x{(x - 1)^2}$ in [0,1][NCERT Exemp. Ex.5.3 ,Q.65,Page 112]}
+	
+	
+	
+		\textbf{Solution}
+		
+		
+			We have, $f(x) = x{(x - 1)^2}$ in [0,1]
+			
+			As	we know that, Rolle's theorem states that, if $f$ be any real valued function, defined in the closed interval [a, b], such that 
+			
+			(i) $f$ is continuous on [a, b].
+			
+			
+			 (ii) $f$ is differentiable (a,b) 
+			 
+			 
+			 .(iii) $f(a) = f(b)$.
+			 
+			Then, there exists a real number ${\rm{c}}$ in the open interval $(a,b)$, such that ${f^\prime }(c) = {0^\prime }$. Here, we shall verify the Rolle's theorem for the given function.
+			
+			
+			
+		(i) Since, $f(x) = x{(x - 1)^2}$ is a polynomial function.
+		So, it is continuous in [0,1] .
+		
+		(ii) Now, ${f^\prime }(x) = x \cdot \frac{d}{{dx}}{(x - 1)^2} + {(x - 1)^2}\frac{d}{{dx}}x$
+		
+		
+		$ = x \cdot 2(x - 1) \cdot 1 + {(x - 1)^2}$
+		
+		
+		$ = 2{x^2} - 2x + {x^2} + 1 - 2x$
+		
+		
+		$ = 3{x^2} - 4x + 1$ which exists in (0,1) .
+		
+		
+		So, $f(x)$ is differentiable in (0,1) .
+		
+		
+		(iii) Now, $f(0) = 0$ and $f(1) = 0 \Rightarrow f(0) = f(1)$ 
+		
+		
+		$f$ satisfies the above conditions of Rolle's theorem.
+		
+		
+		Hence, by Rolle's theorem there exists  c $\in (0,1)$ such that 
+		${f^\prime }(c) = 0$
+		
+		
+		$ \Rightarrow $$3{c^2} - 4c + 1 = 0$
+		
+		$ \Rightarrow $$3{c^2} - 3c - c + 1 = 0$
+		
+		$ \Rightarrow $$3c(c - 1) - 1(c - 1) = 0$
+		
+		$ \Rightarrow $$(3c - 1)(c - 1) = 0$
+		
+		$ \Rightarrow $$c = \frac{1}{3},1 \Rightarrow \frac{1}{3} \in (0,1)$
+		
+		
+		Thus, we see that there exists a real number $c$ in the open interval (0,1) . 
+		
+		
+		Hence, Rolle's theorem has been verified.
+		
+		
+		
+	\item \textbf{	$f(x) = {\sin ^4}x + {\cos ^4}x$ in $\left[ {0,\frac{\pi }{2}} \right]$ [NCERT Exemp. Ex.5.3 ,Q.66,Page 112]}
+	
+	
+		\textbf{Solution}
+		
+		
+			We have, $f(x) = {\sin ^4}x + {\cos ^4}x$ in $\left[ {0,\frac{\pi }{2}} \right]$                         …….(i)
+			
+			
+		(i) $f(x)$ is continuous in $\left[ {0,\frac{\pi }{2}} \right]$ 
+		
+		 
+		[since, ${\sin ^4}x$ and ${\cos ^4}x$ are continuous functions and we know that, if $g$ and $h$ be continuous functions, then $(g + h)$ is a continuous function.]
+		
+		
+		(ii) ${f^\prime }(x) = 4{(\sin x)^3} \cdot \cos x + 4{(\cos x)^3} \cdot ( - \sin x)$
+		
+		
+		$ = 4{\sin ^3}x \cdot \cos x - 4\sin x \cdot {\cos ^3}x$
+		$ = 4\sin x\cos x\left( {{{\sin }^2}x - {{\cos }^2}x} \right)$ which exists in $\left( {0,\frac{\pi }{2}} \right)$                    …….(ii)
+		
+		
+		Hence, $f(x)$ is differentiable in $\left( {0,\frac{\pi }{2}} \right)$.
+		
+		
+		(iii) Also, $f(0) = 0 + 1 = 1$ and $f\left( {\frac{\pi }{2}} \right) = 1 + 0 = 1$
+		
+		
+		$ \Rightarrow $$f(0) = f\left( {\frac{\pi }{2}} \right)$
+		Conditions of Rolle's theorem are satisfied. 
+		
+		
+		Hence, there exists atleast one $c \in \left( {0,\frac{\pi }{2}} \right)$ such that ${f^\prime }(c) = 0$.
+		
+		
+		therefore,$4\sin c\cos c\left( {{{\sin }^2}c - {{\cos }^2}c} \right) = 0$
+		
+		
+		$ \Rightarrow $$4\sin c\cos c( - \cos 2c) = 0$
+		
+		$ \Rightarrow $$ - 2\sin 2c \cdot \cos 2c = 0$
+		
+		$ \Rightarrow $$\quad  - \sin 4c = 0$
+		
+		$ \Rightarrow $$\sin 4c = 0$
+		
+		$ \Rightarrow $$4c = \pi $
+		
+		$ \Rightarrow $$C = \frac{\pi }{4}$
+		
+		and $\frac{\pi }{4} \in \left( {0,\frac{\pi }{2}} \right)$
+		
+		
+		Hence, Rolle's theorem has been verified.
+		
+	\item  \textbf{	$f(x) = \log \left( {{x^2} + 2} \right) - \log 3$ in [-1,1][NCERT Exemp. Ex.5.3 ,Q.67,Page 112]}
+	
+	
+		\textbf{Solution}
+		
+		
+			We have, $f(x) = \log \left( {{x^2} + 2} \right) - \log 3$
+		(i) Logarithmic functions are continuous in their domain. 
+		Hence, $f(x) = \log \left( {{x^2} + 2} \right) - \log 3$ is continuous in [-1,1] .
+		
+		
+		(ii) $f(x) = \frac{1}{{{x^2} + 2}} \cdot 2x - 0$
+		$ = \frac{{2x}}{{{x^2} + 2}},$ which exists in (-1,1) .
+		Hence, $f(x)$ is differentiable in (-1,1) .
+		
+		
+		(iii) $f( - 1) = \log \left[ {{{( - 1)}^2} + 2} \right] - \log 3 = \log 3 - \log 3 = 0$ and
+		$f(1) = \log \left( {{1^2} + 2} \right) - \log 3 = \log 3 - \log 3 = 0$
+		
+		
+		$ \Rightarrow $$f( - 1) = f(1)$
+		
+		
+		Conditions of Rolle's theorem are satisfied. 
+		
+		
+		Hence, there exists a real number $c$ such that 
+		$f(c) = 0$
+		
+		
+		$ \Rightarrow $$\frac{{2c}}{{{c^2} + 2}} = 0$
+		
+		
+		$ \Rightarrow $$c = 0 \in ( - 1,1)$
+		
+		
+		Hence, Rolle's theorem has been verified.
+		
+	\item \textbf{	$f(x) = x(x + 3){e^{ - x/2}}$ in [-3,0][NCERT Exemp. Ex.5.3 ,Q.68,Page 112]}		
+	
+	
+		\textbf{Solution}
+		
+		
+			We have, $f(x) = x(x + 3){e^{ - x/2}}$
+		(i) $f(x)$ is a continuous function. [since, it is a combination of polynomial functions $x(x + 3)$ and an exponential function ${e^{ - x/2}}$ which are continuous functions] 
+		
+		
+		So, $f(x) = x(x + 3){e^{ - x/2}}$ is continuous in [-3,0] 
+		
+		.
+		(ii) therefore,${f^\prime }(x) = \left( {{x^2} + 3x} \right) \cdot \frac{d}{{dx}}{e^{ - x/2}} + {e^{ - x/2}} \cdot \frac{d}{{dx}}\left( {{x^2} + 3x} \right)$
+		
+		
+		$ = \left( {{x^2} + 3x} \right) \cdot {e^{ - x/2}} \cdot \left( { - \frac{1}{2}} \right) + {e^{ - x/2}} \cdot (2x + 3)$
+		$ = {e^{ - x/2}}\left[ {2x + 3 - \frac{1}{2} \cdot \left( {{x^2} + 3x} \right)} \right]$
+		
+		
+		$ = {e^{ - x/2}}\left[ {\frac{{4x + 6 - {x^2} - 3x}}{2}} \right]$
+		$ = {e^{ - x/2}} \cdot \frac{1}{2}\left[ { - {x^2} + x + 6} \right]$
+		
+		
+		$ = \frac{{ - 1}}{2}{e^{ - x/2}}\left[ {{x^2} - x - 6} \right]$
+		
+		
+		$ = \frac{{ - 1}}{2}{e^{ - x/2}}\left[ {{x^2} - 3x + 2x - 6} \right]$
+		$ = \frac{{ - 1}}{2}{e^{ - x/2}}[(x + 2)(x - 3)]$ which exists in (-3,0)
+		
+		
+		Hence, $f(x)$ is differentiable in (-3,0) .
+		
+		
+		(iii) therefore,$f( - 3) =  - 3( - 3 + 3){e^{ - 3/2}} = 0$
+		and $f(0) = 0(0 + 3){e^{ - 0/2}} = 0$
+		
+		
+		$ \Rightarrow $$f( - 3) = f(0)$
+		
+		
+		Since, conditions of Rolle's theorem are satisfied.
+		
+		
+		Hence, there exists a real number $c$ such that $f'(c) = 0$ 
+		$ \Rightarrow $$ - \frac{1}{2}{e^{ - c/2}}(c + 2)(c - 3) = 0$
+		$ \Rightarrow $$c =  - 2,3,$ where $ - 2 \in ( - 3,0)$
+		
+		
+		Therefore, Rolle's theorem has been verified.
+		
+\item \textbf{	$f(x) = \sqrt {4 - {x^2}} $ in [-2,2][NCERT Exemp. Ex.5.3 ,Q.69,Page 112]}
+
+
+		\textbf{Solution}
+		
+		
+			We have, $f(x) = \sqrt {4 - {x^2}}  = {\left( {4 - {x^2}} \right)^{1/2}}$
+			
+			
+		(i) $f(x) = \sqrt {4 - {x^2}} $ is a continuous function. 
+		
+		[since every polynomial function is a continuous function] 
+		Hence, $f(x)$ is continuous in [-2,2] .
+		
+		
+		(ii) ${f^\prime }(x) = \frac{1}{2}{\left( {4 - {x^2}} \right)^{ - 1/2}} \cdot ( - 2x)$
+		
+		
+		$ =  - x \cdot \frac{1}{{\sqrt {4 - {x^2}} }},$ which exists everywhere except at $x =  \pm 2$. 
+		
+		
+		Hence, $f(x)$ is differentiable in (-2,2) .
+		
+		
+		(iii) $f( - 2) = \sqrt {(4 - 4)}  = 0$ and $f(2) = \sqrt {(4 - 4)}  = 0$
+		
+		$ \Rightarrow $$f( - 2) = f(2)$
+		
+		
+		conditions of Rolle's theorem are satisfied.
+		
+		
+		Hence, there exists a real number $c$ such that ${f^\prime }(c) = 0$. 
+		
+		$ \Rightarrow $$ - c\frac{1}{{\sqrt {4 - {c^2}} }} = 0$
+		
+		$ \Rightarrow $$c = 0 \in ( - 2,2)$
+		
+		Hence, Rolle's theorem has been verified.
+		
+		
+		
+	\item \textbf{	Discuss the applicability of Rolle's theorem on the function given by $f(x) = \left\{ {\begin{array}{*{20}{l}}{{x^2} + 1,}&{{\rm{ if }}0 \le x \le 1}\\{3 - x,}&{{\rm{ if }}1 \le x \le 2}\end{array}} \right.$[NCERT Exemp. Ex.5.3 ,Q.70,Page 112]}
+	
+	
+		\textbf{Solution}
+		
+		
+			We have $f(x) = \left\{ {\begin{array}{*{20}{l}}{{x^2} + 1,}&{{\rm{ if }}0 \le x \le 1}\\{3 - x,}&{{\rm{ if }}1 \le x \le 2}\end{array}} \right.$
+			
+			
+		We know that, polynomial function is everywhere continuous and differentiability. 
+		
+		
+		So, $f(x)$ is continuous and differentiable at all points except possibly at $x = 1$. 
+		
+		
+		Now, check the differentiability at $x = 1$, 
+		At $x = 1$, 
+		${\rm{LDH}} = \mathop {\lim }\limits_{x \to {1^ - }} \frac{{f(x) - f(1)}}{{x - 1}}$
+		
+		
+		$ = \mathop {\lim }\limits_{x \to 1} \frac{{\left( {{x^2} + 1} \right) - (1 + 1)}}{{x - 1}}$   
+		
+		                
+		$ = \mathop {\lim }\limits_{x \to 1} \frac{{{x^2} - 1}}{{x - 1}} = \mathop {\lim }\limits_{x \to 1} \frac{{(x + 1)(x - 1)}}{{x - 1}}$
+		$ = 2$
+		
+		
+		and ${\rm{RDH}} = \mathop {\lim }\limits_{x \to {1^ + }} \frac{{f(x) - f(1)}}{{x - 1}} = \mathop {\lim }\limits_{x \to 1} \frac{{(3 - x)f(1 + 1)}}{{(x - 1)}}$
+		
+		
+		$ = \mathop {\lim }\limits_{x \to 1} \frac{{3 - x - 2}}{{x - 1}} = \mathop {\lim }\limits_{x \to 1} \frac{{ - (x - 1)}}{{x - 1}} =  - 1$
+		
+		
+		
+		therefore,${\rm{LHD}} \ne {\rm{RHD}}$
+		
+Hence we can say that  $f(x)$ is not differentiable at $x = 1$. 
+		
+		
+Therefore, Rolle's theorem is not applicable on the interval [0,2] .
+		
+	\item \textbf{	Find the points on the curve $y = (\cos x - 1)$ in $[0,2\pi ],$ where the tangent is parallel to $X$ -axis[NCERT Exemp. Ex.5.3 ,Q.71,Page 112]}
+	
+	
+		\textbf{Solution}	
+		
+		
+		The equation of the curve is $y = \cos x - 1$.
+		
+		
+		Now, we have to find a point on the curve in $[0,2\pi ]$,
+		
+		where the tangent is parallel to $X$-axis i.e., the tangent to the curve at $x = c$ has a slope o, where $c \in (0,2\pi )$.
+		
+		
+		Let us apply Rolle's theorem to get the point.
+		
+		
+		(i) $y = \cos x - 1$ is a continuous function in $[0,2\pi ]$. 
+		[since it is a combination of cosine function and a constant function]
+		
+		
+		(ii) $y' =  - \sin x,$ which exists in $(0,2\pi )$. 
+		
+		Hence, $y$ is differentiable in $(0,2\pi )$.
+		
+		(iii) $y(0) = \cos 0 - 1 = 0$ and $y(2\pi ) = \cos 2\pi  - 1 = 0$,
+		therefore,$y(0) = y(2\pi )$
+		
+		
+		Since, conditions of Rolle's theorem are satisfied. 
+		
+		Hence, there exists a real number $c$ such that 
+		$f(c) = 0$
+		
+		$ \Rightarrow $$ - \sin c = 0$
+		
+		$ \Rightarrow $$c = \pi $ or 0, where $\pi  \in (0,2\pi )$
+		
+		$ \Rightarrow $$x = \pi $
+		
+		therefore,$y = \cos \pi  - 1 =  - 2$
+		
+		Hence, the required point on the curve, where the tangent drawn is parallel to the $X$-axis is $(\pi , - 2)$.
+		
+		
+		
+		
+			
+	\item \textbf{	Using Rolle's theorem, find the point on the curve $y = x(x - 4),x \in [0,4],$ where the tangent is parallel to $X$-axis[NCERT Exemp. Ex.5.3 ,Q.72,Page 112]}
+	
+	
+		\textbf{Solution}
+		
+		
+			We have, $y = x(x - 4),x \in [0,4]$
+			
+			
+		(i) $y$ is a continuous function since $x(x - 4)$ is a polynomial function.
+		
+		Hence, $y = x(x - 4)$ is continuous in [0,4] .
+		
+		
+		(ii) ${y^\prime } = (x - 4) \cdot 1 + x \cdot 1 = 2x - 4$ which exists in (0,4) . 
+		
+		
+		Hence, $y$ is differentiable in (0,4) .
+		
+		
+		(iii) $y(0) = 0(0 - 4) = 0$
+		
+		
+		and $y(4) = 4(4 - 4) = 0$
+		
+		
+		$ \Rightarrow $$y(0) = y(4)$
+		
+		
+		Sicne, conditions of Rolle's theorem are satisfied. 
+		
+		
+		Hence, there exists a point $c$ such that 
+		${f^\prime }(c) = 0$ in (0,4)  
+		
+		                   
+		$ \Rightarrow $$2c - 4 = 0$
+		
+		$ \Rightarrow $$c = 2$
+		
+		$ \Rightarrow $$x = 2;y = 2(2 - 4) =  - 4$
+		
+		Thus, (2,-4) is the point on the curve at which the tangent drawn is parallel to $x$-axis.
+		
+		
+	\textbf{	Verify mean value theorem for each of the functions.}
+		
+	\item \textbf{	$f(x) = \frac{1}{{4x - 1}}$ in [1,4][NCERT Exemp. Ex.5.3 ,Q.73,Page 112] }
+	
+	
+	
+		\textbf{Solution}
+		
+		
+			We have, $f(x) = \frac{1}{{4x - 1}}$ in [1,4]
+			
+			
+			For mean value theorem follow the following algorithm : 
+			
+			If $f$ be a real function such that
+			
+			(i) $f(x)$ is continuous on [a, b]
+			
+			(ii) $f(x)$ is differentiable on ]a, b[ 
+			
+			
+			Then, there exists a real number $c \in ]a,b[$such that ${f^\prime }(c) = \frac{{f(b) - f(a)}}{{b - a}}$, thus we can verify it for given function.
+			
+			
+			
+		(i) $f(x)$ is continuous in [1,4] . 
+		
+		
+		Also, at $x = \frac{1}{4},f(x)$ is discontinuous.
+		
+		Hence, $f(x)$ is continuous in [1,4] .
+		
+		(ii) ${f^\prime }(x) =  - \frac{4}{{{{(4x - 1)}^2}}},$ which exists in (1,4) .
+		
+		Since, conditions of mean value theorem are satisfied.
+		 
+		Hence, there exists a real number $c \in ]1,4[$ such that 
+		${f^\prime }(c) = \frac{{f(4) - f(1)}}{{4 - 1}}$
+		
+		$ \Rightarrow $$\frac{{ - 4}}{{{{(4c - 1)}^2}}} = \frac{{\frac{1}{{16 - 1}} - \frac{1}{{4 - 1}}}}{{4 - 1}} = \frac{{\frac{1}{{15}} - \frac{1}{3}}}{3}$
+		
+		
+		$ \Rightarrow $$\frac{{ - 4}}{{{{(4c - 1)}^2}}} = \frac{{1 - 5}}{{45}} = \frac{{ - 4}}{{45}}$
+		
+		
+		$ \Rightarrow $${(4c - 1)^2} = 45$
+		
+		$ \Rightarrow $$4c - 1 =  \pm 3\sqrt 5 $
+		
+		$ \Rightarrow $$c = \frac{{3\sqrt 5  + 1}}{4} \in (1,4)$                [neglecting (-ve) value]
+		
+		
+		
+		Hence, mean value theorem has been verified.
+		
+		
+			
+		
+\item \textbf{	$f(x) = {x^3} - 2{x^2} - x + 3{\mathop{\rm in}\nolimits} [0,1]$[NCERT Exemp. Ex.5.3 ,Q.74,Page 112]}
+		
+		\textbf{Solution}
+		
+		
+			We have, $f(x) = {x^3} - 2{x^2} - x + 3$ in [0,1]
+			
+			
+		(i) Since, $f(x)$ is a polynomial function. 
+		
+		Hence, $f(x)$ is continuous in [0,1] .
+		
+		
+		(ii) ${f^\prime }(x) = 3{x^2} - 4x - 1,$ which exists in (0,1)
+		Hence, $f(x)$ is differentiable in (0,1) . 
+		
+		
+		Since, conditions of mean value theorem are satisfied. 
+		
+		Therefore, by mean value theorem $\exists c \in (0,1)$, such that 
+		${f^\prime }(c) = \frac{{f(1) - f(0)}}{{1 - 0}}$
+		
+		
+		$ \Rightarrow $$3{c^2} - 4c - 1 = \frac{{[1 - 2 - 1 + 3] - [0 + 3]}}{{1 - 0}}$
+		
+		
+		$ \Rightarrow $$3{c^2} - 4c - 1 = \frac{{ - 2}}{1}$
+		
+		$ \Rightarrow $$3{c^2} - 4c + 1 = 0$
+		
+		
+		$ \Rightarrow $$3{c^2} - 3c - c + 1 = 0$
+		
+		$ \Rightarrow $$3c(c - 1) - 1(c - 1) = 0$
+		
+		$ \Rightarrow $$(3c - 1)(c - 1) = 0$
+		
+		$ \Rightarrow $$c = 1/3,1,$ where $\frac{1}{3} \in (0,1)$
+		
+		
+		Hence, the mean value theorem has been verified.
+		
+	\item \textbf{	$f(x) = \sin x - \sin 2x$ in $[0,\pi ]$[NCERT Exemp. Ex.5.3 ,Q.75,Page 112]}
+	
+	
+	
+		\textbf{Solution}
+		
+		
+			We have, $f(x) = \sin x - \sin 2x$ in $[0,\pi ]$
+			
+			
+		(i) Since, we know that sine functions are continuous functions hence $f(x) = \sin x - \sin 2x$ is a continuous function in $[0,\pi ]$.
+		
+		
+		(ii) ${f^\prime }(x) = \cos x - \cos 2x \cdot 2 = \cos x - 2\cos 2x,$ which exists in $(0,\pi )$.
+		
+		
+		So, $f(x)$ is differentiable in $(0,\pi )$. Conditions of mean value theorem are satisfied. Hence, $\exists c \in (0,\pi )$ such that, $f'(c) = \frac{{f(\pi ) - f(0)}}{{\pi  - 0}}$
+		
+		
+		$ \Rightarrow $$\cos c - 2\cos 2c = \frac{{\sin \pi  - \sin 2\pi  - \sin 0 + \sin 2 \cdot 0}}{{\pi  - 0}}$
+		
+		
+		$ \Rightarrow $$2\cos 2c - \cos c = \frac{0}{\pi }$
+		$ \Rightarrow $$2 \cdot \left( {2{{\cos }^2}c - 1} \right) - \cos c = 0$
+		
+		
+		$ \Rightarrow $$4{\cos ^2}c - 2 - \cos c = 0$
+		
+		$ \Rightarrow $$4{\cos ^2}c - \cos c - 2 = 0$
+		
+		$ \Rightarrow $$\cos \,c = \frac{{1 \pm \sqrt {1 + 32} }}{8} = \frac{{1 \pm \sqrt {33} }}{8}$
+		
+		
+		therefore,$c = {\cos ^{ - 1}}\left( {\frac{{1 \pm \sqrt {33} }}{8}} \right)$
+		
+		
+		Also, ${\cos ^{ - 1}}\left( {\frac{{1 \pm \sqrt {33} }}{8}} \right) \in (0,\pi )$
+		
+		
+		Hence, mean value theorem has been verified.
+		
+	\item \textbf{	$f(x) = \sqrt {25 - {x^2}} $ in [1,5][NCERT Exemp. Ex.5.3 ,Q.76,Page 112]}
+	
+	
+		\textbf{Solution}
+		
+		
+			We have, $f(x) = \sqrt {25 - {x^2}} $ in [1,5]
+			
+			
+		(i) Since, $f(x) = {\left( {25 - {x^2}} \right)^{1/2}},$ where $25 - {x^2} \ge 0$ 
+		
+		
+		$ \Rightarrow $${x^2} \le  \pm 5 \Rightarrow  - 5 \le x \le 5$
+		
+		
+		Hence, $f(x)$ is continuous in [1,5] .
+		
+		
+		(ii) ${f^\prime }(x) = \frac{1}{2}{\left( {25 - {x^2}} \right)^{ - 1/2}} \cdot  - 2x = \frac{{ - x}}{{\sqrt {25 - {x^2}} }},$ which exists in (1,5) .
+		
+		
+		Hence, ${f^\prime }(x)$ is differentiable in (1,5) .
+		
+		
+		Since, conditions of mean value theorem are satisfied. 
+		
+		
+		By mean value theorem $\exists c \in (1,5)$ such that 
+		$f'(c) = \frac{{f(5) - f(1)}}{{5 - 1}} \Rightarrow \frac{{ - c}}{{\sqrt {25 - {c^2}} }} = \frac{{0 - \sqrt {24} }}{4}$
+		$ \Rightarrow $$\frac{{{c^2}}}{{25 - {c^2}}} = \frac{{24}}{{16}}$
+		$ \Rightarrow $$16{c^2} = 600 - 24{c^2}$
+		
+		
+		$ \Rightarrow $${c^2} = \frac{{600}}{{40}} = 15$
+		
+		
+		therefore,$c =  \pm \sqrt {15} $
+		
+		
+		Also, $c = \sqrt {15}  \in (1,5)$
+		
+		
+		Hence, the mean value theorem has been verified.
+		
+		
+		
+		
+	\item \textbf{	Find a point on the curve $y = {(x - 3)^2},$ where the tangent is parallel to the chord joining the points (3,0) and (4,1)[NCERT Exemp. Ex.5.3 ,Q.77,Page 112]}
+	
+	 
+		\textbf{Solution}
+		
+		
+			We have, $y = {(x - 3)^2},$ which is continuous in ${x_1} = 3$ and ${x_2} = 4$ i.e., [3,4]. 
+			
+			
+		Also, ${y^\prime } = 2(x - 3) \cdot 1 = 2(x - 3)$ which exists in (3,4). 
+		
+		
+		Hence, by mean value theorem there exists a point on the curve at which tangent drawn is parallel to the chord joining the points (3,0) and (4,1) . 
+		
+		
+		Thus, $f'(c) = \frac{{f(4) - f(3)}}{{4 - 3}}$
+		$ \Rightarrow $$2(c - 3) = \frac{{{{(4 - 3)}^2} - {{(3 - 3)}^2}}}{{4 - 3}}$
+		
+		
+		$ \Rightarrow $$2c - 6 = \frac{{1 - 0}}{1} \Rightarrow c = \frac{7}{2}$
+		
+		
+		For $x = \frac{7}{2},$          $y = {\left( {\frac{7}{2} - 3} \right)^2} = {\left( {\frac{1}{2}} \right)^2} = \frac{1}{4}$
+		
+		
+		So, $\left( {\frac{7}{2},\frac{1}{4}} \right)$ is the point on the curve at which tangent drawn is parallel to the chord joining the points (3,0) and (4,1).
+		
+		
+		
+		
+		
+		
+
+		
+			
+	\item \textbf{	Using mean value theorem, prove that there is a point on the curve $y = 2{x^2} - 5x + 3$ between the points $A(1,0)$ and $B(2,1),$ where tangent is parallel to the chord AB. Also, find that point [NCERT Exemp. Ex.5.3 ,Q.78,Page 112]}
+	
+	
+		\textbf{Solution}
+		
+		
+			We have, $y = 2{x^2} - 5x + 3,$ which is continuous in [1,2] as it is a polynomial function. 
+			
+			
+		Also, ${y^\prime } = 4x - 5,$ which exists in (1,2).
+		
+		 
+		By mean value theorem, $\exists c \in (1,2)$ at which drawn tangent is parallel to the chord AB, where $A$ and $B$ are (1,0) and (2,1) , respectively. 
+		
+		
+		therefore,${f^\prime }(c) = \frac{{f(2) - f(1)}}{{2 - 1}}$
+		
+		
+		$ \Rightarrow $$4c - 5 = \frac{{(8 - 10 + 3) - (2 - 5 + 3)}}{1}$
+		
+		
+		$ \Rightarrow $$4c - 5 = 1$
+		
+		
+		therefore,$c = \frac{6}{4} = \frac{3}{2} \in (1,2)$
+		
+		
+		For $x = \frac{3}{2},$    
+		
+		         $y = 2{\left( {\frac{3}{2}} \right)^2} - 5\left( {\frac{3}{2}} \right) + 3$
+		         
+		         
+		$ = 2 \times \frac{9}{4} - \frac{{15}}{2} + 3 = \frac{{9 - 15 + 6}}{2} = 0$
+		
+		
+		Hence, $\left( {\frac{3}{2},0} \right)$ is the point on the curve $y = 2{x^2} - 5x + 3$ between the points $A(1,0)$ and $B(2,1),$ where tangent is parallel to the chord AB.
+		
+		
+		
+		
+		\textbf{Long Answer Questions(L.A.)}
+		
+	\item \textbf{	Find the values of $p$ and $q$, so that $f(x) = \left\{ {\begin{array}{*{20}{l}}{{x^2} + 3x + p,{\rm{ if }}x \le 1}\\{qx + 2,{\rm{ }}\,\,\,\,\,\,\,\,\,\,\,{\rm{if }}x > 1}\end{array}} \right.$ is differentiable at $x = 1$[NCERT Exemp. Ex.5.3 ,Q.79,Page 112]}
+	
+	
+		\textbf{Solution}
+		
+		
+			We have, $f(x) = \left\{ {\begin{array}{*{20}{l}}{{x^2} + 3x + p,{\rm{ if }}x \le 1}\\{qx + 2,{\rm{ }}\,\,\,\,\,\,\,\,\,\,{\rm{if }}x > 1}\end{array}} \right.$ is differentiable at $x = 1$
+			
+			
+		therefore,$L{f^\prime }(1) = \mathop {\lim }\limits_{x \to {1^ - }} \frac{{f(x) - f(1)}}{{x - 1}}$
+		
+		
+		$ = \mathop {\lim }\limits_{x \to {1^ - }} \frac{{\left( {{x^2} + 3x + p} \right) - (1 + 3 + p)}}{{x - 1}}$
+		
+		
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{\left[ {{{(1 - h)}^2} + 3(1 - h) + p} \right] - [1 + 3 + p]}}{{(1 - h) - 1}}$
+		
+		
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{\left[ {1 + {h^2} - 2h + 3 - 3h + p} \right] - [4 + p]}}{{ - h}}$
+		
+		
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{\left[ {{h^2} - 5h + p + 4 - 4 - p} \right]}}{{ - h}} = \mathop {\lim }\limits_{h \to 0} \frac{{h[h - 5]}}{{ - h}}$
+		
+		
+		$ = \mathop {\lim }\limits_{h \to 0}  - [h - 5] = 5$
+		$R{f^\prime }(1) = \mathop {\lim }\limits_{x \to {1^ + }} \frac{{f(x) - f(1)}}{{x - 1}} = \mathop {\lim }\limits_{x \to {1^ + }} \frac{{(qx + 2) - (1 + 3 + p)}}{{x - 1}}$
+		
+		
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{[q(1 + h) + 2] - (4 + p)}}{{1 + h - 1}}$
+		
+		
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{[q + qh + 2 - 4 - p]}}{h} = \mathop {\lim }\limits_{h \to 0} \frac{{qh + (q - 2 - p)}}{h}$
+		
+		
+		$ \Rightarrow $$q - 2 - p = 0 \Rightarrow p - q =  - 2$               ………(i)
+		
+		
+		$ \Rightarrow $$\mathop {\lim }\limits_{h \to 0} \frac{{qh + 0}}{h} = q\quad $ [for limit to exist]
+		
+		
+		If $L{f^\prime }(1) = R{f^\prime }(1),$ then $5 = q$
+		$ \Rightarrow $$p - 5 =  - 2 \Rightarrow p = 3$
+		
+		
+		Therefore the value of $p = 3$ and $q = 5$
+		
+	\item \textbf{	If ${x^m} \cdot {y^n} = {(x + y)^{m + n}}$, prove that [NCERT Exemp. Ex.5.3 ,Q.80,Page 113]}
+	
+	
+		(i) $\frac{{dy}}{{dx}} = \frac{y}{x}$ and
+		
+		
+		
+		(ii) $\frac{{{d^2}y}}{{d{x^2}}} = 0$
+		
+		
+		\textbf{Solution}
+		
+		
+		
+			We have, ${x^m} \cdot {y^n} = {(x + y)^{m + n}}$                     ………(i)
+			
+		
+		(i) Differentiating Eq. (i) w.r.t. $x$, we get 
+		$\frac{d}{{dx}}\left( {{x^m} \cdot {y^n}} \right) = \frac{d}{{dx}}{(x + y)^{m + n}}$
+		
+		
+		$ \Rightarrow $${x^m} \cdot \frac{d}{{dy}}{y^n} \cdot \frac{{dy}}{{dx}} + {y^n} \cdot \frac{d}{{dx}}{x^m} = (m + n){(x + y)^{m + n - 1}}\frac{d}{{dx}}(x + y)$
+		
+		
+		$ \Rightarrow $${x^m} \cdot n{y^{n - 1}}\frac{{dy}}{{dx}} + {y^n} \cdot m{x^{m - 1}} = (m + n){(x + y)^{m + n - 1}}\left( {1 + \frac{{dy}}{{dx}}} \right)$
+		
+		
+		$ \Rightarrow $$\frac{{dy}}{{dx}}\left[ {{x^m} \cdot n{y^n}^{ - 1} - (m + n) \cdot {{(x + y)}^{m + n - 1}}} \right] = (m + n){(x + y)^{m + n - 1}} - {y^n}m{x^{m - 1}}$
+		
+		
+		$ \Rightarrow $$\frac{{dy}}{{dx}}\left[ {n{x^m}{y^{n - 1}} - (m + n){{(x + y)}^{m + n - 1}}} \right] = (m + n) \cdot {(x + y)^{m + n - 1}} - \frac{{{y^n} - 1 \cdot y \cdot m{x^m}}}{x}$
+		
+		
+		therefore,
+		
+		
+		
+$  	\frac{{dy}}{{dx}} = \frac{{\frac{{(m + n){{(x + y)}^{m + n}}}}{{(x + y)}} - \frac{{{y^{n - 1}} \cdot y \cdot m{x^m}}}{x}}}{{\frac{{n{x^m}{y^n}}}{y} - (m + n){{(x + y)}^{m + n}}\frac{1}{{(x + y)}}}}$
+		
+
+$= \frac{{\frac{{x(m + n){{(x + y)}^{m + n}} - (x + y) \cdot y{ \cdot ^{n - 1}}y \cdot m{x^m}}}{{(x + y) \cdot x}}}}{{\frac{{(x + y)n{x^m}{y^n} - y(m + n){{(x + y)}^{m + n}}}}{{(x + y) \cdot y}}}}$
+
+
+	
+	
+		$ = \frac{{\frac{{x(m + n) \cdot {x^m} \cdot {y^n} - m(x + y){y^n}{x^m}}}{{(x + y) \cdot x}}}}{{\frac{{(x + y)n{x^m} \cdot {y^n} - y(m + n) \cdot {x^m} \cdot {y^n}}}{{(x + y) \cdot y}}}}$   
+		
+		            
+		$ = \frac{{{x^m}{y^n}[mx + nx - mx - my] \cdot (x + y)y}}{{{x^m}{y^n}[nx + ny - my - ny] \cdot (x + y) \cdot x}}$
+	
+	
+		$ = \frac{y}{x}$                                                                   ……(ii)
+		
+		
+		Hence proved.
+		
+		
+		
+		(ii) Further, differentiating Eq.(ii) i.e., $\frac{{dy}}{{dx}} = \frac{y}{x}$ on both the sides w.r.t. $x$, we get
+		$\frac{{{d^2}y}}{{d{x^2}}} = \frac{{x \cdot \frac{{dy}}{{dx}} - y \cdot 1}}{{{x^2}}}$
+		
+		
+		$ = \frac{{x \cdot \frac{y}{x} - y}}{{{x^2}}}$   
+		
+		                                 
+		$ = 0$
+		Hence proved.
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+	\item	\textbf{If $x = \sin t$ and $y = \sin pt,$ then prove that 
+		$\left( {1 - {x^2}} \right)\frac{{{d^2}y}}{{d{x^2}}} - x\frac{{dy}}{{dx}} + {p^2}y = 0$[NCERT Exemp. Ex.5.3 ,Q.81,Page 113]}
+		
+		
+		\textbf{Solution}
+		
+		
+			We have, $x = \sin t$ and $y = \sin pt$
+		therefore,$\frac{{dx}}{{dt}} = \cos t$ and $\frac{{dy}}{{dt}} = \cos pt \cdot p$                       …….(i)
+		
+		
+		$ \Rightarrow $$\frac{{dy}}{{dx}} = \frac{{dy/dt}}{{dx/dt}} = \frac{{p \cdot \cos pt}}{{\cos t}}$
+		
+		
+		Again, differentiating both sides w.r.t. $x$, we get $\frac{{{d^2}y}}{{d{x^2}}} = \frac{{\cos t \cdot \frac{d}{{dt}}(p \cdot \cos pt)\frac{{dt}}{{dx}} - p\cos pt \cdot \frac{d}{{dt}}\cos t \cdot \frac{{dt}}{{dx}}}}{{{{\cos }^2}t}}$
+	
+	
+		$ = \frac{{[\cos t \cdot p \cdot ( - \sin pt) \cdot p - p\cos pt \cdot ( - \sin t)]\frac{{dt}}{{dx}}}}{{{{\cos }^2}t}}$
+	
+	
+		$ = \frac{{\left[ { - {p^2}\sin pt \cdot \cos t + p\sin t \cdot \cos pt} \right] \cdot \frac{1}{{\cos t}}}}{{{{\cos }^2}t}}$
+	
+	
+		$ \Rightarrow $$\frac{{{d^2}y}}{{d{x^2}}} = \frac{{ - {p^2}\sin pt \cdot \cos t + p\cos pt \cdot \sin t}}{{{{\cos }^3}t}}$                       …..(ii)
+		
+		
+		Since, we have to prove 
+		
+		$\left( {1 - {x^2}} \right)\frac{{{d^2}y}}{{d{x^2}}} - x\frac{{dy}}{{dx}} + {p^2}y = 0$
+		
+		
+		therefore,${\rm{LHS}} = \left( {1 - {{\sin }^2}t} \right)\frac{{\left[ { - {p^2}\sin pt \cdot \cos t + p\cos pt \cdot \sin t} \right]}}{{{{\cos }^3}t}}$
+		
+		
+		$ - \sin t \cdot \frac{{p\cos pt}}{{\cos t}} + {p^2}\sin pt$
+		
+		
+		$ = \frac{1}{{{{\cos }^3}t}}\left[ {\begin{array}{*{20}{l}}{\left( {1 - {{\sin }^2}t} \right)\left( { - {p^2}\sin pt \cdot \cos t + p\cos pt \cdot \sin t} \right)}\\{ - p\cos pt \cdot \sin t \cdot {{\cos }^2}t + {p^2}\sin pt \cdot {{\cos }^3}t}\end{array}} \right]$
+		
+		$ = \frac{1}{{{{\cos }^3}t}} \cdot 0$
+		
+		
+		$ = 0$
+		
+		Hence proved.
+		
+	\item	\textbf{Find the value of $\frac{{dy}}{{dx}}$, if $y = {x^{\tan x}} + \sqrt {\frac{{{x^2} + 1}}{2}} $[NCERT Exemp. Ex.5.3 ,Q.82,Page 113]}
+	
+	
+		\textbf{Solution}
+		
+			We have, $y = {x^{\tan x}} + \sqrt {\frac{{{x^2} + 1}}{2}} $                            ………(i)
+			
+			
+			
+		Taking $u = {x^{\tan x}}$ and $v = \sqrt {\frac{{{x^2} + 1}}{2}} $
+		$\log u = \tan x\log x$                                                ……..(ii)
+		
+		
+		and ${v^2} = \frac{{{x^2} + 1}}{2}$                                                   ……….(iii)
+		
+		
+		On, differentiating Eq. (ii) w.r.t. $x$ , we get 
+		$\frac{1}{u} \cdot \frac{{du}}{{dx}} = \tan x \cdot \frac{1}{x} + \log x \cdot {\sec ^2}x$
+		
+		
+		$ \Rightarrow $$\frac{{du}}{{dx}} = u\left[ {\frac{{\tan x}}{x} + \log x \cdot {{\sec }^2}x} \right]$
+		
+		
+		$ = {x^{\tan x}}\left[ {\frac{{\tan x}}{x} + \log x \cdot {{\sec }^2}x} \right]$                                   ……..(iv)
+		
+		
+		Also, differentiating Eq. (iii) w.r.t. $x$, we get $2v \cdot \frac{{dv}}{{dx}} = \frac{1}{2}(2x) \Rightarrow \frac{{dv}}{{dx}} = \frac{1}{{4v}} \cdot (2x)$
+		
+		
+		$ \Rightarrow $$\frac{{dv}}{{dx}} = \frac{1}{{4 \cdot \sqrt {\frac{{{x^2} + 1}}{2}} }} \cdot 2x = \frac{{x \cdot \sqrt 2 }}{{2\sqrt {{x^2} + 1} }}$
+		
+		
+		
+		$ \Rightarrow $$\frac{{dv}}{{dx}} = \frac{x}{{\sqrt {2\left( {{x^2} + 1} \right)} }}$                                          …….(v)
+		
+		
+		Now, $y = u + v$ 
+		
+		
+		therefore,$\frac{{dy}}{{dx}} = \frac{{du}}{{dx}} + \frac{{dv}}{{dx}}$
+		$ = {x^{\tan x}}\left[ {\frac{{\tan x}}{x} + \log x \cdot {{\sec }^2}x} \right] + \frac{x}{{\sqrt {2\left( {{x^2} + 1} \right)} }}$
+		
+		
+		
+		\textbf{Objective Type Questions }
+		
+		\textbf{Choose the correct answers from the given four options in each of the Exercises 83 to 96  }
+		
+	\item	\textbf{If $f(x) = 2x$ and $g(x) = \frac{{{x^2}}}{2} + 1,$ then which of the following can be a discontinuous function? [NCERT Exemp. Ex.5.3 ,Q.83,Page 113]}
+	
+	
+	\begin{enumerate}
+	
+	\item	$f(x) + g(x)$
+	\item	$f(x) - g(x)$
+	\item	$f(x) \cdot g(x)$
+	\item	$\frac{{g(x)}}{{f(x)}}$
+	\end{enumerate}
+	
+		\textbf{Correct option is d}
+		
+		
+		\textbf{Solution}
+		
+		
+			We know that, if $f$ and $g$ be continuous functions, then
+		$f + g$ is continuous
+		
+		$f - g$ is continuous.
+		
+		$fg$ is continuous
+		
+		$\frac{f}{g}$ is continuous at these points, where $g(x) \ne 0$. 
+	
+	
+		Here, $\frac{{g(x)}}{{f(x)}} = \frac{{\frac{{{x^2}}}{2} + 1}}{{2x}} = \frac{{{x^2} + 2}}{{4x}}$
+		which is discontinuous at $x = 0$
+		
+		\item 	\textbf{The function $f(x) = \frac{{4 - {x^2}}}{{4x - {x^3}}}$ is [NCERT Exemp. Ex.5.3 ,Q.84,Page 113]}
+		
+		\begin{enumerate}
+		
+		\item	discontinuous at only one point
+		\item	discontinuous at exactly two points
+		\item	discontinuous at exactly three points
+		\item	None of the above
+		\end{enumerate}
+		
+		
+				\textbf{Correct option is c }
+
+		
+		
+		\textbf{Solution}
+		
+		
+			We have, $f(x) = \frac{{4 - {x^2}}}{{4x - {x^3}}} = \frac{{\left( {4 - {x^2}} \right)}}{{x\left( {4 - {x^2}} \right)}}$
+			
+			
+		$ = \frac{{\left( {4 - {x^2}} \right)}}{{x\left( {{2^2} - {x^2}} \right)}} = \frac{{4 - {x^2}}}{{x(2 + x)(2 - x)}}$
+		
+		
+		Clearly, $f(x)$ is discontinuous at exactly three points $x = 0,x =  - 2$ and $x = 2$.
+		
+	\item	\textbf{The set of points where the function $f$ given by $f(x) = |2x - 1|\sin x$ is differentiable is [NCERT Exemp. Ex.5.3 ,Q.85,Page 113]}
+	\begin{enumerate}
+	
+	\item	$R$
+	\item	$R - \left( {\frac{1}{2}} \right)$
+	\item	$(0,\infty )$
+	\item	None of these
+	\end{enumerate}
+	
+	
+			\textbf{Correct option is b}
+
+		
+		
+		\textbf{Solution}
+		
+			We have, $f(x) = |2x - 1|\sin x$
+			
+			
+		At $x = \frac{1}{2},$$f(x)$ is not differentiable. 
+	
+	
+		Hence, $f(x)$ is differentiable in $R - \left( {\frac{1}{2}} \right)$. 
+		
+		
+		$Rf'\left( {\frac{1}{2}} \right) = \mathop {\lim }\limits_{h \to 0} \frac{{f\left( {\frac{1}{2} + h} \right) - f\left( {\frac{1}{2}} \right)}}{h}$
+		
+		
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{\left| {2\left( {\frac{1}{2} + h} \right) - 1} \right|\sin \left( {\frac{1}{2} + h} \right) - 0}}{h}$
+		
+		
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{|2h| \cdot \sin \left( {\frac{{1 + 2h}}{2}} \right)}}{h} = 2 \cdot \sin \frac{1}{2}$
+		and $Lf'\left( {\frac{1}{2}} \right) = \mathop {\lim }\limits_{h \to 0} \frac{{f\left( {\frac{1}{2} - h} \right) - f\left( {\frac{1}{2}} \right)}}{{ - h}}$
+		
+		
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{2{{\left( {\frac{1}{2} - h} \right)}^{ - 1}}\mid  - \sin \left( {\frac{1}{2} - h} \right) - 0}}{{ - h}}$
+		
+		
+		$ = \mathop {\lim }\limits_{h \to 0} \frac{{|0 - 2h| - \sin \left( {\frac{1}{2} - h} \right)}}{{ - h}} =  - 2\sin \left( {\frac{1}{2}} \right)$
+		
+		So, $f(x)$ is not differentiable at $x = \frac{1}{2}$.
+		
+	\item	\textbf{The function $f(x) = \cot x$ is discontinuous on the set[NCERT Exemp. Ex.5.3 ,Q.86,Page 114]}
+	
+	\begin{enumerate}
+	
+	\item	$\{ x = n\pi :n \in Z\} $
+	\item	$\{ x = 2n\pi :n \in Z\} $
+	\item	$\left\{ {x = (2n + 1)\frac{\pi }{2};n \in Z} \right\}$
+	\item	$\left\{ {x = \frac{{n\pi }}{2};n \in Z} \right\}$
+	\end{enumerate}
+	
+	
+			\textbf{Correct option is c}
+
+		
+		
+		\textbf{Solution}
+		
+			We know that, $f(x) = \cot x$ is continuous in $R - \{ n\pi :n \in Z\} $. 
+		Since, $f(x) = \cot x = \frac{{\cos x}}{{\sin x}}$                      $[{\rm{since}},\sin x = 0\,{\rm{at}}\,n\pi ,n \in Z]$ 
+		
+		
+		Hence, $f(x) = \cot x$ is discontinuous on the set $\{ x = n\pi :n \in Z\} $.
+		
+	\item	\textbf{The function $f(x) = {e^{|x|}}$ is  [NCERT Exemp. Ex.5.3 ,Q.87,Page 114]}
+	
+	
+	\begin{enumerate}
+	
+	\item	continuous everywhere but not differentiable at $x = 0$
+	\item	continuous and differentiable everywhere
+	\item	not continuous at $x = 0$
+	\item	None of the above 
+	\end{enumerate}
+	
+	
+			\textbf{Correct option is a }
+
+		
+		
+		\textbf{Solution}
+		
+		
+			Let $u(x) = |x|$ and $v(x) = {e^x}$
+			
+			
+		therefore,$f(x) = {\mathop{\rm vou}\nolimits} (x) = v[u(x)]$
+		$ = v|x| = {e^{|x|}}$
+		
+		
+		Since, $u(x)$ and $v(x)$ are both continuous functions.
+		
+		
+		So, $f(x)$ is also continuous function but $u(x) = |x|$ is not differentiable at $x = 0,$ whereas $v(x) = {e^x}$ is differentiable at everywhere.
+		
+		
+		Hence, $f(x)$ is continuous everywhere but not differentiable at $x = 0$.
+		
+	\item	\textbf{If $f(x) = {x^2}\sin \frac{1}{x},$ where $x \ne 0,$ then the value of the function $f$ at $x = 0,$ so that the function is continuous at $x = 0,$ is  [NCERT Exemp. Ex.5.3 ,Q.88,Page 114]}
+	
+	\begin{enumerate}
+	
+	\item	0
+	\item	-1
+	\item	1
+	\item	None of these 
+	\end{enumerate}
+	
+	
+	
+			\textbf{Correct option is a }
+
+		
+		
+		\textbf{Solution}
+		
+			$f(x) = {x^2}\sin \left( {\frac{1}{x}} \right)$, where $x \ne 0$
+		Hence, value of the function $f$ at $x = 0$, so that it is continuous at $x = 0$ is 0 .
+		
+	\item	\textbf{If $f(x) = \left[ {\begin{array}{*{20}{l}}{mx + 1,}&{{\rm{ if }}x \le \frac{\pi }{2}{\rm{ }}}\\{\sin x + n,}&{{\rm{ if }}x > \frac{\pi }{2}}\end{array}} \right.$is continuous at $x = \frac{\pi }{2},$ then   [NCERT Exemp. Ex.5.3 ,Q.89,Page 114]}
+	
+	\begin{enumerate}
+	
+	\item	$m = 1,n = 0$
+	\item	$m = \frac{{n\pi }}{2} + 1$
+	\item	$n = \frac{{m\pi }}{2}$
+	\item	$m = n = \frac{\pi }{2}$
+	\end{enumerate}
+	
+	
+			\textbf{Correct option is c }
+
+		
+		
+		\textbf{Solution}
+		
+		
+			We have $f(x) = \left\{ {\begin{array}{*{20}{l}}{mx + 1,}&{{\rm{ if }}x \le \frac{\pi }{2}}\\{(\sin x + n),}&{{\rm{ if }}x > \frac{\pi }{2}}\end{array}} \right.$ is continuous at $x = \frac{\pi }{2}$
+			
+			
+		therefore,${\rm{LHL}} = \mathop {\lim }\limits_{x \to \frac{{{\pi ^ - }}}{2}} (mx + 1) = \mathop {\lim }\limits_{h \to 0} \left[ {m\left( {\frac{\pi }{2} - h} \right) + 1} \right] = \frac{{m\pi }}{2} + 1$
+		
+		
+		and ${\rm{RHL}} = \mathop {\lim }\limits_{x \to \frac{{{\pi ^ + }}}{2}} (\sin x + n) = \mathop {\lim }\limits_{h \to 0} \left[ {\sin \left( {\frac{\pi }{2} + h} \right) + n} \right]$
+		
+		
+		$ = \mathop {\lim }\limits_{h \to 0} \cos h + n = 1 + n$
+		therefore,${\rm{LHL}} = {\rm{RHL}}$               [to be continuous at $x = \frac{\pi }{2}$]
+		
+		
+		$ \Rightarrow $$m \cdot \frac{\pi }{2} + 1 = n + 1$
+		
+		
+		therefore,$n = m \cdot \frac{\pi }{2}$
+		
+\item	\textbf{If $f(x) = |\sin x|,$ then  [NCERT Exemp. Ex.5.3 ,Q.90,Page 114]}
+
+
+\begin{enumerate}
+		\item	$f$ is everywhere differentiable
+	\item	$f$ is everywhere continuous but not differentiable at $x = n\pi ,$$n \in Z$
+	\item	$f$ is everywhere continuous but not differentiable at $x = (2n + 1)\frac{\pi }{2},$$n \in Z$
+	\item	None of the above
+	
+\end{enumerate}
+
+
+		\textbf{Correct option is b }
+		
+		
+
+			
+			
+		\textbf{Solution}
+		
+			We have, $f(x) = |\sin x|$
+			
+			
+		Let $f(x) = {\mathop{\rm vou}\nolimits} (x) = v[u(x)]$                  [where, $u(x) = \sin x$ and $v(x) = |x|$]
+		$ = v(\sin x) = |\sin x|$
+		
+		
+		where, $u(x)$ and $v(x)$ are both continuous.
+		
+		 
+		Hence, $f(x) = $ $vo\,\,u(x)$ is also a continuous function but $v(x)$ is not differentiable at $x = 0$. 
+		
+		
+		So, $f(x)$ is not differentiable where $\sin x = 0 \Rightarrow x = n\pi ,n \in Z$ 
+		
+		
+		Hence, $f(x)$ is continuous everywhere but not differentiable at $x = n\pi ,n \in Z$.
+		
+	\item	\textbf{If $y = \log \left( {\frac{{1 - {x^2}}}{{1 + {x^2}}}} \right),$ then $\frac{{dy}}{{dx}}$ is equal to  [NCERT Exemp. Ex.5.3 ,Q.91,Page 114]}
+	\begin{enumerate}
+	
+	\item	$\frac{{4{x^3}}}{{1 - {x^4}}}$
+	\item	$\frac{{ - 4x}}{{1 - {x^4}}}$
+	\item	$\frac{1}{{4 - {x^4}}}$
+	\item	$\frac{{ - 4{x^3}}}{{1 - {x^4}}}$
+	\end{enumerate}
+	
+	
+			\textbf{Correct option is b }
+			
+
+		
+		
+		\textbf{Solution}
+		
+			We have, $y = \log \left( {\frac{{1 - {x^2}}}{{1 + {x^2}}}} \right)$
+		therefore,$\frac{{dy}}{{dx}} = \frac{1}{{\frac{{1 - {x^2}}}{{1 + {x^2}}}}} \cdot \frac{d}{{dx}}\left( {\frac{{1 - {x^2}}}{{1 + {x^2}}}} \right)$
+		
+		
+		$ = \frac{{\left( {1 + {x^2}} \right)}}{{\left( {1 - {x^2}} \right)}} \cdot \frac{{\left( {1 + {x^2}} \right) \cdot ( - 2x) - \left( {1 - {x^2}} \right) \cdot 2x}}{{{{\left( {1 + {x^2}} \right)}^2}}}$
+		
+		
+		$ = \frac{{ - 2x\left[ {1 + {x^2} + 1 - {x^2}} \right]}}{{\left( {1 - {x^2}} \right) \cdot \left( {1 + {x^2}} \right)}} = \frac{{ - 4x}}{{1 - {x^4}}}$
+		
+	\item	\textbf{If $y = \sqrt {\sin x + y} $, then $\frac{{dy}}{{dx}}$ is equal to   [NCERT Exemp. Ex.5.3 ,Q.92,Page 115]}
+	
+	\begin{enumerate}
+	
+	\item	$\frac{{\cos x}}{{2y - 1}}$
+	\item	$\frac{{\cos x}}{{1 - 2y}}$
+	\item	$\frac{{\sin x}}{{1 - 2y}}$
+	\item	$\frac{{\sin x}}{{2y - 1}}$
+	\end{enumerate}
+	
+	
+			\textbf{Correct option is a }
+			
+			
+
+		
+		
+		\textbf{Solution}
+		
+		
+			
+		therefore,$\quad \frac{{dy}}{{dx}} = \frac{1}{2}{(\sin x + y)^{ - 1/2}} \cdot \frac{d}{{dx}}(\sin x + y)$
+		
+		
+		$ \Rightarrow $$\quad \frac{{dy}}{{dx}} = \frac{1}{2} \cdot \frac{1}{{{{(\sin x + y)}^{1/2}}}} \cdot \left( {\cos x + \frac{{dy}}{{dx}}} \right)$
+		
+		
+		$ \Rightarrow $$\frac{{dy}}{{dx}} = \frac{1}{{2y}}\left( {\cos x + \frac{{dy}}{{dx}}} \right)$      
+		
+		           
+		$ \Rightarrow $$\frac{{dy}}{{dx}}\left( {1 - \frac{1}{{2y}}} \right) = \frac{{\cos x}}{{2y}}$
+		
+		
+		therefore,$\frac{{dy}}{{dx}} = \frac{{\cos x}}{{2y}} \cdot \frac{{2y}}{{2y - 1}} = \frac{{\cos x}}{{2y - 1}}$
+		
+	\item	\textbf{The derivative of ${\cos ^{ - 1}}\left( {2{x^2} - 1} \right)$ w.r.t. ${\cos ^{ - 1}}x$ is  [NCERT Exemp. Ex.5.3 ,Q.93,Page 115] }
+	
+	\begin{enumerate}
+	
+	\item	2
+	\item	$\frac{{ - 1}}{{2\sqrt {1 - {x^2}} }}$
+	\item	$\frac{2}{x}$
+	\item	$1 - {x^2}$
+	\end{enumerate}
+	
+	
+			\textbf{Correct option is a }
+			
+			
+
+		
+		
+		
+		\textbf{Solution}
+		
+		
+			Let $u = {\cos ^{ - 1}}\left( {2{x^2} - 1} \right)$ and $v = {\cos ^{ - 1}}x$
+			
+			
+		therefore,$\frac{{dv}}{{dx}} = \frac{{ +  - 1}}{{\sqrt {1 - {{\left( {2{x^2} - 1} \right)}^2}} }} \cdot 4x = \frac{{ - 4x}}{{\sqrt {1 - \left( {4{x^4} + 1 - 4{x^2}} \right)} }}$
+		
+		
+		$ = \frac{{ - 4x}}{{\sqrt { - 4{x^4} + 4{x^2}} }} = \frac{{ - 4x}}{{\sqrt {4{x^2}\left( {1 - {x^2}} \right)} }}$
+		$ = \frac{{ - 2}}{{\sqrt {1 - {x^2}} }}$
+		
+		
+		and $\frac{{du}}{{dx}} = \frac{{ - 1}}{{\sqrt {1 - {x^2}} }}$
+		therefore,$\frac{{dx}}{{dv}} = \frac{{du/dx}}{{dv/dx}} = \frac{{ - 2/\sqrt {1 - {x^2}} }}{{ - 1/\sqrt {1 - {x^2}} }} = 2$
+		
+	\item	\textbf{If $x = {t^2}$ and $y = {t^3},$ then $\frac{{{d^2}y}}{{d{x^2}}}$ is equal to   [NCERT Exemp. Ex.5.3 ,Q.94,Page 115]}
+	
+	\begin{enumerate}
+		\item	$\frac{3}{2}$
+\item	$\frac{3}{{4t}}$
+\item	$\frac{3}{{2t}}$
+\item	$\frac{3}{{2t}}$
+
+	\end{enumerate}
+
+
+		\textbf{Correct option is b}
+		
+
+
+		
+		
+		\textbf{Solution}	
+		
+		We have, $x = {t^2}$ and $y = {t^3}$ 
+		
+		
+		therefore,$\frac{{dx}}{{dt}} = 2t$ and $\frac{{dy}}{{dt}} = 3{t^2}$
+		therefore,$\frac{{dy}}{{dx}} = \frac{{dy/dt}}{{dx/dt}} = \frac{{3{t^2}}}{{2t}} = \frac{3}{2}t$
+		
+		
+		On further differentiating w.r.t. $x$, we get 
+		$\frac{{{d^2}y}}{{d{x^2}}} = \frac{3}{2} \cdot \frac{d}{{dt}}t \cdot \frac{{dt}}{{dx}}$
+		
+		
+		$ = \frac{3}{2} \cdot \frac{1}{{2t}}$  
+		
+		                   
+		$ = \frac{3}{{4t}}$
+		
+	\item	\textbf{The value of $c$ in Rolle's theorem for the function $f(x) = {x^3} - 3x$ in the interval $[0,\sqrt 3 ]$ is  [NCERT Exemp. Ex.5.3 ,Q.95,Page 115]}
+	
+	
+	\begin{enumerate}
+	
+	\item	1
+	\item	-1
+	\item	$\frac{3}{2}$
+	\item	$\frac{1}{3}$
+	\end{enumerate}
+	
+	
+			\textbf{Correct option is a }
+			
+
+		
+		\textbf{Solution}	
+		
+		                    
+		$ \Rightarrow $$\quad 3{c^2} - 3 = 0$
+		
+		
+		$ \Rightarrow $${c^2} = \frac{3}{3} = 1$
+		
+		
+		$ \Rightarrow $$c =  \pm 1,$ where $1 \in (0,\sqrt 3 )$
+		therefore,$\quad c = 1$
+		
+	\item	\textbf{For the function $f(x) = x + \frac{1}{x},x \in [1,3],$ the value of $c$ for mean value theorem is [NCERT Exemp. Ex.5.3 ,Q.96,Page 116] }
+	\begin{enumerate}
+	
+	\item	1
+	\item	$\sqrt 3 $
+	\item	2
+	\item	None of these
+	\end{enumerate}
+	
+	
+			\textbf{Correct option is b }
+			
+			
+
+		
+		
+		\textbf{Solution}	
+		
+		
+		$ \Rightarrow $$1 - \frac{1}{{{c^2}}} = \frac{{\left[ {3 + \frac{1}{3}} \right] - \left[ {1 + \frac{1}{1}} \right]}}{{3 - 1}}$                     
+		
+		        
+		$ \Rightarrow $$\frac{{{c^2} - 1}}{{{c^2}}} = \frac{{\frac{{10}}{3} - 2}}{2}$
+		
+		
+		$ \Rightarrow $$\frac{{{c^2} - 1}}{{{c^2}}} = \frac{4}{{3 \times 2}} = \frac{2}{3}$
+		
+		
+		$ \Rightarrow $$3\left( {{c^2} - 1} \right) = 2{c^2}$
+		
+		
+		$ \Rightarrow $$3{c^2} - 2{c^2} = 3$
+		
+		
+		$ \Rightarrow $${c^2} = 3 \Rightarrow c =  \pm \sqrt 3 $
+		
+		
+		
+		\textbf{Fill in the blanks in each of the Exercises 97 to 101 :}
+		
+		
+	\item 	\textbf{An example of a function which is continuous everywhere but fails to be differentiable exactly at two points is …………  [NCERT Exemp. Ex.5.3 ,Q.97,Page 116]}
+	
+	
+	
+		\textbf{Solution}
+		
+			$|x| + |x - 1|$ is continuous everywhere but fails to be differentiable exactly at two points $x = 0$ and $x = 1$. 
+		So, there can be more such examples of functions.
+		
+	\item	\textbf{Derivative of ${x^2}$ w.r.t. ${x^3}$ is ………….[NCERT Exemp. Ex.5.3 ,Q.98,Page 116]}
+	
+	
+		\textbf{Solution}
+		
+		
+			Derivative of ${x^2}$ w.r.t. ${x^3}$ is $\frac{2}{{3x}}$
+			
+			
+		Let $u = {x^2}$ and $v = {x^3}$
+		therefore,$\quad \frac{{du}}{{dx}} = 2x$ and $\frac{{dv}}{{dx}} = 3{x^2}$
+		
+		
+		$ \Rightarrow $$\quad \frac{{du}}{{dv}} = \frac{{2x}}{{3{x^2}}} = \frac{2}{{3x}}$
+		
+\item	\textbf{If $f(x) = |\cos x|,$ then ${f^\prime }\left( {\frac{\pi }{4}} \right)$ is equal to ……..[NCERT Exemp. Ex.5.3 ,Q.99,Page 116]}
+
+
+		\textbf{Solution}
+		
+		
+			If $f(x) = |\cos x|,$ then ${f^\prime }\left( {\frac{\pi }{4}} \right)$
+		$0 < x < \frac{\pi }{2},\cos x > 0$
+		$f(x) =  + \cos x$
+		
+		
+		therefore,${f^\prime }(x) = ( - \sin x)$
+		
+		
+		
+		$ \Rightarrow $${f^\prime }\left( {\frac{\pi }{4}} \right) =  - \sin \frac{\pi }{4} = \frac{{ - 1}}{{\sqrt 2 }}$            
+		
+	\item	\textbf{If $f(x) = |\cos x - \sin x|,$ then ${f^\prime }\left( {\frac{\pi }{3}} \right)$ is equal to………….[NCERT Exemp. Ex.5.3 ,Q.100,Page 116].}
+	
+	
+		\textbf{Solution}
+		
+		
+			
+		therefore,${f^\prime }\left( {\frac{\pi }{3}} \right) = \frac{{\sqrt 3  + 1}}{2}$
+		
+		
+		
+		We know that, $\frac{\pi }{4} < x < \frac{\pi }{2},\sin x > \cos x$
+		therefore,$\cos x - \sin x \le 0$ i.e.,                 $f(x) =  - (\cos x - \sin x)$
+		
+		
+		${f^\prime }(x) =  - [ - \sin x - \cos x]$
+		
+		
+		therefore,${f^\prime }\left( {\frac{\pi }{3}} \right) =  - \left( {\frac{{ - \sqrt 3 }}{2} - \frac{1}{2}} \right) = \left( {\frac{{\sqrt 3  + 1}}{2}} \right)$
+		
+	\item	\textbf{For the curve $\sqrt x  + \sqrt y  = 1,\frac{{dy}}{{dx}}$ at $\left( {\frac{1}{4},\frac{1}{4}} \right)$ is…………[NCERT Exemp. Ex.5.3 ,Q.101,Page 116]}
+	
+	
+		\textbf{Solution}
+		
+		
+			For the curve $\sqrt x  + \sqrt y  = 1,$$\frac{{dy}}{{dx}}$ at $\left( {\frac{1}{4},\frac{1}{4}} \right)$ is -1 .
+		We have, $\sqrt x  + \sqrt y  = 1$
+		
+		
+		$ \Rightarrow $$\frac{1}{{2\sqrt x }} + \frac{1}{{2\sqrt y }}\frac{{dy}}{{dx}} = 0$
+		
+		
+		$ \Rightarrow $$\frac{{dy}}{{dx}} =  - \frac{{\sqrt y }}{{\sqrt x }}$
+		therefore,${\left( {\frac{{dy}}{{dx}}} \right)_{\left( {\frac{1}{4},\frac{1}{4}} \right)}} = \frac{{ - \frac{1}{2}}}{{\frac{1}{2}}} =  - 1$
+		
+		\textbf{State True or False for the statements in each of Exercises 102 to 106 }
+		
+	\item	\textbf{Rolle's theorem is applicable for the function $f(x) = |x - 1|$ in [0,2][NCERT Exemp. Ex.5.3 ,Q.102,Page 116]}.
+	
+	
+		\textbf{Solution}
+		
+			\textbf{False} 
+			
+		Hence, $f(x) = |x - 1|$ in [0,2] is not differentiable at $x = 1 \in (0,2)$.
+		
+	\item	\textbf{If $f$ is continuous on its domain $D$, then $\left| {f\mid } \right|$ is also continuous on $D$[NCERT Exemp. Ex.5.3 ,Q.103,Page 116]}
+	
+	
+		\textbf{Solution}
+		
+			\textbf{True}
+		
+	\item	\textbf{The composition of two continuous function is a continuous function [NCERT Exemp. Ex.5.3 ,Q.104,Page 116] }.
+	
+	
+		\textbf{Solution}	
+		
+		
+		\textbf{True}
+		
+		
+	\item	\textbf{Trigonometric and inverse trigonometric functions are differentiable in their respective domain[NCERT Exemp. Ex.5.3 ,Q.105,Page 116]}
+	
+	
+		\textbf{Solution}	
+		
+		
+		\textbf{True}
+		
+	\item \textbf{	If $f \cdot g$ is continuous at $x = a$, then $f$ and $g$ are separately continuous at $x = a$[NCERT Exemp. Ex.5.3 ,Q.106,Page 116]}
+	
+		\textbf{Solution}	
+		
+		\textbf{False}
+		
+		
+		Let $f(x) = \sin x$ and $g(x) = \cot x$
+		therefore, $f(x) \cdot g(x) = \sin x \cdot \frac{{\cos x}}{{\sin x}} = \cos x$
+		which is continuous at $x = 0$ but $\cot x$ is not continuous at $x = 0$.
+		
+		
+		
+	\end{enumerate}
+	
+	
+	
+\end{document}
