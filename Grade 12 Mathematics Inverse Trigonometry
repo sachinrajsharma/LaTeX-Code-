@@ -1,0 +1,1351 @@
+\documentclass[10pt,a4paper, english]{article}
+%\usepackage[a4paper,margin=1in,landscape]{geometry}
+%\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{lmodern}
+%\usepackage[english]{babel}
+\usepackage{tikz}
+\usepackage{mathptmx}
+\usepackage{geometry}
+\geometry{
+	top=0.5in,            % <-- you want to adjust this
+	inner=0.5in,
+	outer=0.5in,
+	bottom=0.5in,
+	headheight=3ex,       % <-- and this
+	headsep=2ex,          % <-- and this
+}
+\usepackage{verbatim}
+\everymath{\displaystyle}
+\usepackage{amsmath}
+%\usepackage{lipsum}
+
+%\setlength{\parskip}{1em}
+\usepackage{fancyhdr}
+%BANSAL DPP - 17,18,19
+\pagestyle{fancy}
+\fancyhf{}
+%\rhead{www.mathstudy.in}
+
+%\usepackage[landscape]{geometry}
+\chead{\Large{ Inverse Trigonometry  }}
+\rhead{By: Sachin Sharmaa}
+\rfoot{https://udgamwelfarefoundation.com/}
+\usepackage{amsfonts}
+%\usepackage{helvet}
+\usepackage{amssymb}
+\begin{document}
+	
+	\begin{center}
+		\textbf{\LARGE NCERT EXEMPLAR }
+	\end{center}
+	
+	\begin{center}
+		\textbf{SHORT ANSWER (S.A.)}
+	\end{center}
+
+
+\begin{enumerate}
+	\item  	Find the value of ${\tan ^{ - 1}}\left( {\tan \frac{{5\pi }}{6}} \right) + {\cos ^{ - 1}}\left( {\cos \frac{{13\pi }}{6}} \right)$.
+	[NCERT,Ex.2.3,Q.1,Page.35]
+	
+\textbf{Solution}
+
+
+	We know that, ${\tan ^{ - 1}}\tan x = x;x \in \left( { - \frac{\pi }{2},\frac{\pi }{2}} \right)$ and ${\cos ^{ - 1}}\cos x = x;x \in [0,\pi ]$
+	
+	$therefore, {\tan ^{ - 1}}\left( {\tan \frac{{5\pi }}{6}} \right) + {\cos ^{ - 1}}\left( {\cos \frac{{13\pi }}{6}} \right)$
+	
+	$ = {\tan ^{ - 1}}\left[ {\tan \left( {\pi  - \frac{\pi }{6}} \right)} \right] + {\cos ^{ - 1}}\left[ {\cos \left( {\pi  + \frac{{7\pi }}{6}} \right)} \right]$
+	
+	$ = {\tan ^{ - 1}}\left( { - \tan \frac{\pi }{6}} \right) + {\cos ^{ - 1}}\left( { - \cos \frac{{7\pi }}{6}} \right)$    
+	     
+	$ =  - {\tan ^{ - 1}}\left( {\tan \frac{\pi }{6}} \right) + \pi  - \left[ {{{\cos }^{ - 1}}\cos \left( {\frac{{7\pi }}{6}} \right)} \right]$
+	
+		and $\left. {{{\cos }^{ - 1}}( - x) = \pi  - {{\cos }^{ - 1}}x;x \in [ - 1,1]} \right\}$
+	
+	$ =  - {\tan ^{ - 1}}\left( {\tan \frac{\pi }{6}} \right) + \pi  - {\cos ^{ - 1}}\left[ {\cos \left( {\pi  + \frac{\pi }{6}} \right)} \right]$
+	
+	$ =  - {\tan ^{ - 1}}\left( {\tan \frac{\pi }{6}} \right) + \pi  - \pi  + {\cos ^{ - 1}}\left( {\cos \frac{\pi }{6}} \right)$          
+	
+	$ =  - \frac{\pi }{6} + 0 + \frac{\pi }{6} = 0$
+	
+
+	
+\item 	Evaluate $\cos \left[ {{{\cos }^{ - 1}}\left( {\frac{{ - \sqrt 3 }}{2}} \right) + \frac{\pi }{6}} \right]$.
+	[NCERT,Ex.2.3,Q.2,Page.35]
+	
+	
+\textbf{Solution}
+
+
+	We have, $\cos \left[ {{{\cos }^{ - 1}}\left( {\frac{{ - \sqrt 3 }}{2}} \right) + \frac{\pi }{6}} \right] = \cos \left[ {{{\cos }^{ - 1}}\left( {\cos \frac{{5\pi }}{6}} \right) + \frac{\pi }{6}} \right]$               
+	
+	$ = \cos \left( {\frac{{5\pi }}{6} + \frac{\pi }{6}} \right)$    
+	                
+	$ = \cos \left( {\frac{{6\pi }}{6}} \right)$
+	$ = \cos (\pi ) =  - 1$
+	
+\item  	Prove that $\cot \left( {\frac{\pi }{4} - 2{{\cot }^{ - 1}}3} \right) = 7$.
+	[NCERT,Ex.2.3,Q.3,Page.35]
+	
+	
+\textbf{Solution}
+
+	We have to prove, $\cot \left( {\frac{\pi }{4} - 2{{\cot }^{ - 1}}3} \right) = 7$
+	
+	$ \Rightarrow \left( {\frac{\pi }{4} - 2{{\cot }^{ - 1}}3} \right) = {\cot ^{ - 1}}7$
+	
+	$ \Rightarrow \left( {2{{\cot }^{ - 1}}3} \right) = \frac{\pi }{4} - {\cot ^{ - 1}}7$
+	
+	$ \Rightarrow $$2{\tan ^{ - 1}}\frac{1}{3} = \frac{\pi }{4} - {\tan ^{ - 1}}\frac{1}{7}$
+	
+	$ \Rightarrow $$2{\tan ^{ - 1}}\frac{1}{3} + {\tan ^{ - 1}}\frac{1}{7} = \frac{\pi }{4}$
+	
+	
+	$ \Rightarrow $${\tan ^{ - 1}}\frac{{2/3}}{{1 - {{(1/3)}^2}}} + {\tan ^{ - 1}}\frac{1}{7} = \frac{\pi }{4}$
+	
+	$ \Rightarrow $${\tan ^{ - 1}}\frac{{2/3}}{{8/9}} + {\tan ^{ - 1}}\frac{1}{7} = \frac{\pi }{4}$
+	
+	
+	$ \Rightarrow $${\tan ^{ - 1}}\frac{3}{4} + {\tan ^{ - 1}}\frac{1}{7} = \frac{\pi }{4}$
+	
+	$ \Rightarrow $${\tan ^{ - 1}}\frac{{\frac{3}{4} + \frac{1}{7}}}{{1 - \frac{3}{4} \cdot \frac{1}{7}}} = \frac{\pi }{4}$
+	
+	$ \Rightarrow $${\tan ^{ - 1}}\frac{{(21 + 4)/28}}{{(28 - 3)/28}} = \frac{\pi }{4}$
+	$ \Rightarrow $${\tan ^{ - 1}}\frac{{25}}{{25}} = \frac{\pi }{4}$
+	
+	$ \Rightarrow $$1 = \tan \frac{\pi }{4}$
+	
+	$ \Rightarrow $$1 = 1$
+	$ \Rightarrow $${\rm{LHS}} = {\rm{RHS}}$
+	
+\item 	Find the value of ${\tan ^{ - 1}}\left( { - \frac{1}{{\sqrt 3 }}} \right) + {\cot ^{ - 1}}\left( {\frac{1}{{\sqrt 3 }}} \right) + {\tan ^{ - 1}}\left[ {\sin \left( {\frac{{ - \pi }}{2}} \right)} \right]$.
+	[NCERT,Ex.2.3,Q.4,Page.35]
+	
+	
+
+\textbf{Solution}
+
+
+	We have, ${\tan ^{ - 1}}\left( { - \frac{1}{{\sqrt 3 }}} \right) + {\cot ^{ - 1}}\left( {\frac{1}{{\sqrt 3 }}} \right) + {\tan ^{ - 1}}\left[ {\sin \left( {\frac{{ - \pi }}{2}} \right)} \right]$
+	
+	$ = {\tan ^{ - 1}}\left( {\tan \frac{{5\pi }}{6}} \right) + {\cot ^{ - 1}}\left( {\cot \frac{\pi }{3}} \right) + {\tan ^{ - 1}}( - 1)$
+	
+	$ = {\tan ^{ - 1}}\left[ {\tan \left( {\pi  - \frac{\pi }{6}} \right)} \right] + {\cot ^{ - 1}}\left[ {\cot \left( {\frac{\pi }{3}} \right)} \right] + {\tan ^{ - 1}}\left[ {\tan \left( {\pi  - \frac{\pi }{4}} \right)} \right]$
+	
+	$ = {\tan ^{ - 1}}\left( { - \tan \frac{\pi }{6}} \right) + {\cot ^{ - 1}}\left( {\cot \frac{\pi }{3}} \right) + {\tan ^{ - 1}}\left( { - \tan \frac{\pi }{4}} \right)$
+	
+	$ =  - \frac{\pi }{6} + \frac{\pi }{3} - \frac{\pi }{4} = \frac{{ - 2\pi  + 4\pi  - 3\pi }}{{12}}$	
+	$ = \frac{{ - 5\pi  + 4\pi }}{{12}} =  - \frac{\pi }{{12}}$
+	
+\item 	Find the value of ${\tan ^{ - 1}}\left( {\tan \frac{{2\pi }}{3}} \right)$.
+	[NCERT,Ex.2.3,Q.5,Page.35]
+
+\textbf{Solution}
+
+	We have, ${\tan ^{ - 1}}\left( {\tan \frac{{2\pi }}{3}} \right) = {\tan ^{ - 1}}\tan \left( {\pi  - \frac{\pi }{3}} \right)$
+	
+	$ = {\tan ^{ - 1}}\left( { - \tan \frac{\pi }{3}} \right)$       
+	            
+	$ =  - {\tan ^{ - 1}}\tan \frac{\pi }{3} =  - \frac{\pi }{3}$  
+	                
+	Note 
+	Remember that, ${\tan ^{ - 1}}\left( {\tan \frac{{2\pi }}{3}} \right) \ne \frac{{2\pi }}{3}$
+	
+	Since, ${\tan ^{ - 1}}(\tan x) = x$, if $x \in \left( { - \frac{\pi }{2},\frac{\pi }{2}} \right)$
+	
+	 and $\frac{{2\pi }}{3} \notin \left( {\frac{{ - \pi }}{2},\frac{\pi }{2}} \right)$
+	
+\item 	Show that $2{\tan ^{ - 1}}( - 3) = \frac{{ - \pi }}{2} + {\tan ^{ - 1}}\left( {\frac{{ - 4}}{3}} \right)$.
+
+	[NCERT,Ex.2.3,Q.6,Page.35]
+	
+\textbf{Solution}
+
+	${\rm{LHS}} = 2{\tan ^{ - 1}}( - 3) =  - 2{\tan ^{ - 1}}3$ 
+	
+		   
+	$ =  - \left[ {{{\cos }^{ - 1}}\frac{{1 - {3^2}}}{{1 + {3^2}}}} \right]$ 
+		       
+	$ =  - \left[ {{{\cos }^{ - 1}}\left( {\frac{{ - 8}}{{10}}} \right)} \right] =  - \left[ {{{\cos }^{ - 1}}\left( {\frac{{ - 4}}{5}} \right)} \right]$
+	
+	
+	$ =  - \left[ {\pi  - {{\cos }^{ - 1}}\left( {\frac{4}{5}} \right)} \right]$ 
+	        
+	$ =  - \pi  + {\cos ^{ - 1}}\left( {\frac{4}{5}} \right)$
+	
+	
+	$\left[ {{\rm{let}}{{\cos }^{ - 1}}\left( {\frac{4}{5}} \right) = \theta  \Rightarrow \cos \theta  = \frac{4}{5} \Rightarrow \tan \theta  = \frac{3}{4} \Rightarrow \theta  = {{\tan }^{ - 1}}\frac{3}{4}} \right]$
+	
+	$ =  - \pi  + {\tan ^{ - 1}}\left( {\frac{3}{4}} \right) =  - \pi  + \left[ {\frac{\pi }{2} - {{\cot }^{ - 1}}\left( {\frac{3}{4}} \right)} \right]$
+	
+	$ =  - \frac{\pi }{2} - {\cot ^{ - 1}}\frac{3}{4} =  - \frac{\pi }{2} - {\tan ^{ - 1}}\frac{4}{3}$
+	
+	$ =  - \frac{\pi }{2} + {\tan ^{ - 1}}\left( {\frac{{ - 4}}{3}} \right)$     
+	         
+	= RHS $\quad $ Hence proved.
+	
+\item  	Find the real Solution of
+	${\tan ^{ - 1}}\sqrt {x(x + 1)}  + {\sin ^{ - 1}}\sqrt {{x^2} + x + 1}  = \frac{\pi }{2}$.
+	[NCERT,Ex.2.3,Q.7,Page.36]	
+	
+\textbf{Solution}
+
+	We have, ${\tan ^{ - 1}}\sqrt {x(x + 1)}  + {\sin ^{ - 1}}\sqrt {{x^2} + x + 1}  = \frac{\pi }{2}$    
+	
+	 ……(i)	
+	Let ${\sin ^{ - 1}}\sqrt {{x^2} + x + 1}  = \theta $
+	
+	$ \Rightarrow $$\sin \theta  = \sqrt {\frac{{{x^2} + x + 1}}{1}} $
+	
+	$ \Rightarrow $$\tan \theta  = \frac{{\sqrt {{x^2} + x + 1} }}{{\sqrt { - {x^2} - x} }}$                 
+	
+	$ = {\sin ^{ - 1}}\sqrt {{x^2} + x + 1} $
+	On putting the value of $\theta $ in Eq. (i),
+	
+	 we get	${\tan ^{ - 1}}\sqrt {x(x + 1)}  + {\tan ^{ - 1}}\frac{{\sqrt {{x^2} + x + 1} }}{{\sqrt { - {x^2} - x} }} = \frac{\pi }{2}$
+	 
+	We know that, ${\tan ^{ - 1}}x + {\tan ^{ - 1}}y = {\tan ^{ - 1}}\left( {\frac{{x + y}}{{1 - xy}}} \right),xy < 1$
+	
+	$therefore, {\tan ^{ - 1}}\left[ {\frac{{\sqrt {x(x + 1)}  + \sqrt {\frac{{{x^2} + x + 1}}{{ - {x^2} - x}}} }}{{1 - \sqrt {x(x + 1)}  \cdot \sqrt {\frac{{{x^2} + x + 1}}{{ - {x^2} - x}}} }}} \right] = \frac{\pi }{2}$
+	
+	$ \Rightarrow $${\tan ^{ - 1}}\left[ {\frac{{\sqrt {{x^2} + x}  + \sqrt {\frac{{{x^2} + x + 1}}{{ - 1\left( {{x^2} + x} \right)}}} }}{{1 - \sqrt {\left( {{x^2} + x} \right) \cdot \frac{{\left( {{x^2} + x + 1} \right)}}{{ - 1\left( {{x^2} + x} \right)}}} }}} \right] = \frac{\pi }{2}$
+	
+	$ \Rightarrow $$\frac{{{x^2} + x + \sqrt { - \left( {{x^2} + x + 1} \right)} }}{{\left[ {1 - \sqrt { - \left( {{x^2} + x + 1} \right.} } \right]\sqrt {\left( {{x^2} + x} \right)} }} = \tan \frac{\pi }{2} = \frac{1}{0}$
+	
+	$ \Rightarrow \left[ {1 - \sqrt { - \left( {{x^2} + x + 1} \right)} } \right]\sqrt {\left( {{x^2} + x} \right)}  = 0$
+	
+	$ \Rightarrow  - \left( {{x^2} + x + 1} \right) = 1$ or ${x^2} + x = 0$
+	$ \Rightarrow  - {x^2} - x - 1 = 1$ or $x(x + 1) = 0$
+	
+	$ \Rightarrow $${x^2} + x + 2 = 0$ or $x(x + 1) = 0$
+	$therefore, x = \frac{{ - 1 \pm \sqrt {1 - 4 \times 2} }}{2}$
+	
+	$ \Rightarrow $$x = 0$ or $x =  - 1$
+	For real Solution, we have $x = 0, - 1$
+	
+
+	
+\item 	Find the value of $\sin \left( {2{{\tan }^{ - 1}}\frac{1}{3}} \right) + \cos \left( {{{\tan }^{ - 1}}2\sqrt 2 } \right)$.	[NCERT,Ex.2.3,Q.8,Page.36]
+
+\textbf{Solution}
+
+	We have, $\sin \left( {2{{\tan }^{ - 1}}\frac{1}{3}} \right) + \cos \left( {{{\tan }^{ - 1}}2\sqrt 2 } \right)$
+	
+	$ = \sin \left[ {{{\sin }^{ - 1}}\left\{ {\frac{{2 \times \frac{1}{3}}}{{1 + {{\left( {\frac{1}{3}} \right)}^2}}}} \right\}} \right] + \cos \left( {{{\cos }^{ - 1}}\frac{1}{3}} \right)$ 
+	 
+	and $\left. {{{\tan }^{ - 1}}(2\sqrt 2 ) = {{\cos }^{ - 1}}\frac{1}{3}} \right]$
+	
+	$ = \sin \left[ {{{\sin }^{ - 1}}\left( {\frac{{\frac{2}{3}}}{{1 + \frac{1}{9}}}} \right)} \right] + \frac{1}{3}$   
+	 
+	$ = \sin \left[ {{{\sin }^{ - 1}}\left( {\frac{{2 \times 9}}{{3 \times 10}}} \right)} \right] + \frac{1}{3} = \sin \left[ {{{\sin }^{ - 1}}\left( {\frac{3}{5}} \right)} \right] + \frac{1}{3}$     
+	
+	$ = \frac{3}{5} + \frac{1}{3} = \frac{{9 + 5}}{{15}} = \frac{{14}}{{15}}$
+	
+\item 	If $2{\tan ^{ - 1}}(\cos \theta ) = {\tan ^{ - 1}}(2{\mathop{\rm cosec}\nolimits} \theta )$, then show that $\theta  = \frac{\pi }{4}$, where $n$ is any integer.
+	[NCERT,Ex.2.3,Q.9,Page.36]
+
+\textbf{Solution}
+
+	We have, $2{\tan ^{ - 1}}(\cos \theta ) = {\tan ^{ - 1}}(2{\mathop{\rm cosec}\nolimits} \theta )$
+	$ \Rightarrow $${\tan ^{ - 1}}\left( {\frac{{2\cos \theta }}{{1 - {{\cos }^2}\theta }}} \right) = {\tan ^{ - 1}}(2{\mathop{\rm cosec}\nolimits} \theta )$
+	
+	$ \Rightarrow \left( {\frac{{2\cos \theta }}{{{{\sin }^2}\theta }}} \right) = (2{\mathop{\rm cosec}\nolimits} \theta )$
+	$ \Rightarrow (\cot \theta  \cdot 2{\mathop{\rm cosec}\nolimits} \theta ) = (2{\mathop{\rm cosec}\nolimits} \theta ) \Rightarrow \cot \theta  = 1$
+	
+	$ \Rightarrow $$\cot \theta  = \cot \frac{\pi }{4} \Rightarrow \theta  = \frac{\pi }{4}$
+	
+
+	
+\item 	Show that $\cos \left( {2{{\tan }^{ - 1}}\frac{1}{7}} \right) = \sin \left( {4{{\tan }^{ - 1}}\frac{1}{3}} \right)$.
+[NCERT,Ex.2.3,Q.10,Page.36]
+
+\textbf{Solution}
+
+	We have, $\cos \left( {2{{\tan }^{ - 1}}\frac{1}{7}} \right) = \sin \left( {4{{\tan }^{ - 1}}\frac{1}{3}} \right)$
+	
+	$ \Rightarrow $$\cos \left[ {{{\cos }^{ - 1}}\left( {\frac{{1 - {{\left( {\frac{1}{7}} \right)}^2}}}{{1 + {{\left( {\frac{1}{7}} \right)}^2}}}} \right)} \right] = \sin \left[ {2 \cdot 2{{\tan }^{ - 1}}\frac{1}{3}} \right]$      
+	
+	$ \Rightarrow $$\cos \left[ {{{\cos }^{ - 1}}\left( {\frac{{\frac{{48}}{{49}}}}{{\frac{{50}}{{49}}}}} \right)} \right] = \sin \left[ {2 \cdot \left( {{{\tan }^{ - 1}}\frac{{\frac{2}{3}}}{{1 - {{\left( {\frac{1}{3}} \right)}^2}}}} \right)} \right]$
+	
+	$ \Rightarrow $$\cos \left[ {{{\cos }^{ - 1}}\left( {\frac{{48 \times 49}}{{50 \times 49}}} \right)} \right] = \sin \left[ {2{{\tan }^{ - 1}}\left( {\frac{{18}}{{24}}} \right)} \right]$
+	
+	$ \Rightarrow $$\cos \left[ {{{\cos }^{ - 1}}\left( {\frac{{24}}{{25}}} \right)} \right] = \sin \left( {2{{\tan }^{ - 1}}\frac{3}{4}} \right)$
+	
+	$ \Rightarrow $$\cos \left[ {{{\cos }^{ - 1}}\left( {\frac{{24}}{{25}}} \right)} \right] = \sin \left( {{{\sin }^{ - 1}}\frac{{2 \times \frac{3}{4}}}{{1 + \frac{9}{{16}}}}} \right)$
+	
+	$ \Rightarrow $$\frac{{24}}{{25}} = \sin \left( {{{\sin }^{ - 1}}\frac{{3/2}}{{25/16}}} \right)$
+	$ \Rightarrow $$\frac{{24}}{{25}} = \frac{{48}}{{50}} \Rightarrow \frac{{24}}{{25}} = \frac{{24}}{{25}}$
+	$therefore, {\rm{LHS}} = {\rm{RHS}}$
+	Hence proved.
+	
+\item 	Solve the equation $\cos \left( {{{\tan }^{ - 1}}x} \right) = \sin \left( {{{\cot }^{ - 1}}\frac{3}{4}} \right)$.
+[NCERT,Ex.2.3,Q.11,Page.36]
+
+\textbf{Solution}
+
+	We have, $\cos \left( {{{\tan }^{ - 1}}x} \right) = \sin \left( {{{\cot }^{ - 1}}\frac{3}{4}} \right)$
+	
+	$ \Rightarrow $$\cos \left( {{{\cos }^{ - 1}}\frac{1}{{\sqrt {{x^2} + 1} }}} \right) = \sin \left( {{{\sin }^{ - 1}}\frac{4}{5}} \right)$
+	
+	Let ${\tan ^{ - 1}}x = {\theta _1} \Rightarrow \tan {\theta _1} = \frac{x}{1}$
+	
+	$ \Rightarrow $$\cos {\theta _1} = \frac{1}{{\sqrt {{x^2} + 1} }} \Rightarrow {\theta _1} = {\cos ^{ - 1}}\frac{1}{{\sqrt {{x^2} + 1} }}$
+	
+	and ${\cot ^{ - 1}}\frac{3}{4} = {\theta _2} \Rightarrow \cot {\theta _2} = \frac{3}{4}$
+	
+	$ \Rightarrow $$\sin {\theta _2} = \frac{4}{5} \Rightarrow {\theta _2} = {\sin ^{ - 1}}\frac{4}{5}$
+	
+	$ \Rightarrow $$\frac{1}{{\sqrt {{x^2} + 1} }} = \frac{4}{5}$
+	. and $\left. {\sin \left( {{{\sin }^{ - 1}}x} \right) = x,x \in [ - 1,1]} \right\}$
+	
+	On squaring both sides,
+	
+	 we get 
+	$16\left( {{x^2} + 1} \right) = 25$
+	$ \Rightarrow $$16{x^2} = 9$
+	$ \Rightarrow $${x^2} = {\left( {\frac{3}{4}} \right)^2}$
+	
+	$therefore, $$x =  \pm \frac{3}{4} = \frac{{ - 3}}{4},\frac{3}{4}$
+	
+	\begin{center}
+		\textbf{LONG ANSWER (L.A.)}
+	\end{center}
+
+
+
+\item 	Prove that ${\tan ^{ - 1}}\left( {\frac{{\sqrt {1 + {x^2}}  + \sqrt {1 - {x^2}} }}{{\sqrt {1 + {x^2}}  - \sqrt {1 - {x^2}} }}} \right) = \frac{\pi }{4} + \frac{1}{2}{\cos ^{ - 1}}{x^2}$.
+[NCERT,Ex.2.3,Q.12,Page.36]
+
+
+\textbf{Solution}
+
+	We have, 
+${\tan ^{ - 1}}\left( {\frac{{\sqrt {1 + {x^2}}  + \sqrt {1 - {x^2}} }}{{\sqrt {1 + {x^2}}  - \sqrt {1 - {x^2}} }}} \right) = \frac{\pi }{4} + \frac{1}{2}{\cos ^{ - 1}}{x^2}$
+
+$therefore, $${\rm{LHS}} = {\tan ^{ - 1}}\left( {\frac{{\sqrt {1 + {x^2}}  + \sqrt {1 - {x^2}} }}{{\sqrt {1 + {x^2}}  - \sqrt {1 - {x^2}} }}} \right)$             
+
+ ….(i)
+[let ${x^2} = \cos 2\theta  = \left( {{{\cos }^2}\theta  - {{\sin }^2}\theta } \right) = 1 - 2{\sin ^2}\theta  = 2{\cos ^2}\theta  - 1$]
+$ \Rightarrow $${\cos ^{ - 1}}{x^2} = 2\theta  \Rightarrow \theta  = \frac{1}{2}{\cos ^{ - 1}}{x^2}$
+
+$therefore, $$\sqrt {1 + {x^2}}  = \sqrt {1 + \cos 2\theta } $
+
+$ = \sqrt {1 + 2{{\cos }^2}\theta  - 1}  = \sqrt 2 \cos \theta $
+
+and $\sqrt {1 - {x^2}}  = \sqrt {1 - \cos 2\theta } $
+$ = \sqrt {1 - 1 + 2{{\sin }^2}\theta }  = \sqrt 2 \sin \theta $
+
+$therefore, $${\rm{LHS}} = {\tan ^{ - 1}}\left( {\frac{{\sqrt 2 \cos \theta  + \sqrt 2 \sin \theta }}{{\sqrt 2 \cos \theta  - \sqrt 2 \sin \theta }}} \right)$
+
+$ = {\tan ^{ - 1}}\left( {\frac{{\cos \theta  + \sin \theta }}{{\cos \theta  - \sin \theta }}} \right)$
+
+$ = {\tan ^{ - 1}}\left( {\frac{{1 + \tan \theta }}{{1 - \tan \theta }}} \right) = {\tan ^{ - 1}}\left( {\frac{{\tan \frac{\pi }{4} + \tan \theta }}{{1 - \tan \frac{\pi }{4} \cdot \tan \theta }}} \right)$
+
+$ = {\tan ^{ - 1}}\left[ {\tan \left( {\frac{\pi }{4} + \theta } \right)} \right]$    
+           
+$ = \frac{\pi }{4} + \theta  = \frac{\pi }{4} + \frac{1}{2}{\cos ^{ - 1}}{x^2}$
+$ = {\rm{RHS}}$ Hence proved.
+
+\item Find the simplified form of 
+${\cos ^{ - 1}}\left( {\frac{3}{5}\cos x + \frac{4}{5}\sin x} \right)$, where $x \in \left[ {\frac{{ - 3\pi }}{4},\frac{\pi }{4}} \right]$.
+[NCERT,Ex.2.3,Q.13,Page.36]
+
+\textbf{Solution}
+
+	We have, ${\cos ^{ - 1}}\left[ {\frac{3}{5}\cos x + \frac{4}{5}\sin x} \right],x \in \left[ {\frac{{ - 3\pi }}{4},\frac{\pi }{4}} \right]$
+
+Let $\cos y = \frac{3}{5}$
+$ \Rightarrow $$\sin y = \frac{4}{5}$
+
+$ \Rightarrow $$y = {\cos ^{ - 1}}\frac{3}{5} = {\sin ^{ - 1}}\frac{4}{5} = {\tan ^{ - 1}}\left( {\frac{4}{3}} \right)$
+
+$therefore, $${\cos ^{ - 1}}[\cos y \cdot \cos x + \sin y \cdot \sin x]$
+$ = {\cos ^{ - 1}}[\cos (y - x)]$                            
+
+$ = y - x = {\tan ^{ - 1}}\frac{4}{3} - x$                  
+
+\item 	Prove that ${\sin ^{ - 1}}\frac{8}{{17}} + {\sin ^{ - 1}}\frac{3}{5} = {\sin ^{ - 1}}\frac{{77}}{{85}}$.
+[NCERT,Ex.2.3,Q.14,Page.36]
+
+\textbf{Solution}
+
+	We have, ${\sin ^{ - 1}}\frac{8}{{17}} + {\sin ^{ - 1}}\frac{3}{5} = {\sin ^{ - 1}}\frac{{77}}{{85}}$
+	
+$therefore, $${\rm{LHS}} = {\sin ^{ - 1}}\frac{8}{{17}} + {\sin ^{ - 1}}\frac{3}{5}$
+
+$ = {\tan ^{ - 1}}\frac{8}{{15}} + {\tan ^{ - 1}}\frac{3}{4}$
+
+Let ${\sin ^{ - 1}}\frac{8}{{17}} = {\theta _1} \Rightarrow \sin {\theta _1} = \frac{8}{{17}}$
+
+$ \Rightarrow $$\tan {\theta _1} = \frac{8}{{15}} \Rightarrow {\theta _1} = {\tan ^{ - 1}}\frac{8}{{15}}$
+
+and ${\sin ^{ - 1}}\frac{3}{5} = {\theta _2} \Rightarrow \sin {\theta _2} = \frac{3}{5}$
+
+$ \Rightarrow $$\tan {\theta _2} = \frac{3}{4} \Rightarrow {\theta _2} = {\tan ^{ - 1}}\frac{3}{4}$
+
+$ = {\tan ^{ - 1}}\left[ {\frac{{\frac{8}{{15}} + \frac{3}{4}}}{{1 - \frac{8}{{15}} \times \frac{3}{4}}}} \right]$     
+
+    
+$ = {\tan ^{ - 1}}\left[ {\frac{{\frac{{32 + 45}}{{60}}}}{{\frac{{60 - 24}}{{60}}}}} \right] = {\tan ^{ - 1}}\left( {\frac{{77}}{{36}}} \right)$
+
+Let ${\theta _3} = {\tan ^{ - 1}}\frac{{77}}{{36}} \Rightarrow \tan {\theta _3} = \frac{{77}}{{36}}$
+
+$ \Rightarrow $$\sin {\theta _3} = \frac{{77}}{{\sqrt {5929 + 1296} }} = \frac{{77}}{{85}}$
+
+$therefore, $${\theta _3} = {\sin ^{ - 1}}\frac{{77}}{{85}}$
+
+$ = {\sin ^{ - 1}}\frac{{77}}{{85}} = {\rm{RHS}}$ 
+           Hence proved.
+           
+           Alternate Method To prove, ${\sin ^{ - 1}}\frac{8}{{17}} + {\sin ^{ - 1}}\frac{3}{5} = {\sin ^{ - 1}}\frac{{77}}{{85}}$
+
+Let ${\sin ^{ - 1}}\frac{8}{{17}} = x$
+$ \Rightarrow $$\sin x = \frac{8}{{17}}$
+$ \Rightarrow $$\cos x = \sqrt {1 - {{\sin }^2}x}  = \sqrt {1 - {{\left( {\frac{8}{{17}}} \right)}^2}} $
+
+$ = \sqrt {\frac{{289 - 64}}{{289}}}  = \sqrt {\frac{{225}}{{289}}}  = \frac{{15}}{{17}}$
+
+
+Let ${\sin ^{ - 1}}\frac{3}{5} = y$
+$ \Rightarrow $$\sin y = \frac{3}{5} \Rightarrow {\sin ^2}y = \frac{9}{{25}}$
+
+$therefore, $${\cos ^2}y = 1 - \frac{9}{{25}}$
+
+$ \Rightarrow $${\cos ^2}y = {\left( {\frac{4}{5}} \right)^2} \Rightarrow \cos y = \frac{4}{5}$
+
+Now, $\sin (x + y) = \sin x \cdot \cos y + \cos x \cdot \sin y$
+
+$ = \frac{8}{{17}} \cdot \frac{4}{5} + \frac{{15}}{{17}} \cdot \frac{3}{5}$
+$ = \frac{{32}}{{85}} + \frac{{45}}{{85}} = \frac{{77}}{{85}}$
+
+$ \Rightarrow $$(x + y) = {\sin ^{ - 1}}\left( {\frac{{77}}{{85}}} \right)$
+$ \Rightarrow $${\sin ^{ - 1}}\frac{8}{{17}} + {\sin ^{ - 1}}\frac{3}{5} = {\sin ^{ - 1}}\frac{{77}}{{85}}$
+
+\item 	Show that ${\sin ^{ - 1}}\frac{5}{{13}} + {\cos ^{ - 1}}\frac{3}{5} = {\tan ^{ - 1}}\frac{{63}}{{16}}$.
+[NCERT,Ex.2.3,Q.15,Page.36]
+
+\textbf{Solution}
+
+	We have, ${\sin ^{ - 1}}\frac{5}{{13}} + {\cos ^{ - 1}}\frac{3}{5} = {\tan ^{ - 1}}\frac{{63}}{{16}}$    
+	
+	      …….(i)
+Let ${\sin ^{ - 1}}\frac{5}{{13}} = x$
+$ \Rightarrow $$\sin x = \frac{5}{{13}}$
+and ${\cos ^2}x = 1 - {\sin ^2}x$
+
+$ = 1 - \frac{{25}}{{169}} = \frac{{144}}{{169}}$
+$ \Rightarrow $$\cos x = \sqrt {\frac{{144}}{{169}}}  = \frac{{12}}{{13}}$
+
+$therefore, $$\tan x = \frac{{\sin x}}{{\cos x}} = \frac{{5/13}}{{12/13}} = \frac{5}{{12}}$ 
+
+            ……(ii)
+$ \Rightarrow $$\tan x = 5/12$                 
+
+                   …….(iii)
+Again, let ${\cos ^{ - 1}}\frac{3}{5} = y \Rightarrow \cos y = \frac{3}{5}$
+
+$therefore, $$\sin y = \sqrt {1 - {{\cos }^2}y} $
+$ = \sqrt {1 - {{\left( {\frac{3}{5}} \right)}^2}}  = \sqrt {1 - \frac{9}{{25}}} $
+
+$\sin y = \sqrt {\frac{{16}}{{25}}}  = \frac{4}{5}$
+$ \Rightarrow $$\tan y = \frac{{\sin y}}{{\cos y}} = \frac{{4/5}}{{3/5}} = \frac{4}{3}$ 
+
+               …….(iii)
+We know that,
+$\tan (x + y) = \frac{{\tan x + \tan y}}{{1 - \tan x \cdot \tan y}}$
+
+$ \Rightarrow $$\tan (x + y) = \frac{{\frac{5}{{12}} + \frac{4}{3}}}{{1 - \frac{5}{{12}} \cdot \frac{4}{3}}} \Rightarrow \tan (x + y) = \frac{{\frac{{15 + 48}}{{36}}}}{{\frac{{36 - 20}}{{36}}}}$
+
+$ \Rightarrow $$\tan (x + y) = \frac{{63/36}}{{16/36}}$
+
+$ \Rightarrow $$\tan (x + y) = \frac{{63}}{{16}}$
+$ \Rightarrow $$x + y = {\tan ^{ - 1}}\frac{{63}}{{16}}$
+
+$ \Rightarrow $${\tan ^{ - 1}}\frac{5}{{12}} + {\tan ^{ - 1}}\frac{4}{3} = {\tan ^{ - 1}}\frac{{63}}{{16}}$    Hence proved
+
+\item 	Prove that ${\tan ^{ - 1}}\frac{1}{4} + {\tan ^{ - 1}}\frac{2}{9} = {\sin ^{ - 1}}\frac{1}{{\sqrt 5 }}$.
+[NCERT,Ex.2.3,Q.16,Page.36]
+
+
+\textbf{Solution}
+
+	We have, ${\tan ^{ - 1}}\frac{1}{4} + {\tan ^{ - 1}}\frac{2}{9} = {\sin ^{ - 1}}\frac{1}{{\sqrt 5 }}$         
+	
+	  ….(i)
+Let ${\tan ^{ - 1}}\frac{1}{4} = x$
+$ \Rightarrow $$\tan x = \frac{1}{4}$
+
+$ \Rightarrow $${\tan ^2}x = \frac{1}{{16}}$
+$ \Rightarrow $${\sec ^2}x - 1 = \frac{1}{{16}}$
+
+$ \Rightarrow $${\sec ^2}x = 1 + \frac{1}{{16}} = \frac{{17}}{{16}}$
+
+$ \Rightarrow $$\frac{1}{{{{\cos }^2}x}} = \frac{{17}}{{16}}$
+
+$ \Rightarrow $${\cos ^2}x = \frac{{16}}{{17}}$
+$ \Rightarrow $$\cos x = \frac{4}{{\sqrt {17} }}$
+
+$ \Rightarrow $${\sin ^2}x = 1 - {\cos ^2}x = 1 - \frac{{16}}{{17}} = \frac{1}{{17}}$
+
+$ \Rightarrow $$\sin x = \frac{1}{{\sqrt {17} }}$                  
+
+           …..(ii)
+Again, let ${\tan ^{ - 1}}\frac{2}{9} = y$
+$ \Rightarrow $$\tan y = \frac{2}{9} \Rightarrow {\tan ^2}y = \frac{4}{{81}}$
+
+$ \Rightarrow $${\sec ^2}y - 1 = \frac{4}{{81}}$
+$ \Rightarrow $${\sec ^2}y = \frac{4}{{81}} + 1 = \frac{{85}}{{81}}$
+
+$ \Rightarrow $${\cos ^2}y = \frac{{81}}{{85}} \Rightarrow \cos y = \frac{9}{{\sqrt {85} }}$
+
+$ \Rightarrow $${\sin ^2}y = 1 - {\cos ^2}y = 1 - \frac{{81}}{{85}} = \frac{4}{{85}}$
+
+$ \Rightarrow $$\sin y = \frac{2}{{\sqrt {85} }}$                       
+
+       ……(iii)
+We know that, 
+$\sin (x + y) = \sin x \cdot \cos y + \cos x \cdot \sin y$
+
+$ = \frac{1}{{\sqrt {17} }} \cdot \frac{9}{{\sqrt {85} }} + \frac{4}{{\sqrt {17} }} \cdot \frac{2}{{\sqrt {85} }}$
+
+$ = \frac{{17}}{{\sqrt {17}  \cdot \sqrt {85} }} = \frac{{\sqrt {17} }}{{\sqrt {17}  \cdot \sqrt 5 }} = \frac{1}{{\sqrt 5 }}$
+
+$ \Rightarrow $$(x + y) = {\sin ^{ - 1}}\frac{1}{{\sqrt 5 }}$
+
+$ \Rightarrow $${\tan ^{ - 1}}\frac{1}{4} + {\tan ^{ - 1}}\frac{2}{9} = {\sin ^{ - 1}}\frac{1}{{\sqrt 5 }}$         Hence proved.
+
+\item 	Find the value of $4{\tan ^{ - 1}}\frac{1}{5} - {\tan ^{ - 1}}\frac{1}{{239}}$.
+[NCERT,Ex.2.3,Q.17,Page.37]
+
+
+\textbf{Solution}
+
+	We have, $4{\tan ^{ - 1}}\frac{1}{5} - {\tan ^{ - 1}}\frac{1}{{239}}$
+	
+$ = 2 \cdot 2{\tan ^{ - 1}}\frac{1}{5} - {\tan ^{ - 1}}\frac{1}{{239}}$
+
+$ = 2 \cdot \left[ {{{\tan }^{ - 1}}\frac{{\frac{2}{5}}}{{1 - {{\left( {\frac{1}{5}} \right)}^2}}}} \right] - {\tan ^{ - 1}}\frac{1}{{239}}$ 
+  
+$ = 2 \cdot \left[ {{{\tan }^{ - 1}}\left( {\frac{{\frac{2}{5}}}{{1 - \frac{1}{{25}}}}} \right)} \right] - {\tan ^{ - 1}}\frac{1}{{239}}$
+
+$ = 2 \cdot \left[ {{{\tan }^{ - 1}}\left( {\frac{{2/5}}{{24/25}}} \right)} \right] - {\tan ^{ - 1}}\frac{1}{{239}}$
+
+$ = 2{\tan ^{ - 1}}\frac{5}{{12}} - {\tan ^{ - 1}}\frac{1}{{239}}$
+
+$ = {\tan ^{ - 1}}\frac{{2 \cdot \frac{5}{{12}}}}{{1 - {{\left( {\frac{5}{{12}}} \right)}^2}}} - {\tan ^{ - 1}}\frac{1}{{239}}$ 
+          
+$ = {\tan ^{ - 1}}\left( {\frac{{\frac{5}{6}}}{{1 - \frac{{25}}{{144}}}}} \right) - {\tan ^{ - 1}}\frac{1}{{239}}$
+
+$ = {\tan ^{ - 1}}\left( {\frac{{144 \times 5}}{{119 \times 6}}} \right) - {\tan ^{ - 1}}\frac{1}{{239}}$
+$ = {\tan ^{ - 1}}\left( {\frac{{120}}{{119}}} \right) - {\tan ^{ - 1}}\frac{1}{{239}}$
+
+$ = {\tan ^{ - 1}}\left( {\frac{{\frac{{120}}{{119}} - \frac{1}{{239}}}}{{1 + \frac{{120}}{{119}} \cdot \frac{1}{{239}}}}} \right)$                                   
+
+$ = {\tan ^{ - 1}}\left( {\frac{{120 \times 239 - 119}}{{119 \times 239 + 120}}} \right)$
+
+$ = {\tan ^{ - 1}}\left[ {\frac{{28680 - 119}}{{28441 + 120}}} \right] = {\tan ^{ - 1}}\frac{{28561}}{{28561}}$
+
+$ = {\tan ^{ - 1}}(1) = {\tan ^{ - 1}}\left( {\tan \frac{\pi }{4}} \right) = \frac{\pi }{4}$
+
+
+
+\item 	Show that $\tan \left( {\frac{1}{2}{{\sin }^{ - 1}}\frac{3}{4}} \right) = \frac{{4 - \sqrt 7 }}{3}$ and justify why the other value $\frac{{4 + \sqrt 7 }}{3}$ is ignored?
+[NCERT,Ex.2.3,Q.18,Page.37]
+
+\textbf{Solution}
+
+	We have, $\tan \left( {\frac{1}{2}{{\sin }^{ - 1}}\frac{3}{4}} \right) = \frac{{4 - \sqrt 7 }}{3}$
+	
+$therefore, $  
+
+${\rm{LHS}} = \tan \left[ {\frac{1}{2}{{\sin }^{ - 1}}\left( {\frac{3}{4}} \right)} \right]$
+
+Let $\frac{1}{2}{\sin ^{ - 1}}\frac{3}{4} = \theta  \Rightarrow {\sin ^{ - 1}}\frac{3}{4} = 2\theta $
+
+$ \Rightarrow $$\sin 2\theta  = \frac{3}{4} \Rightarrow \frac{{2\tan \theta }}{{1 + {{\tan }^2}\theta }} = \frac{3}{4}$
+
+$ \Rightarrow $$3 + 3{\tan ^2}\theta  = 8\tan \theta $
+$ \Rightarrow $$3{\tan ^2}\theta  - 8\tan \theta  + 3 = 0$
+
+Let $\tan \theta  = y$
+
+
+Therefore equation will become :  $3{y^2} - 8y + 3 = 0$
+
+$ \Rightarrow $$y = \frac{{ + 8 \pm \sqrt {64 - 4 \times 3 \times 3} }}{{2 \times 3}} = \frac{{8 \pm \sqrt {28} }}{6}$
+$ = \frac{{2[4 \pm \sqrt 7 ]}}{{2 \cdot 3}}$
+$ \Rightarrow $$\tan \theta  = \frac{{4 \pm \sqrt 7 }}{3}$
+
+$ \Rightarrow $$\theta  = {\tan ^{ - 1}}\left[ {\frac{{4 \pm \sqrt 7 }}{3}} \right]$
+$\left\{ {{\rm{but}}\frac{{4 + \sqrt 7 }}{3} > \frac{1}{2} \cdot \frac{\pi }{2}} \right.$,
+ since $\left. {\max \left[ {\tan \left( {\frac{1}{2}{{\sin }^{ - 1}}\frac{3}{4}} \right)} \right] = 1} \right\}$
+ 
+$therefore, $${\rm{LHS}} = \tan {\tan ^{ - 1}}\left( {\frac{{4 - \sqrt 7 }}{3}} \right) = \frac{{4 - \sqrt 7 }}{3} = {\rm{RHS}}$
+
+Note Since, $ - \frac{\pi }{2} \le {\sin ^{ - 1}}\frac{3}{4} \le \pi /2$$ \Rightarrow $$\frac{{ - \pi }}{4} \le \frac{1}{2}{\sin ^{ - 1}}\frac{3}{4} \le \pi /4$
+
+$therefore, $$\tan \left( {\frac{{ - \pi }}{4}} \right) \le \tan \frac{1}{2}\left( {{{\sin }^{ - 1}}\frac{3}{4}} \right) \le \tan \frac{\pi }{4}$
+
+$ \Rightarrow $$ - 1 \le \tan \left( {\frac{1}{2}{{\sin }^{ - 1}}\frac{3}{4}} \right) \le 1$
+
+\item 	If ${a_1},{a_2},{a_3}, \ldots ,{a_n}$ is an arithmetic progression with common difference
+$d$, then evaluate the following expression.
+$\tan \left[ {{{\tan }^{ - 1}}\left( {\frac{d}{{1 + {a_1}{a_2}}}} \right) + {{\tan }^{ - 1}}\left( {\frac{d}{{1 + {a_2}{a_3}}}} \right) + {{\tan }^{ - 1}}\left( {\frac{d}{{1 + {a_3}{a_4}}}} \right)} \right.$ $\left. { +  \ldots  + {{\tan }^{ - 1}}\left( {\frac{d}{{1 + {a_{n - 1}}{a_n}}}} \right)} \right]$
+
+We have, ${a_1} = a,{a_2} = a + d,{a_3} = a + 2d$
+and $d = {a_2} - {a_1} = {a_3} - {a_2} = {a_4} - {a_3} =  \ldots  = {a_n} - {a_{n - 1}}$
+[NCERT,Ex.2.3,Q.19,Page.37]
+
+\textbf{Solution}
+
+	Given that, $\tan \left[ {{{\tan }^{ - 1}}\left( {\frac{d}{{1 + {a_1}{a_2}}}} \right) + {{\tan }^{ - 1}}\left( {\frac{d}{{1 + {a_2}{a_3}}}} \right)} \right.$.
+	
+$\left. { + {{\tan }^{ - 1}}\left( {\frac{d}{{1 + {a_3}{a_4}}}} \right) +  \ldots  + {{\tan }^{ - 1}}\left( {\frac{d}{{1 + {a_{n - 1}} \cdot {a_n}}}} \right)} \right]$
+
+$ = \tan \left[ {{{\tan }^{ - 1}}\frac{{{a_2} - {a_1}}}{{1 + {a_2} \cdot {a_1}}} + {{\tan }^{ - 1}}\frac{{{a_3} - {a_2}}}{{1 + {a_3} \cdot {a_2}}} +  \ldots  + {{\tan }^{ - 1}}\frac{{{a_n} - {a_{n - 1}}}}{{1 + {a_n} \cdot {a_{n - 1}}}}} \right]$
+
+$ = \tan \left[ {\left( {{{\tan }^{ - 1}}{a_2} - {{\tan }^{ - 1}}{a_1}} \right) + \left( {{{\tan }^{ - 1}}{a_3} - {{\tan }^{ - 1}}{a_2}} \right) +  \ldots  + \left( {{{\tan }^{ - 1}}{a_n} - {{\tan }^{ - 1}}{a_{n - 1}}} \right)} \right]$
+
+$ = \tan \left[ {{{\tan }^{ - 1}}{a_n} - {{\tan }^{ - 1}}{a_1}} \right]$
+
+$ = \tan \left[ {{{\tan }^{ - 1}}\frac{{{a_n} - {a_1}}}{{1 + {a_n} \cdot {a_1}}}} \right]$   
+                
+$ = \frac{{{a_n} - {a_1}}}{{1 + {a_n} \cdot {a_1}}}$                                        
+
+
+
+\begin{center}
+	\textbf{OBJECTIVE TYPE QUESTIONS }
+	
+\end{center}
+
+\textbf{Choose the correct answers from the given four options in each of the Exercises from 20 to 37 (M.C.Q.).}
+
+\item Which of the following is the principal value branch of ${\cos ^{ - 1}}x$ ?
+	\begin{enumerate}
+		\item	$\left[ { - \frac{\pi }{2},\frac{\pi }{2}} \right]$
+	\item	$(0,\pi )$
+	\item	$[0,\pi ]$
+	\item	$(0,\pi ) - \left\{ {\frac{\pi }{2}} \right\}$
+	\end{enumerate}
+	[NCERT,Ex.2.3,Q.20,Page.37]
+
+
+
+\textbf{Correct Answer	c}
+
+
+\textbf{Solution}
+
+	We know that, the principal value branch of ${\cos ^{ - 1}}x$ is $[0,\pi ]$.
+
+$therefore, $ $y = {\cos ^{ - 1}}x$
+
+	\item 	Which of the following is the principal value branch of ${{\mathop{\rm cosec}\nolimits} ^{ - 1}}x$ ?
+	\begin{enumerate}
+	\item	$\left( {\frac{{ - \pi }}{2},\frac{\pi }{2}} \right)$
+	\item	$[0,\pi ] - \left\{ {\frac{\pi }{2}} \right\}$
+	\item	$\left[ {\frac{\pi }{2},\frac{\pi }{2}} \right]$
+	\item	$\left[ {\frac{{ - \pi }}{2},\frac{\pi }{2}} \right] - [0]$
+	\end{enumerate}
+[NCERT,Ex.2.3,Q.21,Page.37]
+
+
+\textbf{Correct Answer	d}
+
+  
+\textbf{Solution}
+
+
+	We know that, the principal value branch of ${{\mathop{\rm cosec}\nolimits} ^{ - 1}}x$ is $\left[ {\frac{{ - \pi }}{2},\frac{\pi }{2}} \right] - 0$.
+
+$therefore, $ $y = {{\mathop{\rm cosec}\nolimits} ^{ - 1}}x$
+
+	\item 	If $3{\tan ^{ - 1}}x + {\cot ^{ - 1}}x = \pi $, then $x$ equals to
+	\begin{enumerate}
+	\item	0
+	\item	1
+	\item	-1
+	\item	$\frac{1}{2}$
+	\end{enumerate}
+[NCERT,Ex.2.3,Q.22,Page.37]
+
+
+\textbf{Correct Answer	b}
+
+
+\textbf{Solution}
+
+	Given that, $3{\tan ^{ - 1}}x + {\cot ^{ - 1}}x = \pi $  
+	        
+	   …..(i)
+$ \Rightarrow $$2{\tan ^{ - 1}}x + {\tan ^{ - 1}}x + {\cot ^{ - 1}}x = \pi $
+$ \Rightarrow $$2{\tan ^{ - 1}}x = \pi  - \frac{\pi }{2}$   
+                
+$ \Rightarrow $$2{\tan ^{ - 1}}x = \frac{\pi }{2}$
+
+$ \Rightarrow $${\tan ^{ - 1}}\frac{{2x}}{{1 - {x^2}}} = \frac{\pi }{2}$  
+           
+$ \Rightarrow $$\frac{{2x}}{{1 - {x^2}}} = \tan \frac{\pi }{2}$
+
+$ \Rightarrow $$\frac{{2x}}{{1 - {x^2}}} = \frac{1}{0} \Rightarrow 1 - {x^2} = 0$
+
+$ \Rightarrow $${x^2} = 1 \Rightarrow x =  \pm 1 \Rightarrow x = 1$
+
+Hence, only $x = 1$ satisfies the given equation.
+
+Note Here, putting $x =  - 1$ in the given equation,
+
+
+we get
+$3{\tan ^{ - 1}}( - 1) + {\cot ^{ - 1}}( - 1) = \pi $
+
+$ \Rightarrow $$3{\tan ^{ - 1}}\left[ {\tan \left( {\frac{{ - \pi }}{4}} \right)} \right] + {\cot ^{ - 1}}\left[ {\cot \left( {\frac{{ - \pi }}{4}} \right)} \right] = \pi $
+
+$ \Rightarrow $$3{\tan ^{ - 1}}\left( { - \tan \frac{\pi }{4}} \right) + {\cot ^{ - 1}}\left( { - \cot \frac{\pi }{4}} \right) = \pi $
+
+$ \Rightarrow $$ - 3{\tan ^{ - 1}}\left( {\tan \frac{\pi }{4}} \right) + \pi  - {\cot ^{ - 1}}\left( {\cot \frac{\pi }{4}} \right) = \pi $
+
+$ \Rightarrow $$ - 3 \cdot \frac{\pi }{4} + \pi  - \frac{\pi }{4} = \pi $
+
+$ \Rightarrow $$ - \pi  + \pi  = \pi  \Rightarrow 0 \ne \pi $
+
+Hence, $x =  - 1$ does not satisfy the given equation.
+
+\item 	The value of ${\sin ^{ - 1}}\left[ {\cos \left( {\frac{{33\pi }}{5}} \right)} \right]$ is
+\begin{enumerate}
+\item	$\frac{{3\pi }}{5}$
+\item	$\frac{{ - 7\pi }}{5}$
+\item	$\frac{\pi }{{10}}$
+\item	$\frac{{ - \pi }}{{10}}$
+\end{enumerate}
+
+\textbf{Correct Answer	d}
+
+[NCERT,Ex.2.3,Q.23,Page.37]
+
+\textbf{Solution}
+
+	We have,
+${\sin ^{ - 1}}\left( {\cos \frac{{33\pi }}{5}} \right) = {\sin ^{ - 1}}\left[ {\cos \left( {6\pi  + \frac{{3\pi }}{5}} \right)} \right] = {\sin ^{ - 1}}\left[ {\cos \left( {\frac{{3\pi }}{5}} \right)} \right]$
+
+$ = {\sin ^{ - 1}}\left[ {\cos \left( {\frac{\pi }{2} + \frac{\pi }{{10}}} \right)} \right] = {\sin ^{ - 1}}\left( { - \sin \frac{\pi }{{10}}} \right)$
+$ =  - {\sin ^{ - 1}}\left( {\sin \frac{\pi }{{10}}} \right)$     
+                   
+$ =  - \frac{\pi }{{10}}$                                              
+
+\item	The domain of the function ${\cos ^{ - 1}}(2x - 1)$ is
+\begin{enumerate}
+\item	[0,1]
+\item	[-1,1]
+\item	(-1,1)
+\item	$[0,\pi ]$
+\end{enumerate}
+[NCERT,Ex.2.3,Q.24,Page.38]
+
+\textbf{Correct Answer	a}
+
+
+\textbf{Solution}
+
+	We have, $f(x) = {\cos ^{ - 1}}(2x - 1)$
+$therefore,  - 1 \le 2x - 1 \le 1$
+
+$ \Rightarrow $$0 \le 2x \le 2$
+
+$ \Rightarrow $$0 \le x \le 1$
+
+$therefore, x \in [0,1]$
+
+\item	The domain of the function defined by $f(x) = {\sin ^{ - 1}}\sqrt {x - 1} $ is
+\begin{enumerate}
+	\item	[1,2]
+	\item	[-1,1]
+	\item	[0,1]
+	\item	None of these
+\end{enumerate}
+[NCERT,Ex.2.3,Q.25,Page.38]
+
+
+\textbf{Correct Answer	a}
+
+\textbf{Solution}
+$ \Rightarrow $$0 \le x - 1 \le 1$                   
+ and $ - 1 \le \sqrt {x - 1}  \le 1]$
+$ \Rightarrow $$1 \le x \le 2$
+
+$therefore, x \in [1,2]$
+
+\item	If $\cos \left( {{{\sin }^{ - 1}}\frac{2}{5} + {{\cos }^{ - 1}}x} \right) = 0$, then $x$ is equal to
+\begin{enumerate}
+\item	$\frac{1}{5}$
+\item	$\frac{2}{5}$
+\item	0
+\item	1
+\end{enumerate}
+[NCERT,Ex.2.3,Q.26,Page.38]
+
+
+\textbf{Correct Answer	b}
+
+
+\textbf{Solution}
+
+	We have, $\cos \left( {{{\sin }^{ - 1}}\frac{2}{5} + {{\cos }^{ - 1}}x} \right) = 0$
+$ \Rightarrow $${\sin ^{ - 1}}\frac{2}{5} + {\cos ^{ - 1}}x = {\cos ^{ - 1}}0$
+
+$ \Rightarrow $${\sin ^{ - 1}}\frac{2}{5} + {\cos ^{ - 1}}x = {\cos ^{ - 1}}\cos \frac{\pi }{2}$
+
+$ \Rightarrow $${\sin ^{ - 1}}\frac{2}{5} + {\cos ^{ - 1}}x = \frac{\pi }{2}$
+
+$ \Rightarrow $${\cos ^{ - 1}}x = \frac{\pi }{2} - {\sin ^{ - 1}}\frac{2}{5}$
+
+$ \Rightarrow $${\cos ^{ - 1}}x = {\cos ^{ - 1}}\frac{2}{5}$                     
+$therefore, $$x = \frac{2}{5}$
+
+\item	The value of $\sin \left[ {2{{\tan }^{ - 1}}(0.75)} \right]$ is
+\begin{enumerate}
+\item	0.75
+\item	1.5
+\item	0.96
+\item	$\sin 1.5$
+\end{enumerate}
+[NCERT,Ex.2.3,Q.27,Page.38]
+
+
+\textbf{Correct Answer	c}
+
+
+\textbf{Solution}
+
+	We have, $\sin \left[ {2{{\tan }^{ - 1}}(0.75)} \right] = \sin \left( {2{{\tan }^{ - 1}}\frac{3}{4}} \right)$       
+
+$ = \sin \left( {{{\sin }^{ - 1}}\frac{{2 \cdot \frac{3}{4}}}{{1 + \frac{9}{{16}}}}} \right) = \sin \left[ {{{\sin }^{ - 1}}\frac{{3/2}}{{25/16}}} \right]$
+
+$ = \sin \left[ {{{\sin }^{ - 1}}\left( {\frac{{48}}{{50}}} \right)} \right] = \sin \left[ {{{\sin }^{ - 1}}\left( {\frac{{24}}{{25}}} \right)} \right] = \frac{{24}}{{25}} = 0.96$
+
+\item	The value of ${\cos ^{ - 1}}\left( {\cos \frac{{3\pi }}{2}} \right)$ is
+\begin{enumerate}
+	\item	$\frac{\pi }{2}$
+	\item	$\frac{{3\pi }}{2}$
+	\item	$\frac{{5\pi }}{2}$
+	\item	$\frac{{7\pi }}{2}$
+\end{enumerate}
+[NCERT,Ex.2.3,Q.28,Page.38]
+
+
+\textbf{Correct Answer	a}
+
+\textbf{Solution}
+
+	We have, ${\cos ^{ - 1}}\left( {\cos \frac{{3\pi }}{2}} \right)$
+	
+$ = {\cos ^{ - 1}}\cos \left( {2\pi  - \frac{\pi }{2}} \right)$   
+             
+$ = {\cos ^{ - 1}}\cos \left( {\frac{\pi }{2}} \right) = \frac{\pi }{2}$  
+               
+Note 
+Remember that, ${\cos ^{ - 1}}\left( {\cos \frac{{3\pi }}{2}} \right) \ne \frac{{3\pi }}{2}$
+$\frac{{3\pi }}{2} \notin (0,\pi )$
+
+\item	The value of $2{\sec ^{ - 1}}2 + {\sin ^{ - 1}}\left( {\frac{1}{2}} \right)$ is
+\begin{enumerate}
+\item	$\frac{\pi }{6}$
+\item	$\frac{{5\pi }}{6}$
+\item	$\frac{{7\pi }}{6}$
+\item	1
+\end{enumerate}
+[NCERT,Ex.2.3,Q.29,Page.38]
+
+
+\textbf{Correct Answer	b}
+
+\textbf{Solution}
+
+	We have, $2{\sec ^{ - 1}}2 + {\sin ^{ - 1}}\frac{1}{2} = 2{\sec ^{ - 1}}\sec \frac{\pi }{3} + {\sin ^{ - 1}}\sin \frac{\pi }{6}$
+	
+$ = 2 \cdot \frac{\pi }{3} + \frac{\pi }{6}$          [and $\left. {{{\sin }^{ - 1}}(\sin x) = x} \right]$
+
+$ = \frac{{4\pi  + \pi }}{6} = \frac{{5\pi }}{6}$
+
+\item If ${\tan ^{ - 1}}x + {\tan ^{ - 1}}y = \frac{{4\pi }}{5}$, then ${\cot ^{ - 1}}x + {\cot ^{ - 1}}y$ equals to
+\begin{enumerate}
+\item	$\frac{\pi }{5}$
+\item	$\frac{{2\pi }}{5}$
+\item	$\frac{{3\pi }}{5}$
+\item	$\pi $
+\end{enumerate}
+[NCERT,Ex.2.3,Q.30,Page.38]
+
+
+\textbf{Correct Answer	a}
+
+\textbf{Solution}
+
+	We have, ${\tan ^{ - 1}}x + {\tan ^{ - 1}}y = \frac{{4\pi }}{5}$
+	
+$ \Rightarrow $$\frac{\pi }{2} - {\cot ^{ - 1}}x + \frac{\pi }{2} - {\cot ^{ - 1}}y = \frac{{4\pi }}{5}$
+
+$ \Rightarrow $$ - \left( {{{\cot }^{ - 1}}x + {{\cot }^{ - 1}}y} \right) = \frac{{4\pi }}{5} - \pi $   
+
+        
+$ \Rightarrow $${\cot ^{ - 1}}x + {\cot ^{ - 1}}y =  - \left( { - \frac{\pi }{5}} \right)$
+
+$ \Rightarrow $${\cot ^{ - 1}}x + {\cot ^{ - 1}}y = \frac{\pi }{5}$
+
+\item	If ${\sin ^{ - 1}}\left( {\frac{{2a}}{{1 + {a^2}}}} \right) + {\cos ^{ - 1}}\left( {\frac{{1 - {a^2}}}{{1 + {a^2}}}} \right) = {\tan ^{ - 1}}\left( {\frac{{2x}}{{1 - {x^2}}}} \right)$, where $\left. {a,x \in } \right]0,1[$, then the value of $x$ is
+\begin{enumerate}
+\item	0
+\item	$\frac{a}{2}$
+\item	a
+\item	$\frac{{2a}}{{1 - {a^2}}}$
+\end{enumerate}
+[NCERT,Ex.2.3,Q.31,Page.38]
+
+
+\textbf{Correct Answer	d}
+
+
+\textbf{Solution}
+
+	We have, ${\sin ^{ - 1}}\left( {\frac{{2a}}{{1 + {a^2}}}} \right) + {\cos ^{ - 1}}\left( {\frac{{1 - {a^2}}}{{1 + {a^2}}}} \right) = {\tan ^{ - 1}}\left( {\frac{{2x}}{{1 - {x^2}}}} \right)$
+	
+	
+Let $a = \tan \theta  \Rightarrow \theta  = {\tan ^{ - 1}}a$
+
+$therefore, {\sin ^{ - 1}}\left( {\frac{{2\tan \theta }}{{1 + {{\tan }^2}\theta }}} \right) + {\cos ^{ - 1}}\left( {\frac{{1 - {{\tan }^2}\theta }}{{1 + {{\tan }^2}\theta }}} \right) = {\tan ^{ - 1}}\frac{{2x}}{{1 - {x^2}}}$
+
+$ \Rightarrow $${\sin ^{ - 1}}\sin 2\theta  + {\cos ^{ - 1}}\cos 2\theta  = {\tan ^{ - 1}}\frac{{2x}}{{1 - {x^2}}}$
+
+$ \Rightarrow $$2\theta  + 2\theta  = {\tan ^{ - 1}}\frac{{2x}}{{1 - {x^2}}}$
+
+$ \Rightarrow $$4{\tan ^{ - 1}}a = {\tan ^{ - 1}}\frac{{2x}}{{1 - {x^2}}}$
+
+$ \Rightarrow $$2 \cdot 2{\tan ^{ - 1}}a = {\tan ^{ - 1}}\frac{{2x}}{{1 - {x^2}}}$
+
+$ \Rightarrow $$2 \cdot {\tan ^{ - 1}}\frac{{2a}}{{1 - {a^2}}} = {\tan ^{ - 1}}\frac{{2x}}{{1 - {x^2}}}$      
+    
+$ \Rightarrow $${\tan ^{ - 1}}\frac{{2 \cdot \left( {\frac{{2a}}{{1 - {a^2}}}} \right)}}{{1 - {{\left( {\frac{{2a}}{{1 - {a^2}}}} \right)}^2}}} = {\tan ^{ - 1}}\left( {\frac{{2x}}{{1 - {x^2}}}} \right)$
+$therefore, x = \frac{{2a}}{{1 - {a^2}}}$
+
+\item	The value of $\cot \left[ {{{\cos }^{ - 1}}\left( {\frac{7}{{25}}} \right)} \right]$ is
+\begin{enumerate}
+	\item	$\frac{{25}}{{24}}$
+	\item	$\frac{{25}}{7}$
+	\item	$\frac{{24}}{{25}}$
+	\item	$\frac{7}{{24}}$
+\end{enumerate}
+[NCERT,Ex.2.3,Q.32,Page.39]
+
+\textbf{Correct Answer	d}
+
+
+\textbf{Solution}
+
+	We have, $\cot \left[ {{{\cos }^{ - 1}}\left( {\frac{7}{{25}}} \right)} \right]$
+
+Let ${\cos ^{ - 1}}\frac{7}{{25}} = x$
+$ \Rightarrow $$\cos x = \frac{7}{{25}}$
+$therefore, \sin x = \sqrt {1 - {{\cos }^2}x}  = \sqrt {1 - {{\left( {\frac{7}{{25}}} \right)}^2}} $
+
+$ = \sqrt {\frac{{625 - 49}}{{625}}}  = \frac{{24}}{{25}}$
+
+$therefore, \cot x = \frac{{\cos x}}{{\sin x}} = \frac{{\frac{7}{{25}}}}{{\frac{{24}}{{25}}}} = \frac{7}{{24}}$     
+
+          ……(i)
+$ \Rightarrow $$x = {\cot ^{ - 1}}\left( {\frac{7}{{24}}} \right) = {\cos ^{ - 1}}\left( {\frac{7}{{25}}} \right)$
+
+$therefore, \cot \left( {{{\cos }^{ - 1}}\frac{7}{{25}}} \right) = \cot \left( {{{\cot }^{ - 1}}\frac{7}{{24}}} \right) = \frac{7}{{24}}$     
+
+\item	The value of $\tan \left( {\frac{1}{2}{{\cos }^{ - 1}}\frac{2}{{\sqrt 5 }}} \right)$ is
+\begin{enumerate}
+\item	$2 + \sqrt 5 $
+\item	$\sqrt 5  - 2$
+\item	$\frac{{\sqrt 5  + 2}}{2}$
+\item	$5 + \sqrt 2 $
+\end{enumerate}
+[NCERT,Ex.2.3,Q.33,Page.39]
+
+\textbf{Correct Answer	b}
+
+
+\textbf{Solution}
+
+	We have, $\tan \left( {\frac{1}{2}{{\cos }^{ - 1}}\frac{2}{{\sqrt 5 }}} \right)$
+	
+Let $\frac{1}{2}{\cos ^{ - 1}}\frac{2}{{\sqrt 5 }} = \theta $
+$ \Rightarrow $${\cos ^{ - 1}}\frac{2}{{\sqrt 5 }} = 2\theta  \Rightarrow \cos 2\theta  = \frac{2}{{\sqrt 5 }}$
+
+$therefore, \left( {1 - 2{{\sin }^2}\theta } \right) = \frac{2}{{\sqrt 5 }}$
+
+$ \Rightarrow $$2{\sin ^2}\theta  = 1 - \frac{2}{{\sqrt 5 }}$
+
+$ \Rightarrow $${\sin ^2}\theta  = \frac{1}{2} - \frac{1}{{\sqrt 5 }}$
+
+$ \Rightarrow $$\sin \theta  = \sqrt {\frac{1}{2} - \frac{1}{{\sqrt 5 }}} $
+
+$therefore, {\cos ^2}\theta  = 1 - {\sin ^2}\theta $
+$ = 1 - \frac{1}{2} + \frac{1}{{\sqrt 5 }} = \frac{1}{2} + \frac{1}{{\sqrt 5 }}$
+
+$ \Rightarrow $$\cos \theta  = \sqrt {\frac{1}{2} + \frac{1}{{\sqrt 5 }}} $
+
+$therefore, \tan \theta  = \sqrt {\frac{{\frac{1}{2} - \frac{1}{{\sqrt 5 }}}}{{\frac{1}{2} + \frac{1}{{\sqrt 5 }}}}}  = \sqrt {\frac{{\sqrt 5  - 2}}{{\sqrt 5  + 2}}} $   
+           
+$ \Rightarrow $$\theta  = {\tan ^{ - 1}}\sqrt {\frac{{\sqrt 5  - 2}}{{\sqrt 5  + 2}}}  = \frac{1}{2}{\cos ^{ - 1}}\frac{2}{{\sqrt 5 }}$
+
+$therefore, \tan \left( {\frac{1}{2}{{\cos }^{ - 1}}\frac{2}{{\sqrt 5 }}} \right) = \tan {\tan ^{ - 1}}\sqrt {\frac{{\sqrt 5  - 2}}{{\sqrt 5  + 2}}} $
+
+$ = \sqrt {\frac{{\sqrt 5  - 2}}{{\sqrt 5  + 2}} \cdot \frac{{\sqrt 5  - 2}}{{\sqrt 5  - 2}}} $
+
+$ = \sqrt {\frac{{{{(\sqrt 5  - 2)}^2}}}{{5 - 4}}}  = \sqrt 5  - 2$
+
+\item	If $|x| \le 1$, then $2{\tan ^{ - 1}}x + {\sin ^{ - 1}}\left( {\frac{{2x}}{{1 + {x^2}}}} \right)$ is equal to
+\begin{enumerate}
+\item	$4{\tan ^{ - 1}}x$
+\item	0
+\item	$\frac{\pi }{2}$
+\item	$\pi $
+\end{enumerate}
+[NCERT,Ex.2.3,Q.34,Page.39]
+
+\textbf{Correct Answer	a}
+
+\textbf{Solution}
+
+	We have, $2{\tan ^{ - 1}}x + {\sin ^{ - 1}}\frac{{2x}}{{1 + {x^2}}}$
+	
+Let $x = \tan \theta $
+$therefore, 2{\tan ^{ - 1}}\tan \theta  + {\sin ^{ - 1}}\frac{{2\tan \theta }}{{1 + {{\tan }^2}\theta }}$               
+
+$ = 2\theta  + {\sin ^{ - 1}}\sin 2\theta $                                        
+$ = 2\theta  + 2\theta $                                                        
+$ = 4\theta $                                                                  
+$ = 4{\tan ^{ - 1}}x$
+
+\item	If ${\cos ^{ - 1}}\alpha  + {\cos ^{ - 1}}\beta  + {\cos ^{ - 1}}\gamma  = 3\pi $, then $\alpha (\beta  + \gamma ) + \beta (\gamma  + \alpha ) + \gamma (\alpha  + \beta )$ equals to
+\begin{enumerate}
+	\item	0
+	\item	1
+	\item	6
+	\item	12
+\end{enumerate}
+[NCERT,Ex.2.3,Q.35,Page.39]
+
+\textbf{Correct Answer	c}
+
+
+\textbf{Solution}
+
+	We have, ${\cos ^{ - 1}}\alpha  + {\cos ^{ - 1}}\beta  + {\cos ^{ - 1}}\gamma  = 3\pi $
+We know that, $0 \le {\cos ^{ - 1}}x \le \pi $
+
+$ \Rightarrow $${\cos ^{ - 1}}\alpha  + {\cos ^{ - 1}}\beta  + {\cos ^{ - 1}}\gamma  = 3\pi $
+
+If and only if, ${\cos ^{ - 1}}\alpha  = {\cos ^{ - 1}}\beta  = {\cos ^{ - 1}}\gamma  = \pi $
+
+$ \Rightarrow $$\cos \pi  = \alpha  = \beta  = \gamma $
+
+$ \Rightarrow $$ - 1 = \alpha  = \beta  = \gamma $
+
+$ \Rightarrow $$\alpha  = \beta  = \gamma  =  - 1$
+
+$therefore, \alpha (\beta  + \gamma ) + \beta (\gamma  + \alpha ) + \gamma (\alpha  + \beta )$
+
+$ =  - 1( - 1 - 1) - 1( - 1 - 1) - 1( - 1 - 1)$
+$ = 2 + 2 + 2 = 6$
+
+\item	The number of real Solutions of the equation $\sqrt {1 + \cos 2x}  = \sqrt 2 {\cos ^{ - 1}}(\cos x){\mathop{\rm in}\nolimits} \left[ {\frac{\pi }{2},\pi } \right]$ is
+\begin{enumerate}
+\item	0
+\item	1
+\item	2
+\item	$\infty $
+\end{enumerate}
+[NCERT,Ex.2.3,Q.36,Page.39]
+
+\textbf{Correct Answer	a}
+
+
+\textbf{Solution}
+
+	We have, $\sqrt {1 + \cos 2x}  = \sqrt 2 {\cos ^{ - 1}}(\cos x),\left[ {\frac{\pi }{2},\pi } \right]$
+	
+$ \Rightarrow $$\sqrt {1 + 2{{\cos }^2}x - 1}  = \sqrt 2 {\cos ^{ - 1}}(\cos x)$
+$ \Rightarrow $$\sqrt 2 \cos x = \sqrt 2 {\cos ^{ - 1}}(\cos x)$
+
+$ \Rightarrow $$\cos x = {\cos ^{ - 1}}(\cos x)$
+
+$ \Rightarrow $$\cos x = x$                      
+which is not true for any real value of $x$. 
+
+Hence, there is no Solution possible for the given equation.
+
+\item	If ${\cos ^{ - 1}}x > {\sin ^{ - 1}}x$, then
+\begin{enumerate}
+\item	$\frac{1}{{\sqrt 2 }} < x \le 1$
+\item	$0 \le x < \frac{1}{{\sqrt 2 }}$
+\item	$ - 1 \le x < \frac{1}{{\sqrt 2 }}$
+\item	$x > 0$
+\end{enumerate}
+[NCERT,Ex.2.3,Q.37,Page.39]
+
+\textbf{Correct Answer	c}
+
+\textbf{Solution}
+
+	We have, ${\cos ^{ - 1}}x > {\sin ^{ - 1}}x$, where $x \in [ - 1,1]$
+	
+$ \Rightarrow $$x < \cos \left( {{{\sin }^{ - 1}}x} \right)$
+
+$ \Rightarrow $$x < \cos \left[ {{{\cos }^{ - 1}}\sqrt {1 - {x^2}} } \right]$          $\left[ {let{{\sin }^{ - 1}}x = \theta  \Rightarrow \sin \theta  = \frac{x}{1}} \right]$
+
+$ \Rightarrow $$x < \sqrt {1 - {x^2}} $
+$ \Rightarrow $${x^2} < 1 - {x^2} \Rightarrow 2{x^2} < 1$
+
+$ \Rightarrow $${x^2} < \frac{1}{2} \Rightarrow x <  \pm \left( {\frac{1}{{\sqrt 2 }}} \right)$ 
+
+          ……(i)
+Also, $ - 1 \le x \le 1$ 
+
+                            …….(ii)
+$therefore,  - 1 \le x \le \frac{1}{{\sqrt 2 }}$
+
+Alternate Method
+$\frac{\pi }{2} - {\sin ^{ - 1}}x > {\sin ^{ - 1}}x$
+
+$\frac{\pi }{2} > 2{\sin ^{ - 1}}x \Rightarrow \frac{\pi }{4} > {\sin ^{ - 1}}x$
+
+$\frac{1}{{\sqrt 2 }} > x \Rightarrow \frac{1}{{\sqrt 2 }} < x \le 1$
+
+We know that, ${\sin ^{ - 1}}x \in \left[ {\frac{{ - \pi }}{2},\frac{\pi }{2}} \right]$
+
+
+
+
+
+\begin{center}
+	\textbf{Fill in the blanks in each of the exercises 38 to 48 }
+\end{center}
+
+\item	The principal value of ${\cos ^{ - 1}}\left( { - \frac{1}{2}} \right)$ is ………..
+[NCERT,Ex.2.3,Q.38,Page.40]
+
+
+\textbf{Solution}	
+
+        $0 \le {\cos ^{ - 1}}x \le \pi $
+${\cos ^{ - 1}}\left( { - \frac{1}{2}} \right) = {\cos ^{ - 1}}\left( {\cos \frac{{2\pi }}{3}} \right) = \frac{{2\pi }}{3}$
+
+\item	The value of ${\sin ^{ - 1}}\left( {\sin \frac{{3\pi }}{5}} \right)$ is …………….
+[NCERT,Ex.2.3,Q.39,Page.40]
+
+\textbf{Solution}
+
+	$ - \frac{\pi }{2} \le {\sin ^{ - 1}}x \le \frac{\pi }{2}$
+	
+$therefore, $${\sin ^{ - 1}}\left( {\sin \frac{{3\pi }}{5}} \right) = {\sin ^{ - 1}}\sin \left( {\pi  - \frac{{2\pi }}{5}} \right) = {\sin ^{ - 1}}\left( {\sin \frac{{2\pi }}{5}} \right) = \frac{{2\pi }}{5}$
+
+\item	If $\cos \left( {{{\tan }^{ - 1}}x + {{\cot }^{ - 1}}\sqrt 3 } \right) = 0$, then the value of $x$ is
+[NCERT,Ex.2.3,Q.40,Page.40]
+
+\textbf{Solution}
+
+	We have, $\cos \left( {{{\tan }^{ - 1}}x + {{\cot }^{ - 1}}\sqrt 3 } \right) = 0$
+	
+$ \Rightarrow $${\tan ^{ - 1}}x + {\cot ^{ - 1}}\sqrt 3  = {\cos ^{ - 1}}0$
+
+$ \Rightarrow $${\tan ^{ - 1}}x + {\cot ^{ - 1}}\sqrt 3  = {\cos ^{ - 1}}\cos \frac{\pi }{2}$
+
+$ \Rightarrow $${\tan ^{ - 1}}x + {\cot ^{ - 1}}\sqrt 3  = \frac{\pi }{2}$
+
+$ \Rightarrow $${\tan ^{ - 1}}x = \frac{\pi }{2} - {\cot ^{ - 1}}\sqrt 3 $
+$ \Rightarrow $${\tan ^{ - 1}}x = {\tan ^{ - 1}}\sqrt 3 $             
+
+$therefore, $$x = \sqrt 3 $ 
+
+\item	The set of values of ${\sec ^{ - 1}}\frac{1}{2}$ is
+[NCERT,Ex.2.3,Q.41,Page.40]
+
+\textbf{Solution}
+
+	Since, domain of ${\sec ^{ - 1}}x$ is $R - ( - 1,1)$.
+	
+$ \Rightarrow $$( - \infty , - 1] \cup [1,\infty )$
+So, there is no set of values exist for ${\sec ^{ - 1}}\frac{1}{2}$. 
+
+So, $\phi $ is the answer.
+
+\item	The principal value of ${\tan ^{ - 1}}\sqrt 3 $ is………………..
+[NCERT,Ex.2.3,Q.42,Page.40]
+
+
+\textbf{Solution}
+
+	${\tan ^{ - 1}}\sqrt 3  = {\tan ^{ - 1}}\tan \left( {\frac{\pi }{3}} \right)$
+
+$ = \left( {\frac{\pi }{3}} \right)$
+
+\item	The value of ${\cos ^{ - 1}}\left( {\cos \frac{{14\pi }}{3}} \right)$ is…………
+[NCERT,Ex.2.3,Q.43,Page.40]
+
+\textbf{Solution}
+
+	We have, ${\cos ^{ - 1}}\left( {\cos \frac{{14\pi }}{3}} \right) = {\cos ^{ - 1}}\cos \left( {4\pi  + \frac{{2\pi }}{3}} \right)$
+	
+$ = {\cos ^{ - 1}}\cos \frac{{2\pi }}{3}$             
+$ = \frac{{2\pi}}{3}$ 
+                                   
+Note
+Remember that, ${\cos ^{ - 1}}\left( {\cos \frac{{14\pi }}{3}} \right) \ne \frac{{14\pi }}{3}$
+Since $,\frac{{14\pi }}{3} \notin [0,\pi ]$
+
+\item	The value of $\cos \left( {{{\sin }^{ - 1}}x + {{\cos }^{ - 1}}x} \right)$, where $|x| \le 1$, is…………..
+[NCERT,Ex.2.3,Q.44,Page.40]
+
+\textbf{Solution}
+
+	$\cos \left( {{{\sin }^{ - 1}}x + {{\cos }^{ - 1}}x} \right)$
+$ = \cos \frac{\pi }{2} = 0$                  
+
+\item	The value of $\tan \left( {\frac{{{{\sin }^{ - 1}}x + {{\cos }^{ - 1}}x}}{2}} \right)$, when $x = \frac{{\sqrt 3 }}{2}$, is …………..
+[NCERT,Ex.2.3,Q.45,Page.40]
+
+\textbf{Solution}
+
+	$\tan \left( {\frac{{{{\sin }^{ - 1}}x + {{\cos }^{ - 1}}x}}{2}} \right) = \tan \left( {\frac{{\pi /2}}{2}} \right)$
+
+$ = \tan \frac{\pi }{1} = 1$
+
+\item	If $y = 2{\tan ^{ - 1}}x + {\sin ^{ - 1}}\left( {\frac{{2x}}{{1 + {x^2}}}} \right)$, then …………….$ < y < $…..…………..
+[NCERT,Ex.2.3,Q.46,Page.40]
+
+\textbf{Solution}
+
+
+	We have, $y = 2{\tan ^{ - 1}}x + {\sin ^{ - 1}}\frac{{2x}}{{1 + {x^2}}}$
+	
+$therefore, $ $y = 2{\tan ^{ - 1}}\tan \theta  + {\sin ^{ - 1}}\frac{{2\tan \theta }}{{1 + {{\tan }^2}\theta }}$     [let $x = \tan \theta ]$
+
+$ \Rightarrow $$y = 2\theta  + {\sin ^{ - 1}}\sin 2\theta $      
+                     
+$ \Rightarrow $$y = 2\theta  + 2\theta  = 4\theta $                                   
+$ \Rightarrow $$y = 4{\tan ^{ - 1}}x$
+$ - \pi /2 < {\tan ^{ - 1}}x < \pi /2$
+
+$therefore, $$ - \frac{{4\pi }}{2} < 4{\tan ^{ - 1}}x < 4\pi /2$
+
+$ \Rightarrow $$ - 2\pi  < 4{\tan ^{ - 1}}x < 2\pi $
+$ \Rightarrow $$ - 2\pi  < y < 2\pi $                                         
+
+\item	The result ${\tan ^{ - 1}}x - {\tan ^{ - 1}}y = {\tan ^{ - 1}}\left( {\frac{{x - y}}{{1 + xy}}} \right)$ is true when the value of $xy$ is………………..
+[NCERT,Ex.2.3,Q.47,Page.40]
+
+\textbf{Solution}
+
+	We know that, ${\tan ^{ - 1}}x - {\tan ^{ - 1}}y = {\tan ^{ - 1}}\left( {\frac{{x - y}}{{1 + xy}}} \right)$
+where,              $xy >  - 1$
+
+\item	The value of ${\cot ^{ - 1}}( - x)x \in R$ in terms of ${\cot ^{ - 1}}x$ is……………
+[NCERT,Ex.2.3,Q.48,Page.40]
+
+\textbf{Solution}
+
+
+	We know that,
+${\cot ^{ - 1}}( - x) = \pi  - {\cot ^{ - 1}}x,x \in R$
+
+
+
+
+\begin{center}
+\textbf{State True or False for the statement in each of the exercises 49 to 55  }
+\end{center}
+\item	All trigonometric functions have inverse over their respective domains.
+[NCERT,Ex.2.3,Q.49,Page.40]
+
+\textbf{Solution}
+
+
+	False 
+	
+As we know that, all trigonometric functions have inverse over their restricted domains.
+
+\item	The value of the expression ${\left( {{{\cos }^{ - 1}}x} \right)^2}$ is equal to ${\sec ^2}x$.
+[NCERT,Ex.2.3,Q.50,Page.40]
+
+\textbf{Solution}
+
+	False 
+	
+${\left[ {{{\cos }^{ - 1}}x} \right]^2} = {\left[ {{{\sec }^{ - 1}}\frac{1}{x}} \right]^2} \ne {\sec ^2}x$
+
+\item	The domain of trigonometric functions can be restricted to any one of their branch (not necessarily principal value) in order to obtain their inverse functions.
+[NCERT,Ex.2.3,Q.51,Page.40]
+
+
+\textbf{Solution}
+
+	True 
+	
+As we know that, the domain of trigonometric functions are restricted in their domain to obtain their inverse functions.
+
+\item	The least numerical value, either positive or negative of angle $\theta $ is called principal value of the inverse trigonometric function.
+[NCERT,Ex.2.3,Q.52,Page.40]
+
+
+\textbf{Solution}
+
+	True
+We know that, the smallest numerical value, either positive or negative of $\theta $ is called the principal value of the function.
+
+\item The graph of inverse trigonometric function can be obtained from the graph of their corresponding function by interchanging X and Y-axes. 
+[NCERT,Ex.2.3,Q.53,Page.40]
+
+
+\textbf{Solution}
+
+	True 
+	
+We know that, the graph of an inverse function can be obtained from the corresponding graph of original function as a mirror image (i.e., reflection) along the line $y = x$.
+
+\item	The minimum value of $n$ for which ${\tan ^{ - 1}}\frac{n}{\pi } > \frac{\pi }{4},n \in N,$ is valid is 5.
+[NCERT,Ex.2.3,Q.54,Page.41]
+
+
+\textbf{Solution}
+
+	False 
+	
+${\tan ^{ - 1}}\frac{n}{\pi } > \frac{\pi }{4} \Rightarrow \frac{n}{\pi } > \tan \frac{\pi }{4}$
+
+$ \Rightarrow $$\frac{n}{\pi } > 1$               
+$ \Rightarrow $$n > \pi $
+So, the minimum value of $n$ is 4.             and $\pi  = 3.14 \ldots ]$
+
+\item	The principal value of ${\sin ^{ - 1}}\left[ {\cos \left( {{{\sin }^{ - 1}}\frac{1}{2}} \right)} \right]$ is $\frac{\pi }{3}$.
+[NCERT,Ex.2.3,Q.55,Page.41]
+
+
+\textbf{Solution}
+
+	True 
+	
+Given that, ${\sin ^{ - 1}}\left[ {\cos \left( {{{\sin }^{ - 1}}\frac{1}{2}} \right)} \right] = {\sin ^{ - 1}}\left[ {\cos {{\sin }^{ - 1}}\left( {\sin \frac{\pi }{6}} \right)} \right]$
+$ = {\sin ^{ - 1}}\left[ {\cos \frac{\pi }{6}} \right]$      
+         
+$ = {\sin ^{ - 1}}\frac{{\sqrt 3 }}{2}$
+$ = {\sin ^{ - 1}}\sin \frac{\pi }{3} = \frac{\pi }{3}$
+
+
+
+\end{enumerate}
+	
+	
+	
+	
+	
+	
+	
+\end{document}
